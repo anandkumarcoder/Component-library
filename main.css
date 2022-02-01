@@ -1,1 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap");
+
+:root{
+    --primary-font : "Open Sans", sans-serif;
+    --background-color: black;
+
+}
+
+main{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer"
+    
+    ;
+}
+
+.nav-bar{
+    background-color: greenyellow;
+}
+
+header{
+   grid-area: header; 
+   border: 1px solid black;
+}
+
+aside{
+    /* background-color: red; */
+    border: 1px solid red;
+    width: 15vw;
+    height: 60vh;
+    grid-area:aside;
+}
+
+section{
+    /* background-color: gold; */
+    border: 1px solid orangered;
+    
+    height: 60vh;
+    /* display: block; */
+    grid-area:main ;
+}
+
+footer{
+    display: block;
+    /* background-color: hotpink; */
+    border: 1px solid hotpink;
+    width: 100vw;
+    height: 20vh;
+    grid-area:footer ;
+}
