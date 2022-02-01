@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="alert.css">
 </head>
 <body>
+    <!-- simple alert button -->
     <div class="container-alert">
       
         <div class="alert alert-primary"> A simple primary alert message</div>
@@ -19,6 +20,8 @@
         <div class="alert alert-error"> A simple primary error message</div>
         <div class="alert alert-success"> A simple sucess alert message</div>
     </div>
+
+    <!-- Alert button with icons starts -->
 
     <div class="container-alert alert-icon">
       
@@ -35,8 +38,27 @@
 
         <div class="alert alert-success">
             <i class="material-icons btn-only">check_circle</i>
-             A simple sucess alert message</div>
+             A simple sucess alert message
+            
+           
     </div>
+
+    <!-- alert bar with close  button -->
+    <div class="container-alert" id="alert-box-close">
+      
+        <div class="alert alert-warning">
+            <i class="material-icons btn-only">report_problem</i>
+            
+            A simple primary alert message with close button
+
+            <button type="button" class="btn-close" id="alert-example-close-btn"></button>
+        </div>
+        
+    </div>
+
+<script src="alert.js"></script>
+
+    
     
 </body>
 </html>
