@@ -97,10 +97,21 @@
     /* color: var(--primary-font); */
   }
 
+  /* aside area starts here */
+
   aside{
     grid-area: aside;
+  
 
   }
+
+  aside > ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  /* -------------- */
   
   section {
     /* background-color: gold; */
