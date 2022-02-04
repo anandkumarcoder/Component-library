@@ -1,3 +1,10 @@
+
+/********Component imports *******/
+@import "/Styles/lenght.css";
+@import "/Styles/typography.css";
+@import "/Styles/alert.css";
+/****** */
+
 * {
     padding: 0;
     margin: 0;
@@ -31,7 +38,7 @@
   
   main {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto minmax(400px,1fr);
     grid-template-areas:
       "header header"
       " aside section"
@@ -94,13 +101,14 @@
   
   a {
     text-decoration: none;
-    /* color: var(--primary-font); */
+   color: var(--primary-font-color);
   }
 
   /* aside area starts here */
 
   aside{
     grid-area: aside;
+    max-width: 30vw;
   
 
   }
@@ -108,6 +116,7 @@
   aside > ul{
     display: flex;
     flex-direction: column;
+    
   }
 
 
@@ -162,6 +171,62 @@
     vertical-align: middle;
     padding-left: 1em;
   }
+
+  /* alert components starts from here */
+
+
+  /* .alert{
+    padding: 1rem;
+    width: 60%;
+    border: 1px solid black;
+    
+    margin: 1em ;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    border-radius:10px ;
+    position: relative;
+}
+
+.alert-primary {
+    background-color: rgba(116, 184, 248, 0.911);
+    color:black;
+  }
+  
+  .alert-secondary {
+    background-color: rgba(168, 184, 185, 0.808);
+  }
+  
+  .alert-success {
+    background-color: #6dc72dc0;
+  }
+  
+  .alert-error {
+    background-color:#EB6455;
+  }
+ */
+
+.alert-warning{
+  color: var(--secondary-font-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   /* footer sections */
   
