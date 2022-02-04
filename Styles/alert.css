@@ -1,3 +1,10 @@
+/* importing external css */
+@import "/Styles/variable.css";
+@import "/Styles/lenght.css";
+@import "/Styles/typography.css";
+
+
+/* --------- */
 *{
     padding: 0;
     margin: 0;
@@ -6,13 +13,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap");
 
-/* importing css files  */
-@import "/Styles/lenght.css";
-@import "/Styles/typography.css";
-@import "/Styles/variable.css";
 
-
-/* ----------- */
 /* simple alert starts */
 .alert{
     /* padding: 1rem; */
@@ -21,29 +22,31 @@
     
     /* margin: 1em ; */
     font-family: "Open Sans", sans-serif;
-    font-weight: 500;
+    font-weight: var(--font-medium);
     text-align: center;
     border-radius:10px ;
     position: relative;
 }
 
 .alert-primary {
-    background-color: rgba(116, 184, 248, 0.911);
-    color:black;
+    background-color:var(--primary-bg-alert);
+    
   }
   
   .alert-secondary {
-    background-color: rgba(168, 184, 185, 0.808);
+    background-color: var(--secondary-bg-alert);
   }
   
   .alert-success {
-    background-color: var(--success-bg);
+    background-color: var(--success-bg-alert);
   }
   
   .alert-error {
-    background-color:#EB6455;
+    background-color:var(--error-bg-alert);
   }
 
+
+  
   /* - alert with icon starts */
 
   .material-icons{
@@ -55,8 +58,8 @@
   /* alert with close button starts */
 
   .alert-warning {
-      background-color:  #ffe7c5;
-      color: black;
+      background-color: var(--warning-bg-alert);
+    
   }
   .btn-close{
       background: transparent url(/assets/close-button.svg);
