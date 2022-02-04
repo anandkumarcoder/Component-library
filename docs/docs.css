@@ -29,19 +29,11 @@
   }
 
 
-  /* body {
-    background-image: url(/assets/rocket-launching-into-space-illustration.png);
-  
-    background-size: cover;
-    object-fit: contain;
-    background-repeat: no-repeat;
-    height: 100vh;
-    color: var(--primary-background-color);
-  } */
+
   
   main {
     display: grid;
-    grid-template-columns: 13vw minmax(0 ,1fr);
+    grid-template-columns: 15vw minmax(0 ,1fr);
     grid-template-areas:
       "header header"
       " aside section"
@@ -54,7 +46,8 @@
   
   header {
     grid-area: header;
-    border: 1px solid blue;
+    border: var(--general-border-white);
+    border-bottom: 20px;
    
   }
   
@@ -65,7 +58,7 @@
   }
   
   .logo-container > .fa-rocket{
-      font-size: 5em;
+      font-size: 3em;
       color: #1b97f5;
     
   }
@@ -74,7 +67,7 @@
   
   .nav-bar {
     padding: 1em;
-    margin: 1em;
+    margin: 0.5em;
     display: flex;
     justify-content: space-between;
     font-weight: var(--font-semi-bold);
@@ -99,15 +92,29 @@
 
   aside{
     grid-area: aside;
-   
-  
+    box-shadow: 0 10px  white;
 
   }
 
   aside > ul{
     display: flex;
     flex-direction: column;
+    text-align: center;
+    line-height: 2rem;
+    font-weight: var(--font-medium);
+    font-size:1.3rem ;
+ 
+
     
+  }
+
+  ul > li:hover{
+    background-color: grey;
+    color: blue;
+ 
+  }
+  aside > h3{
+    text-align: center;
   }
 
 
@@ -130,6 +137,10 @@
   h3{
     font-size:  1.5rem;
   }
+
+  h4{
+    font-size: 2rem;
+  }
   
   .text-container > h5{
   max-width:40%;
@@ -143,36 +154,37 @@
   
   }
 
+
+
   p{
     font-size: 1rem;
     line-height: 2rem;
   }
-  
-  .text-container {
-    /* display: inline-block; */
-    height: 30%;
-    margin: 4em auto;
-    text-align: center;
+
+  .container-alert{
+    border: var(--general-border-grey);
+    padding: 1rem 1rem;
+    margin:  1.5rem 3rem;
+   
+    
   }
   
-  .button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 0.5em;
-    /* margin: -20px; */
+
+  /* code snippets */
+  .code-snippets{
+    border: var(--general-border-grey);
+    padding: 1rem;
+    margin: 4rem 3rem;
+    width: 60vw;
+    
+   
   }
+
   
-  button {
-    padding: 0.5em 1em;
-    border-radius: 15px;
-    font-size: 1em;
-    font-weight: 500;
-  }
+ 
   
-  .material-icons {
-    vertical-align: middle;
-    padding-left: 1em;
-  }
+  
+  
 
 
 

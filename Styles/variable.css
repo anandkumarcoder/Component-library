@@ -13,4 +13,7 @@
   --font-medium: 500;
   --font-semi-bold: 600;
   --font-bold: 700;
+  --general-border-transparent: 1px solid transparent;
+  --general-border-grey: 1px solid grey;
+  --general-border-white: 5px solid #ffffff;
 }
