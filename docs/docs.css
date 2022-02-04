@@ -3,6 +3,7 @@
 @import "/Styles/lenght.css";
 @import "/Styles/typography.css";
 @import "/Styles/alert.css";
+@import "/Styles/variable.css";
 /****** */
 
 * {
@@ -14,19 +15,21 @@
   @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap");
   
   :root {
-    --primary-font: "Open Sans", sans-serif;
+    /* --primary-font: "Open Sans", sans-serif; */
     --primary-background-color: #edf2fc;
     /* #edf2fc; */
     --secondary-background-color: #212121;
-    --primary-font-color: white;
-    --secondary-font-color: black;
+    /* --primary-font-color: black;
+    --secondary-font-color: white; */
   }
   
   .darkmode {
     --primary-background-color: #edf2fc;
     --secondary-background-color: #212121;
   }
-  body {
+
+
+  /* body {
     background-image: url(/assets/rocket-launching-into-space-illustration.png);
   
     background-size: cover;
@@ -34,11 +37,11 @@
     background-repeat: no-repeat;
     height: 100vh;
     color: var(--primary-background-color);
-  }
+  } */
   
   main {
     display: grid;
-    grid-template-columns: auto minmax(400px,1fr);
+    grid-template-columns: 13vw minmax(0 ,1fr);
     grid-template-areas:
       "header header"
       " aside section"
@@ -46,19 +49,16 @@
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
   
-    /* height: 100vh; */
+   
   }
   
   header {
     grid-area: header;
-    border: 1px solid red;
-    /* height: 10vh; */
+    border: 1px solid blue;
+   
   }
   
-  /* img{
-      background-size: cover;
-      
-  } */
+  
   
   .logo{
       display: flex;
@@ -67,27 +67,18 @@
   .logo-container > .fa-rocket{
       font-size: 5em;
       color: #1b97f5;
-      padding-left: 0;
+    
   }
   
-  /* .logo-container{
-     
-  
-     height: 100px;
-  } */
-  
-  /* img{
-      width: 50px;
-      border-radius: 60%;
-  } */
+
   
   .nav-bar {
     padding: 1em;
     margin: 1em;
     display: flex;
     justify-content: space-between;
-    font-weight: 600;
-    color: var(--primary-font-color);
+    font-weight: var(--font-semi-bold);
+    /* color: var(--primary-font-color); */
   }
   
   .nav-links {
@@ -97,7 +88,7 @@
     font-size: 1.4rem;
   }
   
-  /* main section starts here */
+ 
   
   a {
     text-decoration: none;
@@ -108,7 +99,7 @@
 
   aside{
     grid-area: aside;
-    max-width: 30vw;
+   
   
 
   }
@@ -121,6 +112,8 @@
 
 
   /* -------------- */
+
+   /* main section starts here */
   
   section {
     /* background-color: gold; */
@@ -133,6 +126,10 @@
   h2 {
     font-size: 3rem;
   }
+
+  h3{
+    font-size:  1.5rem;
+  }
   
   .text-container > h5{
   max-width:40%;
@@ -144,6 +141,11 @@
     font-weight: 400;
     line-height: 1.3;
   
+  }
+
+  p{
+    font-size: 1rem;
+    line-height: 2rem;
   }
   
   .text-container {
@@ -172,43 +174,6 @@
     padding-left: 1em;
   }
 
-  /* alert components starts from here */
-
-
-  /* .alert{
-    padding: 1rem;
-    width: 60%;
-    border: 1px solid black;
-    
-    margin: 1em ;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 500;
-    text-align: center;
-    border-radius:10px ;
-    position: relative;
-}
-
-.alert-primary {
-    background-color: rgba(116, 184, 248, 0.911);
-    color:black;
-  }
-  
-  .alert-secondary {
-    background-color: rgba(168, 184, 185, 0.808);
-  }
-  
-  .alert-success {
-    background-color: #6dc72dc0;
-  }
-  
-  .alert-error {
-    background-color:#EB6455;
-  }
- */
-
-/* .alert-warning{
-  color: var(--secondary-font-color);
-} */
 
 
 

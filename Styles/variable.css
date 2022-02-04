@@ -1,4 +1,6 @@
 :root {
+
+ --primary-font: "Open Sans", sans-serif;
   --primary-bg-alert: rgba(116, 184, 248, 0.911);
   --secondary-bg-alert: rgba(168, 184, 185, 0.808);
   --success-bg-alert: #6dc72dc0;
