@@ -56,7 +56,7 @@
       <aside>
         <h3 class="text-md p-xs">Components</h3>
         <ul class="m-sm">
-          <li ><a href="#avatar">Avatar</a></li>
+          <li><a href="#avatar">Avatar</a></li>
           <li class="p-xs"><a href="#alert-section">Alert</a></li>
           <li class="p-xs"><a href="#badge">Badge</a></li>
           <li class="p-xs"><a href="#button">Button</a></li>
@@ -71,10 +71,9 @@
 
       <!-- main section starts -->
       <section>
-
         <!-- simple alert button -->
 
-        <div id="alert-section">
+        <div id=" alert-section">
           <div class="alert-heading p-xs mb-sm">
             <h2>Alerts</h2>
             <h5>
@@ -102,7 +101,7 @@
             </div>
           </div>
 
-          <div class="container-alert">
+          <div class="component-container">
             <div class="alert alert-primary p-sm m-sm">
               A simple primary alert message
             </div>
@@ -117,7 +116,6 @@
             </div>
           </div>
 
-
           <div class="code-snippets">
             <pre><code class="html">
               &ltdiv class="alert alert-primary p-sm m-sm "> A simple primary alert message&lt/div>
@@ -125,134 +123,298 @@
                  &ltdiv class="alert alert-error p-sm m-sm "> A simple primary error message&lt/div>
                  &ltdiv class="alert alert-success p-sm m-sm "> A simple success alert message&lt/div>
                </code></pre>
-  
           </div>
 
+          <!-- Alert button with icons starts -->
 
-<!-- Alert button with icons starts -->
+          <div class="alert-description-box mb-sm">
+            <h4>Example of alert bar with icons</h4>
+            <div class="text-description p-xs mb-sm">
+              <p>
+                Alerts can have icon too . Few types of alert with examples are
+                info alert,warning alert, error alert
+              </p>
 
-<div class="alert-description-box mb-sm">
-  <h4>Example of alert bar with icons</h4>
-  <div class="text-description p-xs mb-sm">
-    <p>
-      Alerts can have icon too . Few types of alert with examples are info alert,warning alert, error alert
-    </p>
+              <p>You can copy html part from below code snippet.</p>
+            </div>
+          </div>
 
-  <p>You can copy html part from below code snippet.</p>
-  </div>
-</div>
+          <div class="component-container alert-icon">
+            <div class="alert alert-primary p-sm m-sm">
+              <i class="material-icons">info</i>
+              A simple primary alert message
+            </div>
 
-<div class="container-alert alert-icon">
+            <div class="alert alert-error p-sm m-sm">
+              <i class="material-icons btn-only">report_gmailerrorred</i> A
+              simple primary error message
+            </div>
+
+            <div class="alert alert-success p-sm m-sm">
+              <i class="material-icons btn-only">check_circle</i>
+              A simple success alert message
+            </div>
+          </div>
+
+          <div class="code-snippets">
+            <pre><code class="html">
+          &ltdiv class="container-alert alert-icon">
       
-  <div class="alert alert-primary p-sm m-sm">
-      <i class="material-icons ">info</i>
-        A simple primary alert message
-      </div> 
-
-  <div class="alert alert-error p-sm m-sm"> <i class="material-icons btn-only">report_gmailerrorred</i>
-      A simple primary error message</div>
-
-  <div class="alert alert-success p-sm m-sm">
-      <i class="material-icons btn-only">check_circle</i>
-       A simple success alert message
-      </div>
-     
-</div>
-
-<div class="code-snippets">
-  <pre><code class="html">
-    &ltdiv class="container-alert alert-icon">
-      
-      &ltdiv class="alert alert-primary p-sm m-sm">
+           &ltdiv class="alert alert-primary p-sm m-sm">
           &lti class="material-icons ">info&lt/i>
             A simple primary alert message
           &lt/div> 
     
-      &ltdiv class="alert alert-error p-sm m-sm"> &lti class="material-icons btn-only">report_gmailerrorred&lt/i>
+         &ltdiv class="alert alert-error p-sm m-sm"> &lti class="material-icons btn-only">report_gmailerrorred&lt/i>
           A simple primary error message&lt/div>
     
-      &ltdiv class="alert alert-success p-sm m-sm">
+          &ltdiv class="alert alert-success p-sm m-sm">
           &lti class="material-icons btn-only">check_circle&lt/i>
            A simple success alert message
           &lt/div>
          
-    &lt/div>
-     </code></pre>
+         &lt/div>
+          </code></pre>
+          </div>
 
-</div>
+          <div class="alert-description-box mb-sm">
+            <h4>Example of alert bar with close button</h4>
+            <div class="text-description p-xs mb-sm">
+              <p>Alerts can have close button as well.</p>
 
+              <p>You can copy html and Js from below</p>
+            </div>
+          </div>
 
-<div class="alert-description-box mb-sm">
-  <h4>Example of alert bar with close button</h4>
-  <div class="text-description p-xs mb-sm">
-    <p>
-      Alerts can have close button as well.
-    </p>
+          <!-- alert bar with close  button -->
 
-  <p>You can copy html and Js from below </p>
-  </div>
-</div>
+          <div class="component-container" id="alert-box-close">
+            <div class="alert alert-warning p-sm m-sm">
+              <i class="material-icons btn-only">report_problem</i>
 
+              A simple primary alert message with close button
 
-<!-- alert bar with close  button -->
+              <button
+                type="button"
+                class="btn-close"
+                id="alert-example-close-btn"
+              ></button>
+            </div>
+          </div>
 
-
-<div class="container-alert" id="alert-box-close">
+          <div class="code-snippets">
+            <pre><code class="html">
+          &ltdiv class="container-alert" id="alert-box-close">
       
-  <div class="alert alert-warning p-sm m-sm">
-      <i class="material-icons btn-only">report_problem</i>
-      
-      A simple primary alert message with close button
-
-      <button type="button" class="btn-close" id="alert-example-close-btn"></button>
-  </div>
-</div>
-
-
-
-  <div class="code-snippets">
-    <pre><code class="html">
-      &ltdiv class="container-alert" id="alert-box-close">
-      
-        &ltdiv class="alert alert-warning p-sm m-sm">
+           &ltdiv class="alert alert-warning p-sm m-sm">
             &lti class="material-icons btn-only">report_problem&lt/i>
             
             A simple primary alert message with close button
       
             &ltbutton type="button" class="btn-close" id="alert-example-close-btn">&lt/button>
-        &lt/div>
-       </code></pre>
-  
-  </div>
+            &lt/div>
+           </code></pre>
+          </div>
 
-  <div class="code-snippets">
-    <pre><code class="js">
-      const alertBox = document.querySelector("#alert-box-close");
-      const closeBtn = document.querySelector("#alert-example-close-btn");
+          <div class="code-snippets">
+            <pre><code class="js">
+         const alertBox = document.querySelector("#alert-box-close");
+          const closeBtn = document.querySelector("#alert-example-close-btn");
 
-      closeBtn.addEventListener("click", ()=> {
-        alertBox.style.display = "none"
-        })
+            closeBtn.addEventListener("click", ()=> {
+          alertBox.style.display = "none"
+            })
 
-       </code></pre>
-  
-  </div>
+          </code></pre>
+          </div>
+     </div>
+
+     <hr>
+
+     <div class="button-container">
+
+        <div class="alert-heading p-xs mb-sm">
+            <h2>Buttons</h2>
+            <h5>
+              Buttons are also known as call to action. below are few types of button.
+              Add respective classes are you are good to go
+            </h5>
+          </div>
+
+          <div class="alert-description-box mb-sm">
+            <h4>Example</h4>
+            <div class="text-description p-xs mb-sm">
+              <p>
+               buttons without border
+              </p>
+            </div>
+
+
+            <div class="component-container">
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-secondary">Secondary</button>
+                <button class="btn btn-success">Success</button>
+                <button class="btn btn-error">Error</button>
+              </div>
+
+              <div class="code-snippets">
+                <pre><code class="html">
+                  &ltbutton class="btn btn-primary">Primary&lt/button>
+                  &ltbutton class="btn btn-secondary">Secondary&lt/button>
+                  &ltbutton class="btn btn-success">Success&lt/button>
+                  &ltbutton class="btn btn-error">Error&lt/button>
+                </div>
+              
+               </code></pre>
+              </div>
+
+              <!-- outline buttons -->
+
+              <div class="alert-description-box mb-sm">
+                <h4>Example of buttons with outlined</h4>
+                <div class="text-description p-xs mb-sm">
+                  <p>
+                    If you want to use outlined button add class outlined
+                  </p>
+    
+          
+                </div>
+              </div>
+
+              <div class="component-container">
+                <button class="btn btn-primary-outlined">Primary</button>
+                <button class="btn btn-secondary-outlined">Secondary</button>
+                <button class="btn btn-success-outlined">Success</button>
+                <button class="btn btn-error-outlined">Error</button>
+              </div>
+
+
+
+              <div class="code-snippets">
+                <pre><code class="html">
+                  &ltbutton class="btn btn-primary-outlined">Primary&lt/button>
+                  &ltbutton class="btn btn-secondary-outlined">Secondary&lt/button>
+                  &ltbutton class="btn btn-success-outlined">Success&lt/button>
+                  &ltbutton class="btn btn-error-outlined">Error&lt/button>
+                  
+                </div>
+              
+               </code></pre>
+              </div>
+
+              <!-- buttons with icons -->
+
+
+              
+              <div class="alert-description-box mb-sm">
+                <h4>Example of buttons with icons</h4>
+                <div class="text-description p-xs mb-sm">
+                  <p>
+                    If you want to use buttons with icons just add btn-icon and respective action  button class name 
+                  </p>
+    
+          
+                </div>
+              </div>
+
+              <div class="component-container">
+                <button class="btn btn-icon btn-icon-delete">
+                  <i class="material-icons"> delete </i>Remove
+                </button>
+          
+                <button class="btn btn-icon btn-icon-favorite">
+                  <i class="material-icons"> favorite</i> Move to wishlist
+                </button>
+          
+                <button class="btn btn-icon btn-icon-add-to-cart">
+                  <i class="material-icons">shopping_cart</i>Add to cart
+                </button>
+              
+              </div>
+
+
+
+              <div class="code-snippets">
+                <pre><code class="html">
+                  &ltbutton class="btn btn-icon btn-icon-delete">
+                    &lti class="material-icons"> delete &lt/i>Remove
+                  &lt/button>
+            
+                  &ltbutton class="btn btn-icon btn-icon-favorite">
+                    &lti class="material-icons"> favorite&lt/i> Move to wishlist
+                  &lt/button>
+            
+                  &ltbutton class="btn btn-icon btn-icon-add-to-cart">
+                    &lti class="material-icons">shopping_cart&lt/i>Add to cart
+                  &lt/button>
+                  
+                </div>
+              
+               </code></pre>
+              </div>
+
+              <!-- only icons button -->
+
+              <div class="alert-description-box mb-sm">
+                <h4>Example of  icon buttons</h4>
+                <div class="text-description p-xs mb-sm">
+                  <p>
+                    If you want to use icons buttons just add icon-only class name
+                  </p>
+    
+          
+                </div>
+
+              </div>
+
+              <div class="component-container">
+                <i class="material-icons icon-only"> delete </i>
+                <i class="material-icons icon-only"> favorite</i>
+                <i class="material-icons icon-only">shopping_cart</i>
+          
+                <i class="material-icons icon-only">account_circle</i>
+          
+                <i class="material-icons icon-only">share</i>
+          
+                <i class="material-icons icon-only">notifications</i>
+          
+                
+              </div>
+
+
+
+              <div class="code-snippets">
+                <pre><code class="html">
+                  &lti class="material-icons icon-only"> delete &lt/i>
+                  &lti class="material-icons icon-only"> favorite&lt/i>
+                  &lti class="material-icons icon-only">shopping_cart&lt/i>
+            
+                  &lti class="material-icons icon-only">account_circle&lt/i>
+            
+                  &lti class="material-icons icon-only">share&lt/i>
+            
+                  &lti class="material-icons icon-only">notifications&lt/i>
+                 
+                  
+                </div>
+              
+               </code></pre>
+              </div>
 
 
 
 
 
+             
 
 
-        
+       </div>
 
 
 
 
-
-
-</div>
-          </section>
+     </div>
+</section>
 
       <footer>
         <h4>made by anand kumar</h4>
@@ -268,7 +430,6 @@
         </div>
       </footer>
     </main>
-
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>

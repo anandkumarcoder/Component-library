@@ -4,6 +4,7 @@
 @import "/Styles/typography.css";
 @import "/Styles/alert.css";
 @import "/Styles/variable.css";
+@import "/Styles/button.css";
 /****** */
 
 * {
@@ -161,13 +162,21 @@
     line-height: 2rem;
   }
 
-  .container-alert{
+   .component-container{
     border: var(--general-border-grey);
     padding: 1rem 1rem;
     margin:  1.5rem 3rem;
    
     
   }
+
+  /* .container-alert , .component-container{
+    border: var(--general-border-grey);
+    padding: 1rem 1rem;
+    margin:  1.5rem 3rem;
+   
+    
+  } */
   
 
   /* code snippets */
