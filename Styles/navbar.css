@@ -8,18 +8,19 @@
 
 header {
     grid-area: header;
-    border: var(--general-border-white);
+    background-color:  
+    #fecaca;
+
+   
+    /* margin-bottom: 1rem;
+    #d4d4d4
+    */
    
   }
   
   
   
-  .logo{
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      padding-left: 1rem;
-  }
+
   
   /* .fa-rocket{
      
@@ -28,6 +29,7 @@ header {
   } */
   
 
+ 
   
   .nav-bar {
     
@@ -35,8 +37,18 @@ header {
     justify-content: space-between;
     align-items: center;
     font-weight: var(--font-semi-bold);
-    /* color: var(--primary-font-color); */
+    
   }
+
+  .logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+    
+    flex-wrap: wrap;
+}
   
   .nav-links {
     display: inline;

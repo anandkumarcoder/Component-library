@@ -4,12 +4,7 @@
 @import "/Styles/typography.css";
 
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
+
   @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap");
   
   .container {
@@ -30,8 +25,8 @@
     font-size: 1em;
     border-radius: 15px;
     line-height: 1.5;
-    min-width: 20%;
-    height: 100%;
+    /* max-width: 20%; */
+    /* height: 100%; */
     display: inline-block;
     /* border: none; */
   }
@@ -123,6 +118,7 @@
     font-size: 2em;
   }
   
+  
   .btn-icon {
     color: black;
     border: none;
@@ -137,10 +133,7 @@
     
   }
 
-  .btn-icon-favorite{
-    font-size: 0.9rem;
-    
-  }
+
   
   
   
