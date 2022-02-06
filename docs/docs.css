@@ -39,7 +39,7 @@
  
   }
 
-  .hljs-tag , .hljs-name{
+  .hljs-tag , .hljs-name , .hljs-keyword{
     color: #8b5cf6;
   }
 
@@ -154,7 +154,8 @@
    .component-container{
     border: var(--general-border-grey);
     padding: 1rem 1rem;
-    margin:  1.5rem 3rem;
+    margin:  1.5rem auto;
+    width: 60vw;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -182,7 +183,8 @@
     border: var(--general-border-grey);
     background-color: #e5e7eb;
     padding: 1rem;
-    margin: 4rem 3rem;
+    margin: 4rem auto;
+    /* height: 20vh; */
     width: 60vw;
     
    
