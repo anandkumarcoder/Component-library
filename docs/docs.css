@@ -76,6 +76,7 @@
   aside{
     grid-area: aside;
     box-shadow: 0 10px  white;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,7 +109,8 @@
   
   section {
     /* background-color: gold; */
-    border: 1px solid orangered;
+    /* border: 1px solid orangered; */
+    margin: 2rem;
     grid-area: section;
     /* height: 40vh; */
     padding: 1em;
@@ -219,13 +221,13 @@
   
   footer {
     /* background-color: hotpink; */
-    border: 1px solid hotpink;
+    /* border: 1px solid hotpink; */
     /* height: 10vh; */
     grid-area: footer;
     text-align: center;
     color: var(--primary-font-color);
-    padding-bottom: 2rem;
-    margin-bottom: 1.5rem;
+    /* padding-bottom: 2rem;
+    margin-bottom: 1.5rem; */
   }
   
   footer h4 {

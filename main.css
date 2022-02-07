@@ -54,6 +54,12 @@ header {
     
 } */
 
+a{
+  color: #edf2fc;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .logo{
     display: flex;
 }
