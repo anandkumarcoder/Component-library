@@ -1,0 +1,96 @@
+/* importing external css */
+@import "/Styles/variable.css";
+/* -------- */
+
+.btn {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 15px;
+  line-height: 1.5;
+  display: inline-block;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-success,
+.btn-error {
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-bg-alert);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-bg-alert);
+}
+
+.btn-success {
+  background-color: var(--success-bg-alert);
+}
+
+.btn-error {
+  background-color: var(--error-bg-alert);
+}
+
+/* outlined button style starts */
+
+.btn-primary-outlined {
+  background-color: transparent;
+  border-color: var(--primary-bg-alert);
+  color: var(--primary-bg-alert);
+}
+
+.btn-secondary-outlined {
+  background-color: transparent;
+  border-color: var(--secondary-bg-alert);
+  color: var(--secondary-bg-alert);
+}
+
+.btn-success-outlined {
+  background-color: transparent;
+  border-color: var(--success-bg-alert);
+  color: var(--success-bg-alert);
+}
+
+.btn-error-outlined {
+  background-color: transparent;
+  border-color: var(--error-bg-alert);
+  color: var(--error-bg-alert);
+}
+
+/* button with icon starts */
+.material-icons {
+  font-size: 2rem;
+}
+
+.btn-icon {
+  color: #000000;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #ff69b4;
+  gap: 0.4rem;
+}
+
+/* link btn starts here */
+.link-btn {
+  color: #0000ff;
+  border: var(--general-border-grey);
+}
+
+/* icon btn */
+
+.icon-only {
+  margin: auto 1rem;
+  cursor: pointer;
+  color: #6b6b6b;
+}

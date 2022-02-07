@@ -1,0 +1,18 @@
+:root {
+  --primary-background-color: #fffbeb;
+ --primary-font: "Open Sans", sans-serif;
+  --primary-bg-alert: #1b98f5;
+  --secondary-bg-alert: #a8b8b9ce;
+  --success-bg-alert: #10b981;
+  --error-bg-alert: #eb6455;
+  --warning-bg-alert: #fed7aa;
+  --txt-color-primary: #111827;
+  --txt-color-secondary: #ffffff;
+  --font-light: 300;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  --general-border-transparent: 1px solid transparent;
+  --general-border-grey: 1px solid grey;
+  --general-border-white: 5px solid #ffffff;
+}
