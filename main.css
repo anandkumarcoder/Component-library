@@ -9,7 +9,6 @@
 :root {
   --primary-font: "Open Sans", sans-serif;
   --primary-background-color: #edf2fc;
-  /* #edf2fc; */
   --secondary-background-color: #212121;
   --primary-font-color: white;
   --secondary-font-color: black;
@@ -38,21 +37,16 @@ main {
     "footer";
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
-
-  /* height: 100vh; */
 }
 
 
 header {
   grid-area: header;
   border: 1px solid red;
-  /* height: 10vh; */
+ 
 }
 
-/* img{
-    background-size: cover;
-    
-} */
+
 
 a{
   color: #edf2fc;
@@ -69,8 +63,6 @@ a{
     color: #1b97f5;
     padding-left: 0;
 }
-
-
 
 .nav-bar {
   padding: 1em;
@@ -89,22 +81,18 @@ a{
 }
 
 
-/* aside sections start */
-
-
 
 /* main section starts here */
 
 a {
   text-decoration: none;
-  /* color: var(--primary-font); */
+
 }
 
 section {
-  /* background-color: gold; */
+
   border: 1px solid orangered;
   grid-area: section;
-  /* height: 40vh; */
   padding: 1em;
 }
 
@@ -125,7 +113,6 @@ h5 {
 }
 
 .text-container {
-  /* display: inline-block; */
   height: 30%;
   margin: 4em auto;
   text-align: center;
@@ -135,7 +122,6 @@ h5 {
   display: flex;
   justify-content: center;
   margin-top: 0.5em;
-  /* margin: -20px; */
 }
 
 button {
@@ -153,9 +139,7 @@ button {
 /* footer sections */
 
 footer {
-  /* background-color: hotpink; */
-  border: 1px solid hotpink;
-  /* height: 10vh; */
+  border: 1px solid hotpink; 
   grid-area: footer;
   text-align: center;
   color: var(--primary-font-color);

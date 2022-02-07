@@ -8,43 +8,27 @@
 @import "/Styles/navbar.css";
 /****** */
 
+
+/* importing fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap");
+  /* ------------ */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
   }
   
-  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap");
-  
+ 
   :root {
-    /* --primary-font: "Open Sans", sans-serif; */
-    --primary-background-color: #edf2fc;
-    /* #edf2fc; */
+    
     --secondary-background-color: #212121;
-    /* --primary-font-color: black;
-    --secondary-font-color: white; */
+    
   }
   
   .darkmode {
     --primary-background-color: #edf2fc;
     --secondary-background-color: #212121;
-  }
-
-/* editing js colors */
-  pre{
-    overflow: auto;
-    white-space: pre-line;
-    background-color: #e5e7eb
-    ;
- 
-  }
-
-  .hljs-tag , .hljs-name , .hljs-keyword{
-    color: #8b5cf6;
-  }
-
-  .hljs-attr , .hljs-string{
-    color: #ec4899;
   }
 
 
@@ -60,15 +44,12 @@
       "footer footer";
     min-height: 100vh;
     grid-template-rows: 6vw 1fr auto;
-  
-   
   }
 
   body{
-    background-color: #fffbeb;
+    background-color: var(--primary-background-color);
     color: var(--txt-color-primary);
   }
-  
   
 
   /* aside area starts here */
@@ -108,24 +89,17 @@
    /* main section starts here */
   
   section {
-    /* background-color: gold; */
-    /* border: 1px solid orangered; */
     margin: 2rem;
     grid-area: section;
-    /* height: 40vh; */
     padding: 1em;
   }
   
   h2 {
-    font-size: 2.3rem;
-   
-    
-    
+    font-size: 2.3rem; 
   }
 
   h3{
     font-size:  1.5rem;
-    
   }
 
   h4{
@@ -133,16 +107,10 @@
     line-height: 2rem;
   }
   
-  .text-container > h5{
-  max-width:40%;
-  margin: 0.4em auto;
-  }
-  
   h5 {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.5rem;
-  
   }
 
 
@@ -161,16 +129,10 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    
-   
-    
   }
 
   .component-container-alert{
-   
-   
     flex-direction: column;
-
   }
 
 
@@ -186,48 +148,29 @@
     background-color: #e5e7eb;
     padding: 1rem;
     margin: 4rem auto;
-    /* height: 20vh; */
     width: 60vw;
-    
-   
   }
 
-  
- 
-  
-  
-  
+/* editing js colors */
+pre{
+  overflow: auto;
+  white-space: pre-line;
+  background-color: #e5e7eb;
 
+}
+  .hljs-tag , .hljs-name , .hljs-keyword{
+    color: #8b5cf6;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+  .hljs-attr , .hljs-string{
+    color: #ec4899;
+  }
   /* footer sections */
   
   footer {
-    /* background-color: hotpink; */
-    /* border: 1px solid hotpink; */
-    /* height: 10vh; */
     grid-area: footer;
     text-align: center;
     color: var(--primary-font-color);
-    /* padding-bottom: 2rem;
-    margin-bottom: 1.5rem; */
   }
   
   footer h4 {
@@ -244,10 +187,6 @@
   .fa {
  
     color: var(--primary-font-color);
-  }
-  
-  h4 {
-    font-size: 1.5em;
   }
   
   li {

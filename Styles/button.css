@@ -1,34 +1,22 @@
 /* importing external css */
 @import "/Styles/variable.css";
-@import "/Styles/lenght.css";
-@import "/Styles/typography.css";
+/* -------- */
 
 
-
+/* Importing fonts */
   @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap");
   
-  .container {
-    border: 1px solid rgba(134, 134, 134, 0.534);
-    padding: 0.8em 1em;
-    margin: 1em;
-    width: 40%;
-    font-family: "Open Sans", sans-serif;
-  }
-  
   .btn {
-    padding: 0.5em 1em;
-    margin: 0.5em 1em;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 1rem;
     cursor: pointer;
     font-family: "Open Sans", sans-serif;
     color: white;
     font-weight: 600;
-    font-size: 1em;
+    font-size: 1rem;
     border-radius: 15px;
     line-height: 1.5;
-    /* max-width: 20%; */
-    /* height: 100%; */
     display: inline-block;
-    /* border: none; */
   }
 
   .btn-primary, .btn-secondary, .btn-success, .btn-error{
@@ -37,23 +25,20 @@
   
   
   .btn-primary {
-    background-color: #1b98f5;
+    background-color:var(--primary-bg-alert);
   }
   
   .btn-secondary {
-    background-color: rgba(168, 184, 185, 0.808);
+    background-color: var(--secondary-bg-alert);
   }
   
   .btn-success {
-    background-color: #6ec72d;
+    background-color: var(--success-bg-alert);
   }
   
   .btn-error {
-    background-color: red;
+    background-color: var(--error-bg-alert);
   }
-  
-  
-  
   
   /* outlined button style starts */
   
@@ -61,92 +46,54 @@
     background-color: transparent;
     border-color: var(--primary-bg-alert);
     color: var(--primary-bg-alert);
-    
-
-
-    /* border-color: #1b98f5;
-    color: #1b98f5; */
   }
   
   .btn-secondary-outlined {
     background-color: transparent;
     border-color: var(--secondary-bg-alert);
     color: var(--secondary-bg-alert);
-
-
-
-
-    /* border-color: rgba(168, 184, 185, 0.808);
-    color: rgba(168, 184, 185, 0.808); */
   }
   
   .btn-success-outlined {
     background-color: transparent;
     border-color: var(--success-bg-alert);
     color: var(--success-bg-alert);
-
-    /* border-color: #6ec72d;
-    color: #6ec72d; */
   }
   
   .btn-error-outlined {
     background-color: transparent;
     border-color: var(--error-bg-alert);
     color: var(--error-bg-alert);
-
-
-
-    /* border-color: red;
-    color: red; */
   }
-  
-  
-  
   
   /* button with icon starts */
-  
-  .btn-icons-container {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    
-  }
-  
-  
   .material-icons {
-    font-size: 2em;
+    font-size: 2rem;
   }
-  
   
   .btn-icon {
     color: black;
     border: none;
     background-color: transparent;
-  
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     background-color: hotpink;
-    gap: 0.4em;
+    gap: 0.4rem;
     
   }
 
-
-  
-  
-  
   /* link btn starts here */
   .link-btn{
-      color: blue;
+      color: #0000ff;
       border: var(--general-border-grey);
   }
   
   /* icon btn */
   
   .icon-only{
-      margin: auto 0.5em;
+      margin: auto 1rem;
       cursor: pointer;
-      color: rgb(107, 107, 107);
+      color: #6b6b6b;
   }
