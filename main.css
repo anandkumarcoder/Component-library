@@ -26,9 +26,6 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   color: var(--primary-font-color);
-}
-
-main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -39,29 +36,25 @@ main {
   grid-template-rows: auto 1fr auto;
 }
 
-
 header {
   grid-area: header;
   border: 1px solid red;
- 
 }
 
-
-
-a{
+a {
   color: #edf2fc;
   text-decoration: none;
   cursor: pointer;
 }
 
-.logo{
-    display: flex;
+.logo {
+  display: flex;
 }
 
-.logo-container > .fa-rocket{
-    font-size: 5em;
-    color: #1b97f5;
-    padding-left: 0;
+.logo-container > .fa-rocket {
+  font-size: 5em;
+  color: #1b97f5;
+  padding-left: 0;
 }
 
 .nav-bar {
@@ -80,17 +73,13 @@ a{
   font-size: 1.4rem;
 }
 
-
-
 /* main section starts here */
 
 a {
   text-decoration: none;
-
 }
 
-section {
-
+main {
   border: 1px solid orangered;
   grid-area: section;
   padding: 1em;
@@ -100,16 +89,15 @@ h2 {
   font-size: 3rem;
 }
 
-.text-container > h5{
-max-width:40%;
-margin: 0.4em auto;
+.text-container > h5 {
+  max-width: 40%;
+  margin: 0.4em auto;
 }
 
 h5 {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.3;
-
 }
 
 .text-container {
@@ -139,7 +127,7 @@ button {
 /* footer sections */
 
 footer {
-  border: 1px solid hotpink; 
+  border: 1px solid hotpink;
   grid-area: footer;
   text-align: center;
   color: var(--primary-font-color);
@@ -155,7 +143,6 @@ footer h4 {
 .footer-items {
   display: flex;
   justify-content: center;
-  
 }
 
 .fa {
