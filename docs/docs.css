@@ -5,6 +5,7 @@
 @import "/Styles/variable.css";
 @import "/Styles/button.css";
 @import "/Styles/navbar.css";
+@import "/Styles/badge.css";
 /****** */
 
 /* importing fonts */
@@ -27,6 +28,7 @@
 }
 
 body {
+  font-family: var(--primary-font);
   background-color: var(--primary-background-color);
   color: var(--txt-color-primary);
   display: grid;
