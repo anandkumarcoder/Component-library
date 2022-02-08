@@ -118,6 +118,11 @@ p {
   flex-direction: column;
 }
 
+.component-container-avatar {
+  justify-content: space-between;
+  align-items: center;
+}
+
 hr {
   margin: 1rem 0;
 }
