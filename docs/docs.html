@@ -368,6 +368,7 @@
           </div>
         </div>
         <hr/>
+        <!-- --------Input section starts----- -->
 
         <div class="input-section" id="input">
           <div class="heading p-xs mb-sm">
@@ -388,25 +389,43 @@
                 <label  class="label" for="username">Username
                  
                 </label>
-                <input type="username" placeholder="type username here">
-
-                
-
+                <input id="username" placeholder="type username here" type="text" required>
+                <span></span>
               </div>
 
               <div class="input-holder">
-                <label  class="label" for="email">Email
-                 
+                <label  class="label" for="email">Email  
                 </label>
                 <input type="email" placeholder="type email here here">
-
               </div>
 
               <div class="input-holder">
                 <label for="pwd">Password:</label>
                <input type="password" id="pwd" name="pwd">
-
               </div>
+          </div>
+
+          <div class="code-snippets">
+            <pre><code class="html">&lt;div class=&quot;input-holder&quot;&gt;
+              &lt;label  class=&quot;label&quot; for=&quot;username&quot;&gt;Username
+               
+              &lt;/label&gt;
+              &lt;input id=&quot;username&quot; placeholder=&quot;type username here&quot; type=&quot;text&quot; required&gt;
+              &lt;span&gt;&lt;/span&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;input-holder&quot;&gt;
+              &lt;label  class=&quot;label&quot; for=&quot;email&quot;&gt;Email  
+              &lt;/label&gt;
+              &lt;input type=&quot;email&quot; placeholder=&quot;type email here here&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;input-holder&quot;&gt;
+              &lt;label for=&quot;pwd&quot;&gt;Password:&lt;/label&gt;
+             &lt;input type=&quot;password&quot; id=&quot;pwd&quot; name=&quot;pwd&quot;&gt;
+            &lt;/div&gt;
+               
+              </code></pre>
           </div>
           
           <div class="description-box mb-sm">
@@ -416,25 +435,41 @@
             </div>
 
             <div class="component-container component-container-input">
-              <!-- <div class="input-holder"> -->
+              
                 <div class="search">
                   Search something
-                  <i class="material-icons search-icon">
-                    <!-- <input type="search" class="search"  placeholder="search here"> -->
-                    search
-                    
+                  <i class="material-icons search-icon"> 
+                    search  
                   </i>
-
                 </div>
-                
-               
-                
 
-                
-
-              <!-- </div> -->
+                <select class="input">
+                  <option selected disabled>Select</option>
+                  <option>S</option>
+                  <option>M</option>
+                  <option >L</option>
+                  <option disabled >XL</option>
+              </select>
 
              </div>
+
+             <div class="code-snippets">
+              <pre><code class="html">&lt;div class=&quot;search&quot;&gt;
+                Search something
+                &lt;i class=&quot;material-icons search-icon&quot;&gt; 
+                  search  
+                &lt;/i&gt;
+              &lt;/div&gt;
+
+              &lt;select class=&quot;input&quot;&gt;
+                &lt;option selected disabled&gt;Select&lt;/option&gt;
+                &lt;option&gt;S&lt;/option&gt;
+                &lt;option&gt;M&lt;/option&gt;
+                &lt;option &gt;L&lt;/option&gt;
+                &lt;option disabled &gt;XL&lt;/option&gt;
+            &lt;/select&gt;
+                </code></pre>
+            </div>
 
               
           </div>
