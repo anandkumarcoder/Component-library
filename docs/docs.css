@@ -22,10 +22,6 @@
   --secondary-background-color: #212121;
 }
 
-.darkmode {
-  --primary-background-color: #edf2fc;
-  --secondary-background-color: #212121;
-}
 
 body {
   font-family: var(--primary-font);
