@@ -5,10 +5,7 @@
   flex-direction: column;
   background-color: #ffffff;
   padding: 1rem;
-  
-
-  justify-content: space-around;
-  /* align-items: center; */
+  align-items: center;
   border-radius: 2rem;
   border: 3px solid grey;
   position: relative;
@@ -26,15 +23,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-wrap: wrap; */
+ 
   color: var(--txt-color-secondary);
 }
 
 .card-image {
   width: 100%;
   object-fit: contain;
-  /* height: 100%; */
-  background-size: cover;
+ 
+ 
 }
 
 .card-title {
@@ -42,6 +39,8 @@
   font-weight: var(--font-bolder);
   padding: 1rem auto;
   width: 100%;
+  text-align: center;
+  
  
 }
 
@@ -49,12 +48,14 @@
   font-size: 1rem;
   font-weight: var(--font-semi-bold);
   display: inline-block;
+  vertical-align: middle;
   /* padding: 0.3rem; */
 }
 
 .card-details {
   display: flex;
   flex-direction: column;
+  margin-top:1rem ;
   /* flex-wrap: wrap;  */
  align-items: center;
   /* justify-content: center; */
@@ -68,7 +69,8 @@
 
 .card-rating-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 1rem;
   width: 100%;
   flex-wrap: wrap;
 }
@@ -91,7 +93,7 @@
   width: 100%;
   object-fit: contain;
   height: auto;
-  /* background-size: cover; */
+
 
 }
 
@@ -102,7 +104,7 @@
 .card-main-big {
   position: relative;
   width: 100%;
-  height: 100%;
+ 
 }
 
 .card-main-big > .icon-only {
@@ -117,33 +119,41 @@
 }
 
 .prd-name {
-  margin-top: 3rem;
+  margin-top:0rem;
   display: flex;
   flex-direction: column;
+  
   align-items: center;
+  justify-content: center;
 
 }
 .prd-name > .card-title {
   font-size: 1.2rem;
   display: block;
   width: 100%;
+  padding: 1rem auto;
+  margin-top:0.5rem ;
+}
+.card-price-box > .card-price{
+  font-size: 1.3rem;
+  padding: 0.5rem;
+
 }
 
-.right-col > .card-rating-box > .card-price {
-  font-size: 2rem;
-}
+
 
 .colors-holder {
-  margin: 2rem;
+  margin: 1.5rem;
   display: flex;
   gap: 1rem;
   /* flex-wrap: wrap; */
   /* overflow: none; */
 }
 
+
 .color {
-  height: 4rem;
-  width: 4rem;
+  height: 2rem;
+  width: 2rem;
   border: 1px solid black;
   border-radius: 50%;
   padding: 0.5rem;
@@ -173,7 +183,7 @@
 .action-btn {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 1rem;
   /* flex-wrap: wrap; */
 }
 
