@@ -9,10 +9,7 @@
   border-radius: 2rem;
   border: 3px solid grey;
   position: relative;
-  /* flex-wrap: wrap; */
 }
-
-
 
 .card-overlay {
   position: absolute;
@@ -23,15 +20,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
- 
   color: var(--txt-color-secondary);
 }
 
 .card-image {
   width: 100%;
   object-fit: contain;
- 
- 
 }
 
 .card-title {
@@ -40,27 +34,19 @@
   padding: 1rem auto;
   width: 100%;
   text-align: center;
-  
- 
 }
 
 .card-price {
   font-size: 1rem;
   font-weight: var(--font-semi-bold);
   display: inline-block;
-  vertical-align: middle;
-  /* padding: 0.3rem; */
 }
 
 .card-details {
   display: flex;
   flex-direction: column;
-  margin-top:1rem ;
-  /* flex-wrap: wrap;  */
- align-items: center;
-  /* justify-content: center; */
-  
- 
+  margin-top: 1rem;
+  align-items: center;
 }
 
 .btn-card {
@@ -82,19 +68,16 @@
 /* main big card */
 
 .big {
-
   padding: 0.3rem auto;
   gap: 2rem;
   width: 100%;
   height: 50%;
   flex-direction: row;
 }
-.card-main-big > .card-image{
+.card-main-big > .card-image {
   width: 100%;
   object-fit: contain;
   height: auto;
-
-
 }
 
 .right-col {
@@ -104,7 +87,6 @@
 .card-main-big {
   position: relative;
   width: 100%;
- 
 }
 
 .card-main-big > .icon-only {
@@ -119,37 +101,30 @@
 }
 
 .prd-name {
-  margin-top:0rem;
+  margin-top: 0rem;
   display: flex;
   flex-direction: column;
-  
   align-items: center;
   justify-content: center;
-
 }
 .prd-name > .card-title {
   font-size: 1.2rem;
   display: block;
   width: 100%;
   padding: 1rem auto;
-  margin-top:0.5rem ;
+  margin-top: 0.5rem;
 }
-.card-price-box > .card-price{
+.card-price-box > .card-price {
   font-size: 1.3rem;
   padding: 0.5rem;
-
 }
-
-
 
 .colors-holder {
   margin: 1.5rem;
   display: flex;
   gap: 1rem;
-  /* flex-wrap: wrap; */
-  /* overflow: none; */
-}
 
+}
 
 .color {
   height: 2rem;
