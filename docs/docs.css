@@ -135,6 +135,7 @@ pre {
   overflow: auto;
   white-space: pre-line;
   background-color: #e5e7eb;
+  max-height: 30vh;
 }
 .hljs-tag,
 .hljs-name,
