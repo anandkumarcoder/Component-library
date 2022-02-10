@@ -5,6 +5,7 @@
 @import "/Styles/variable.css";
 @import "/Styles/button.css";
 @import "/Styles/navbar.css";
+@import "/Styles/badge.css";
 /****** */
 
 /* importing fonts */
@@ -21,12 +22,8 @@
   --secondary-background-color: #212121;
 }
 
-.darkmode {
-  --primary-background-color: #edf2fc;
-  --secondary-background-color: #212121;
-}
-
 body {
+  font-family: var(--primary-font);
   background-color: var(--primary-background-color);
   color: var(--txt-color-primary);
   display: grid;
@@ -114,6 +111,11 @@ p {
 
 .component-container-alert {
   flex-direction: column;
+}
+
+.component-container-avatar {
+  justify-content: space-between;
+  align-items: center;
 }
 
 hr {
