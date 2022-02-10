@@ -115,6 +115,9 @@ p {
 .component-container-alert {
   flex-direction: column;
 }
+.component-container-text-utility {
+  flex-direction: column;
+}
 
 hr {
   margin: 1rem 0;
