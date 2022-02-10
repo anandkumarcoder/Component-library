@@ -22,7 +22,6 @@
   --secondary-background-color: #212121;
 }
 
-
 body {
   font-family: var(--primary-font);
   background-color: var(--primary-background-color);
