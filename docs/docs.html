@@ -36,11 +36,13 @@
         </div>
 
         <ul class="nav-items">
-          <li class="nav-links p-xs m-xs">
+          <li class="nav-links p-xs m-xs list-style-none">
             <a href="/index.html"> Home</a>
           </li>
-          <li class="nav-links p-xs m-xs"><a href="#">Docs</a></li>
-          <li class="nav-links p-xs m-xs">
+          <li class="nav-links p-xs m-xs list-style-none">
+            <a href="#">Docs</a>
+          </li>
+          <li class="nav-links p-xs m-xs list-style-none">
             <i class="fa fa-toggle-on" id="toogle-dark"></i>
           </li>
         </ul>
@@ -50,16 +52,18 @@
     <aside>
       <h2 class="text-md p-xs">Components</h2>
       <ul class="m-sm">
-        <li><a href="#avatar">Avatar</a></li>
-        <li class="p-xs"><a href="#alert-section">Alert</a></li>
-        <li class="p-xs"><a href="#badge">Badge</a></li>
-        <li class="p-xs"><a href="#button">Button</a></li>
-        <li class="p-xs"><a href="#card">Card</a></li>
-        <li class="p-xs"><a href="#image">Image</a></li>
-        <li class="p-xs"><a href="#input">Input</a></li>
-        <li class="p-xs"><a href="#spacing">Spacing</a></li>
-        <li class="p-xs"><a href="#text-utils">Text Utilities</a></li>
-        <li class="p-xs"><a href="#lists">Lists</a></li>
+        <li class="list-style-none"><a href="#avatar">Avatar</a></li>
+        <li class="p-xs list-style-none"><a href="#alert-section">Alert</a></li>
+        <li class="p-xs list-style-none"><a href="#badge">Badge</a></li>
+        <li class="p-xs list-style-none"><a href="#button">Button</a></li>
+        <li class="p-xs list-style-none"><a href="#card">Card</a></li>
+        <li class="p-xs list-style-none"><a href="#image">Image</a></li>
+        <li class="p-xs list-style-none"><a href="#input">Input</a></li>
+        <li class="p-xs list-style-none"><a href="#spacing">Spacing</a></li>
+        <li class="p-xs list-style-none">
+          <a href="#text-utils">Text Utilities</a>
+        </li>
+        <li class="p-xs list-style-none"><a href="#lists">Lists</a></li>
       </ul>
     </aside>
 
@@ -376,15 +380,15 @@
         <div class="description-box mb-sm">
           <h3>Example: Headings</h3>
           <div class="text-description p-xs mb-sm">
-            <p>From .h1 to .h5, there are 5 heading variations possible.</p>
+            <p>From h1 to h5, there are 5 heading variations possible. Just add class h1 to h5 in to any h tag to use the below</p>
           </div>
 
           <div class="component-container component-container-text-utility">
-            <h1 class="h1">This is Heading 1</h1>
-            <h2 class="h2">This is Heading 2</h2>
-            <h3 class="h3">This is Heading 3</h3>
-            <h4 class="h4">This is Heading 4</h4>
-            <h5 class="h5">This is Heading 5</h5>
+            <h1 class="h1">This is Heading h1</h1>
+            <h2 class="h2">This is Heading h2</h2>
+            <h3 class="h3">This is Heading h3</h3>
+            <h4 class="h4">This is Heading h4</h4>
+            <h5 class="h5">This is Heading h5</h5>
           </div>
         </div>
       </div>
@@ -397,6 +401,146 @@
               
             </code></pre>
       </div>
+      <hr />
+
+      <!-- list section starts heere -->
+
+      <div id="text-utilis">
+        <div class="heading p-xs mb-sm">
+          <h2>List</h2>
+          <h5>
+            Lists are used to arrange items together and present information
+            using numbered text or bullets.
+          </h5>
+        </div>
+
+        <div class="description-box mb-sm">
+          <h3>Example:Normal list</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>
+              Normal lists can be used to present information items together, as
+              numbered (ordered) or not-numbered (unordered).
+            </p>
+          </div>
+
+          <div class="component-container component-container-list">
+            <ol class="list-container">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 1</li>
+            </ol>
+
+            <ol type="a" class="list-container">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 1</li>
+            </ol>
+
+            <ol class="list-container list-style-circle">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 1</li>
+            </ol>
+
+            <ol class="list-container list-style-square">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 1</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="code-snippets">
+        <pre><code class="html">
+          &lt;ol class=&quot;list-container&quot;&gt;
+          &lt;li&gt;Item 1&lt;/li&gt;
+          &lt;li&gt;Item 2&lt;/li&gt;
+          &lt;li&gt;Item 3&lt;/li&gt;
+          &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;/ol&gt;
+
+        &lt;ol class=&quot;list-container list-style-alpha&quot;&gt;
+          &lt;li&gt;Item 1&lt;/li&gt;
+          &lt;li&gt;Item 2&lt;/li&gt;
+          &lt;li&gt;Item 3&lt;/li&gt;
+          &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;/ol&gt;
+
+        &lt;ol class=&quot;list-container list-style-circle&quot;&gt;
+          &lt;li&gt;Item 1&lt;/li&gt;
+          &lt;li&gt;Item 2&lt;/li&gt;
+          &lt;li&gt;Item 3&lt;/li&gt;
+          &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;/ol&gt;
+
+        &lt;ol class=&quot;list-container list-style-square&quot;&gt;
+          &lt;li&gt;Item 1&lt;/li&gt;
+          &lt;li&gt;Item 2&lt;/li&gt;
+          &lt;li&gt;Item 3&lt;/li&gt;
+          &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/div&gt; 
+              
+            </code></pre>
+      </div>
+
+      <div class="description-box mb-sm">
+        <h3>Example:Stacked list</h3>
+        <p>
+          Add list-stacked to ul tag.
+        </p>
+        
+        </div>
+
+      <div class="component-container component-container-list">
+        <ul class="list-container list-stacked">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+      </div>
+
+      <div class="code-snippets">
+        <pre><code class="html">&lt;ul class=&quot;list-container list-stacked&quot;&gt;
+          &lt;li&gt;Item 1&lt;/li&gt;
+          &lt;li&gt;Item 2&lt;/li&gt;
+          &lt;li&gt;Item 3&lt;/li&gt;
+          &lt;li&gt;Item 4&lt;/li&gt;
+        &lt;/ul&gt;
+            </code></pre>
+      </div>
+      <div class="description-box mb-sm">
+        <h3>Example:Spaced list</h3>
+        <div class="text-description p-xs mb-sm">
+          <p>
+            Add list-spaced to ul tag and spaced to li tag
+          </p>
+        </div>
+
+
+      <div class="component-container component-container-list">
+        <ul class="list-container list-spaced">
+          <li class="spaced">Item 1</li>
+          <li class="spaced">Item 2</li>
+          <li class="spaced">Item 3</li>
+          <li class="spaced">Item 4</li>
+        </ul>
+      </div>
+      <div class="code-snippets">
+        <pre><code class="html"> &lt;ul class=&quot;list-container list-spaced&quot;&gt;
+                   &lt;li class=&quot;spaced&quot;&gt;Item 1&lt;/li&gt;
+          &lt;li class=&quot;spaced&quot;&gt;Item 2&lt;/li&gt;
+          &lt;li class=&quot;spaced&quot;&gt;Item 3&lt;/li&gt;
+          &lt;li class=&quot;spaced&quot;&gt;Item 4&lt;/li&gt;
+        &lt;/ul&gt;
+        </code></pre>
+      </div>
+
       <hr />
     </main>
 
