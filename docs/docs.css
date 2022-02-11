@@ -158,6 +158,7 @@ footer {
 footer h4 {
   display: inline;
   margin: 1em auto;
+  text-align: center;
 }
 
 .footer-items {
