@@ -1,0 +1,9 @@
+.component-container-grid{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns:  30vh repeat(2 , 1fr);
+}
+
+.col-1 {
+    background: orangered;
+}
