@@ -121,6 +121,10 @@ p {
   align-items: center;
 }
 
+.text-alignment{
+/* align-items: initial; */
+display: block;
+}
 .component-container-list{
   justify-content: center;
 }
