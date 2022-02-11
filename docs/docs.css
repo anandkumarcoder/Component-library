@@ -5,7 +5,9 @@
 @import "/Styles/variable.css";
 @import "/Styles/button.css";
 @import "/Styles/navbar.css";
+@import "/Styles/simple-grid.css";;
 @import "/Styles/badge.css";
+
 /****** */
 
 /* importing fonts */
@@ -159,6 +161,7 @@ footer {
 footer h4 {
   display: inline;
   margin: 1em auto;
+  text-align: center;
 }
 
 .footer-items {
