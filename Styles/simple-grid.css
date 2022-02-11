@@ -7,7 +7,7 @@
 }
 
 .col-1 , .col-2 , .col-3{
-    background: #add8e6;
+    background: var(--grid-bg);
     padding: 5rem 0;
 }
 
