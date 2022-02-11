@@ -1,0 +1,15 @@
+.full-image{
+    object-fit: contain;
+     max-width: 100%;
+     max-height: 100%;
+  
+}
+
+.round-image{
+    object-fit: contain;
+     width: 70%;
+     height: auto;
+  
+     border-radius:50% ;
+  
+}

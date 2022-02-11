@@ -27,132 +27,129 @@
     <link rel="stylesheet" href="docs.css" />
   </head>
   <body>
-      <header>
-        <nav class="nav-bar p-xs m-xs">
-          <div class="logo">
-            <i class="fa fa-rocket text-xl"></i>
+    <header>
+      <nav class="nav-bar p-xs m-xs">
+        <div class="logo">
+          <i class="fa fa-rocket text-xl"></i>
 
-            <h2 class="fw-600">Falcon UI</h2>
-          </div>
-         
+          <h2 class="fw-600">Falcon UI</h2>
+        </div>
 
-          <ul class="nav-items">
-            <li class="nav-links p-xs m-xs">
-              <a href="/index.html"> Home</a>
-            </li>
-            <li class="nav-links p-xs m-xs"><a href="#">Docs</a></li>
-            <li class="nav-links p-xs m-xs">
-              <i class="fa fa-toggle-on" id="toogle-dark"></i>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-
-      <aside>
-        <h2 class="text-md p-xs">Components</h2>
-        <ul class="m-sm">
-          <li><a href="#avatar">Avatar</a></li>
-          <li class="p-xs"><a href="#alert-section">Alert</a></li>
-          <li class="p-xs"><a href="#badge">Badge</a></li>
-          <li class="p-xs"><a href="#button">Button</a></li>
-          <li class="p-xs"><a href="#card">Card</a></li>
-          <li class="p-xs"><a href="#image">Image</a></li>
-          <li class="p-xs"><a href="#input">Input</a></li>
-          <li class="p-xs"><a href="#spacing">Spacing</a></li>
-          <li class="p-xs"><a href="#text-utils">Text Utilities</a></li>
-          <li class="p-xs"><a href="#lists">Lists</a></li>
+        <ul class="nav-items">
+          <li class="nav-links p-xs m-xs">
+            <a href="/index.html"> Home</a>
+          </li>
+          <li class="nav-links p-xs m-xs"><a href="#">Docs</a></li>
+          <li class="nav-links p-xs m-xs">
+            <i class="fa fa-toggle-on" id="toogle-dark"></i>
+          </li>
         </ul>
-      </aside>
+      </nav>
+    </header>
 
-      
-      <main>
-        <!-- simple alert button -->
+    <aside>
+      <h2 class="text-md p-xs">Components</h2>
+      <ul class="m-sm">
+        <li><a href="#avatar">Avatar</a></li>
+        <li class="p-xs"><a href="#alert-section">Alert</a></li>
+        <li class="p-xs"><a href="#badge">Badge</a></li>
+        <li class="p-xs"><a href="#button">Button</a></li>
+        <li class="p-xs"><a href="#card">Card</a></li>
+        <li class="p-xs"><a href="#image">Image</a></li>
+        <li class="p-xs"><a href="#input">Input</a></li>
+        <li class="p-xs"><a href="#spacing">Spacing</a></li>
+        <li class="p-xs"><a href="#text-utils">Text Utilities</a></li>
+        <li class="p-xs"><a href="#lists">Lists</a></li>
+      </ul>
+    </aside>
 
-        <div id="alert-section">
-          <div class="heading p-xs mb-sm">
-            <h2>Alerts</h2>
-            <h5>
-              Alerts are used to attract user's attention for important
-              information without interrupting the user's flow.
-            </h5>
+    <main>
+      <!-- simple alert button -->
+
+      <div id="alert-section">
+        <div class="heading p-xs mb-sm">
+          <h2>Alerts</h2>
+          <h5>
+            Alerts are used to attract user's attention for important
+            information without interrupting the user's flow.
+          </h5>
+        </div>
+
+        <div class="description-box mb-sm">
+          <h3>Example</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>
+              Alerts are available in 4 types- success alert, error alert, ,
+              primary alert, secondary alert.
+            </p>
+
+            <p>
+              To use this alert just use class name alert-box and also add class
+              according to alert type- alert-primary, alert-secondary,
+              alert-danger, alert-success, alert-warning. (e.g.class="alert-box
+              alert-primary").
+            </p>
+
+            <p>You can copy html part from below code snippet.</p>
           </div>
+        </div>
 
-          <div class="description-box mb-sm">
-            <h3>Example</h3>
-            <div class="text-description p-xs mb-sm">
-              <p>
-                Alerts are available in 4 types- success alert, error alert, ,
-                primary alert, secondary alert.
-              </p>
-
-              <p>
-                To use this alert just use class name alert-box and also add
-                class according to alert type- alert-primary, alert-secondary,
-                alert-danger, alert-success, alert-warning.
-                (e.g.class="alert-box alert-primary").
-              </p>
-
-              <p>You can copy html part from below code snippet.</p>
-            </div>
+        <div class="component-container component-container-alert">
+          <div class="alert alert-primary p-sm m-sm">
+            A simple primary alert message
           </div>
-
-          <div class="component-container component-container-alert">
-            <div class="alert alert-primary p-sm m-sm">
-              A simple primary alert message
-            </div>
-            <div class="alert alert-secondary p-sm m-sm">
-              A simple secondary alert message
-            </div>
-            <div class="alert alert-error p-sm m-sm">
-              A simple primary error message
-            </div>
-            <div class="alert alert-success p-sm m-sm">
-              A simple success alert message
-            </div>
+          <div class="alert alert-secondary p-sm m-sm">
+            A simple secondary alert message
           </div>
+          <div class="alert alert-error p-sm m-sm">
+            A simple primary error message
+          </div>
+          <div class="alert alert-success p-sm m-sm">
+            A simple success alert message
+          </div>
+        </div>
 
-          <div class="code-snippets">
-            <pre><code class="html">&ltdiv class="alert alert-primary p-sm m-sm "> A simple primary alert message&lt/div>
+        <div class="code-snippets">
+          <pre><code class="html">&ltdiv class="alert alert-primary p-sm m-sm "> A simple primary alert message&lt/div>
                  &emsp;&ltdiv class="alert alert-secondary p-sm m-sm "> A simple secondary alert message&lt/div>
                  &emsp;&ltdiv class="alert alert-error p-sm m-sm "> A simple primary error message&lt/div>
                  &ltdiv class="alert alert-success p-sm m-sm "> A simple success alert message&lt/div>
                </code></pre>
+        </div>
+
+        <!-- Alert button with icons starts -->
+
+        <div class="description-box mb-sm">
+          <h3>Example of alert bar with icons</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>
+              Alerts can have icon too . Few types of alert with examples are
+              info alert,warning alert, error alert
+            </p>
+
+            <p>You can copy html part from below code snippet.</p>
+          </div>
+        </div>
+
+        <div class="component-container component-container-alert alert-icon">
+          <div class="alert alert-primary p-sm m-sm">
+            <i class="material-icons btn-only">info</i>
+            A simple primary alert message
           </div>
 
-          <!-- Alert button with icons starts -->
-
-          <div class="description-box mb-sm">
-            <h3>Example of alert bar with icons</h3>
-            <div class="text-description p-xs mb-sm">
-              <p>
-                Alerts can have icon too . Few types of alert with examples are
-                info alert,warning alert, error alert
-              </p>
-
-              <p>You can copy html part from below code snippet.</p>
-            </div>
+          <div class="alert alert-error p-sm m-sm">
+            <i class="material-icons btn-only">report_gmailerrorred</i> A simple
+            primary error message
           </div>
 
-          <div class="component-container component-container-alert alert-icon">
-            <div class="alert alert-primary p-sm m-sm">
-              <i class="material-icons btn-only">info</i>
-              A simple primary alert message
-            </div>
-
-            <div class="alert alert-error p-sm m-sm">
-              <i class="material-icons btn-only">report_gmailerrorred</i> A
-              simple primary error message
-            </div>
-
-            <div class="alert alert-success p-sm m-sm">
-              <i class="material-icons btn-only">check_circle</i>
-              A simple success alert message
-            </div>
+          <div class="alert alert-success p-sm m-sm">
+            <i class="material-icons btn-only">check_circle</i>
+            A simple success alert message
           </div>
+        </div>
 
-          <div class="code-snippets">
-            <pre><code class="html">
+        <div class="code-snippets">
+          <pre><code class="html">
           &ltdiv class="container-alert alert-icon">
       
            &ltdiv class="alert alert-primary p-sm m-sm">
@@ -170,38 +167,38 @@
          
          &lt/div>
           </code></pre>
+        </div>
+
+        <div class="description-box mb-sm">
+          <h4>Example of alert bar with close button</h4>
+          <div class="text-description p-xs mb-sm">
+            <p>Alerts can have close button as well.</p>
+
+            <p>You can copy html and Js from below</p>
           </div>
+        </div>
 
-          <div class="description-box mb-sm">
-            <h4>Example of alert bar with close button</h4>
-            <div class="text-description p-xs mb-sm">
-              <p>Alerts can have close button as well.</p>
+        <!-- alert bar with close  button -->
 
-              <p>You can copy html and Js from below</p>
-            </div>
+        <div
+          class="component-container component-container-alert"
+          id="alert-box-close"
+        >
+          <div class="alert alert-warning p-sm m-sm">
+            <i class="material-icons btn-only">report_problem</i>
+
+            A simple primary alert message with close button
+
+            <button
+              type="button"
+              class="btn-close"
+              id="alert-example-close-btn"
+            ></button>
           </div>
+        </div>
 
-          <!-- alert bar with close  button -->
-
-          <div
-            class="component-container component-container-alert"
-            id="alert-box-close"
-          >
-            <div class="alert alert-warning p-sm m-sm">
-              <i class="material-icons btn-only">report_problem</i>
-
-              A simple primary alert message with close button
-
-              <button
-                type="button"
-                class="btn-close"
-                id="alert-example-close-btn"
-              ></button>
-            </div>
-          </div>
-
-          <div class="code-snippets">
-            <pre><code class="html">
+        <div class="code-snippets">
+          <pre><code class="html">
           &ltdiv class="container-alert" id="alert-box-close">
       
            &ltdiv class="alert alert-warning p-sm m-sm">
@@ -212,10 +209,10 @@
             &ltbutton type="button" class="btn-close" id="alert-example-close-btn">&lt/button>
             &lt/div>
            </code></pre>
-          </div>
+        </div>
 
-          <div class="code-snippets">
-            <pre><code class="js">
+        <div class="code-snippets">
+          <pre><code class="js">
          const alertBox = document.querySelector("#alert-box-close");
           const closeBtn = document.querySelector("#alert-example-close-btn");
 
@@ -224,96 +221,96 @@
             })
 
           </code></pre>
-          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="button-section">
+        <div class="heading p-xs mb-sm">
+          <h2>Buttons</h2>
+          <h5>
+            Buttons are also known as call to action. below are few types of
+            button. Add respective classes are you are good to go
+          </h5>
         </div>
 
-        <hr />
-
-        <div class="button-section">
-          <div class="heading p-xs mb-sm">
-            <h2>Buttons</h2>
-            <h5>
-              Buttons are also known as call to action. below are few types of
-              button. Add respective classes are you are good to go
-            </h5>
+        <div class="description-box mb-sm">
+          <h3>Example</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>buttons without border</p>
           </div>
 
-          <div class="description-box mb-sm">
-            <h3>Example</h3>
-            <div class="text-description p-xs mb-sm">
-              <p>buttons without border</p>
-            </div>
+          <div class="component-container">
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-error">Error</button>
+          </div>
 
-            <div class="component-container">
-              <button class="btn btn-primary">Primary</button>
-              <button class="btn btn-secondary">Secondary</button>
-              <button class="btn btn-success">Success</button>
-              <button class="btn btn-error">Error</button>
-            </div>
-
-            <div class="code-snippets">
-              <pre><code class="html">
+          <div class="code-snippets">
+            <pre><code class="html">
                   &ltbutton class="btn btn-primary">Primary&lt/button>
                   &ltbutton class="btn btn-secondary">Secondary&lt/button>
                   &ltbutton class="btn btn-success">Success&lt/button>
                   &ltbutton class="btn btn-error">Error&lt/button>
                 </code></pre>
+          </div>
+
+          <!-- outline buttons -->
+
+          <div class="description-box mb-sm">
+            <h3>Example of buttons with outlined</h3>
+            <div class="text-description p-xs mb-sm">
+              <p>If you want to use outlined button add class outlined</p>
             </div>
+          </div>
 
-            <!-- outline buttons -->
+          <div class="component-container">
+            <button class="btn btn-primary-outlined">Primary</button>
+            <button class="btn btn-secondary-outlined">Secondary</button>
+            <button class="btn btn-success-outlined">Success</button>
+            <button class="btn btn-error-outlined">Error</button>
+          </div>
 
-            <div class="description-box mb-sm">
-              <h3>Example of buttons with outlined</h3>
-              <div class="text-description p-xs mb-sm">
-                <p>If you want to use outlined button add class outlined</p>
-              </div>
-            </div>
-
-            <div class="component-container">
-              <button class="btn btn-primary-outlined">Primary</button>
-              <button class="btn btn-secondary-outlined">Secondary</button>
-              <button class="btn btn-success-outlined">Success</button>
-              <button class="btn btn-error-outlined">Error</button>
-            </div>
-
-            <div class="code-snippets">
-              <pre><code class="html">
+          <div class="code-snippets">
+            <pre><code class="html">
                   &ltbutton class="btn btn-primary-outlined">Primary&lt/button>
                   &ltbutton class="btn btn-secondary-outlined">Secondary&lt/button>
                   &ltbutton class="btn btn-success-outlined">Success&lt/button>
                   &ltbutton class="btn btn-error-outlined">Error&lt/button>
                   
                 </code></pre>
+          </div>
+
+          <!-- buttons with icons -->
+
+          <div class="description-box mb-sm">
+            <h3>Example of buttons with icons</h3>
+            <div class="text-description p-xs mb-sm">
+              <p>
+                If you want to use buttons with icons just add btn-icon and
+                respective action button class name
+              </p>
             </div>
+          </div>
 
-            <!-- buttons with icons -->
+          <div class="component-container">
+            <button class="btn btn-icon btn-icon-delete">
+              <i class="material-icons"> delete </i>Remove
+            </button>
 
-            <div class="description-box mb-sm">
-              <h3>Example of buttons with icons</h3>
-              <div class="text-description p-xs mb-sm">
-                <p>
-                  If you want to use buttons with icons just add btn-icon and
-                  respective action button class name
-                </p>
-              </div>
-            </div>
+            <button class="btn btn-icon btn-icon-favorite">
+              <i class="material-icons"> favorite</i> Move to wishlist
+            </button>
 
-            <div class="component-container">
-              <button class="btn btn-icon btn-icon-delete">
-                <i class="material-icons"> delete </i>Remove
-              </button>
+            <button class="btn btn-icon btn-icon-add-to-cart">
+              <i class="material-icons">shopping_cart</i>Add to cart
+            </button>
+          </div>
 
-              <button class="btn btn-icon btn-icon-favorite">
-                <i class="material-icons"> favorite</i> Move to wishlist
-              </button>
-
-              <button class="btn btn-icon btn-icon-add-to-cart">
-                <i class="material-icons">shopping_cart</i>Add to cart
-              </button>
-            </div>
-
-            <div class="code-snippets">
-              <pre><code class="html">
+          <div class="code-snippets">
+            <pre><code class="html">
                   &ltbutton class="btn btn-icon btn-icon-delete">
                     &lti class="material-icons"> delete &lt/i>Remove
                   &lt/button>
@@ -327,33 +324,33 @@
                   &lt/button>
                   
                 </code></pre>
+          </div>
+
+          <!-- only icons button -->
+
+          <div class="description-box mb-sm">
+            <h4>Example of icon buttons</h4>
+            <div class="text-description p-xs mb-sm">
+              <p>
+                If you want to use icons buttons just add icon-only class name
+              </p>
             </div>
+          </div>
 
-            <!-- only icons button -->
+          <div class="component-container">
+            <i class="material-icons icon-only"> delete </i>
+            <i class="material-icons icon-only"> favorite</i>
+            <i class="material-icons icon-only">shopping_cart</i>
 
-            <div class="description-box mb-sm">
-              <h4>Example of icon buttons</h4>
-              <div class="text-description p-xs mb-sm">
-                <p>
-                  If you want to use icons buttons just add icon-only class name
-                </p>
-              </div>
-            </div>
+            <i class="material-icons icon-only">account_circle</i>
 
-            <div class="component-container">
-              <i class="material-icons icon-only"> delete </i>
-              <i class="material-icons icon-only"> favorite</i>
-              <i class="material-icons icon-only">shopping_cart</i>
+            <i class="material-icons icon-only">share</i>
 
-              <i class="material-icons icon-only">account_circle</i>
+            <i class="material-icons icon-only">notifications</i>
+          </div>
 
-              <i class="material-icons icon-only">share</i>
-
-              <i class="material-icons icon-only">notifications</i>
-            </div>
-
-            <div class="code-snippets">
-              <pre><code class="html">
+          <div class="code-snippets">
+            <pre><code class="html">
                   &lti class="material-icons icon-only"> delete &lt/i>
                   &lti class="material-icons icon-only"> favorite&lt/i>
                   &lti class="material-icons icon-only">shopping_cart&lt/i>
@@ -364,45 +361,45 @@
             
                   &lti class="material-icons icon-only">notifications&lt/i>
                 </code></pre>
-            </div>
           </div>
         </div>
-        <hr/>
-        <!-- --------Input section starts----- -->
+      </div>
+      <hr />
+      <!-- --------Input section starts----- -->
 
-        <div class="input-section" id="input">
-          <div class="heading p-xs mb-sm">
-            <h2>Input</h2>
-            <h5>
-             Various Types of input used 
-            </h5>
+      <div class="input-section" id="input">
+        <div class="heading p-xs mb-sm">
+          <h2>Input</h2>
+          <h5>Various Types of input used</h5>
+        </div>
+
+        <div class="description-box mb-sm">
+          <h3>Example</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>Simple input</p>
           </div>
 
-          <div class="description-box mb-sm">
-            <h3>Example</h3>
-            <div class="text-description p-xs mb-sm">
-              <p>Simple input</p>
+          <div class="component-container component-container-input">
+            <div class="input-holder">
+              <label class="label" for="username">Username </label>
+              <input
+                id="username"
+                placeholder="type username here"
+                type="text"
+                required
+              />
+              <span></span>
             </div>
 
-            <div class="component-container component-container-input">
-              <div class="input-holder">
-                <label  class="label" for="username">Username
-                 
-                </label>
-                <input id="username" placeholder="type username here" type="text" required>
-                <span></span>
-              </div>
+            <div class="input-holder">
+              <label class="label" for="email">Email </label>
+              <input type="email" placeholder="type email here here" />
+            </div>
 
-              <div class="input-holder">
-                <label  class="label" for="email">Email  
-                </label>
-                <input type="email" placeholder="type email here here">
-              </div>
-
-              <div class="input-holder">
-                <label for="pwd">Password:</label>
-               <input type="password" id="pwd" name="pwd">
-              </div>
+            <div class="input-holder">
+              <label for="pwd">Password:</label>
+              <input type="password" id="pwd" name="pwd" />
+            </div>
           </div>
 
           <div class="code-snippets">
@@ -427,7 +424,7 @@
                
               </code></pre>
           </div>
-          
+
           <div class="description-box mb-sm">
             <h3>Example</h3>
             <div class="text-description p-xs mb-sm">
@@ -435,26 +432,24 @@
             </div>
 
             <div class="component-container component-container-input">
-              
-                <div class="search">
-                  Search something
-                  <i class="material-icons search-icon"> 
-                    search  
-                  </i>
-                </div>
-
-                <select class="input">
-                  <option selected disabled>Select</option>
-                  <option>S</option>
-                  <option>M</option>
-                  <option >L</option>
-                  <option disabled >XL</option>
+              <div class="search">
+                Search something
+                <i class="material-icons search-icon"> search </i>
+              </div>
+              <select class="input">
+                <option selected disabled>Select</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option disabled>XL</option>
               </select>
+            </div>
+            </div>
 
-             </div>
+          
 
-             <div class="code-snippets">
-              <pre><code class="html">&lt;div class=&quot;search&quot;&gt;
+          <div class="code-snippets">
+            <pre><code class="html">&lt;div class=&quot;search&quot;&gt;
                 Search something
                 &lt;i class=&quot;material-icons search-icon&quot;&gt; 
                   search  
@@ -469,28 +464,65 @@
                 &lt;option disabled &gt;XL&lt;/option&gt;
             &lt;/select&gt;
                 </code></pre>
-            </div>
-
-              
           </div>
-
         </div>
-      </main>
+      </div>
+      <hr />
 
-      <footer>
-        <h4>made by anand kumar</h4>
-        <div class="footer-items">
-          <ul>
-            <li class="footer-links">
-              <a href="#"><i class="fa fa-github text-lg mr-sm"></i></a>
-            </li>
-            <li class="footer-links">
-              <a href="#"><i class="fa fa-twitter text-lg"></i></a>
-            </li>
-          </ul>
+      <div id="image">
+        <div class="heading p-xs mb-sm">
+          <h2>Image</h2>
+          <h5>Small desc below heading</h5>
         </div>
-      </footer>
-    
+
+        <div class="description-box mb-sm">
+          <h3>Example:full size <picture></picture></h3>
+          <div class="text-description p-xs mb-sm">
+            <p>Desc explaining example</p>
+          </div>
+        </div>
+
+        <div class="component-container component-container-image">
+          <img class="full-image" src="/assets/flying-kite.jpg" alt="" srcset="">
+        </div>
+        
+
+        <div class="code-snippets">
+          <pre><code class="html">&lt;img class=&quot;full-image&quot; src=&quot;/assets/flying-kite.jpg&quot; alt=&quot;&quot; srcset=&quot;&quot;&gt;
+           </code></pre>
+        </div>
+      </div>
+
+      <div class="component-container component-container-image">
+        <img class="round-image" src="/assets/flying-kite.jpg" alt="" srcset="">
+      </div>
+
+      <div class="code-snippets">
+        <pre><code class="html">   &lt;img class=&quot;round-image&quot; src=&quot;/assets/flying-kite.jpg&quot; alt=&quot;&quot; srcset=&quot;&quot;&gt;
+          &lt;/div&gt;
+        
+            
+          </code></pre>
+      </div>
+    </div>
+      
+
+      <hr />
+    </main>
+
+    <footer>
+      <h4>made by anand kumar</h4>
+      <div class="footer-items">
+        <ul>
+          <li class="footer-links">
+            <a href="#"><i class="fa fa-github text-lg mr-sm"></i></a>
+          </li>
+          <li class="footer-links">
+            <a href="#"><i class="fa fa-twitter text-lg"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
     <script src="/javascript/highlight.min.js"></script>
     <script>

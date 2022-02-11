@@ -6,6 +6,7 @@
 @import "/Styles/button.css";
 @import "/Styles/navbar.css";
 @import "/Styles/input.css";
+@import "/styles/image.css";
 /****** */
 
 /* importing fonts */
@@ -116,6 +117,10 @@ p {
 
 .component-container-alert {
   flex-direction: column;
+}
+
+.component-container-image{
+  justify-content: center;
 }
 
 hr {
