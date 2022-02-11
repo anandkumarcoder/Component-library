@@ -9,6 +9,7 @@
 .col-1 , .col-2 , .col-3{
     background: var(--grid-bg);
     padding: 5rem 0;
+    text-align: center;
 }
 
 .grid-three-col{
