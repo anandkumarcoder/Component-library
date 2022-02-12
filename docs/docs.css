@@ -7,6 +7,8 @@
 @import "/Styles/navbar.css";
 @import "/Styles/input.css";
 @import "/Styles/image.css";
+@import "/Styles/simple-grid.css";;
+@import "/Styles/badge.css";
 /****** */
 
 /* importing fonts */
@@ -23,12 +25,8 @@
   --secondary-background-color: #212121;
 }
 
-.darkmode {
-  --primary-background-color: #edf2fc;
-  --secondary-background-color: #212121;
-}
-
 body {
+  font-family: var(--primary-font);
   background-color: var(--primary-background-color);
  
   color: var(--txt-color-primary);
@@ -119,9 +117,13 @@ p {
   flex-direction: column;
 }
 
+
 .component-container-image{
   justify-content: center;
- 
+}
+.component-container-avatar {
+  justify-content: space-between;
+  align-items: center;
 }
 
 hr {
@@ -165,6 +167,7 @@ footer {
 footer h4 {
   display: inline;
   margin: 1em auto;
+  text-align: center;
 }
 
 .footer-items {
