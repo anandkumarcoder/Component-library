@@ -21,21 +21,21 @@ input{
     bottom: 10px;
   }
   #username{
-    border: 2px solid black;  
+    border: 2px solid #000000;  
   }
 #username:invalid{
-    border: 2px solid red;
+    border: 2px solid #ff0000;
 }
 
 #username:invalid + span::before{
     content: '✖';
-  color: red;
+  color: #ff0000;
    
 }
 
 #username:valid + span::before{
     content: '✓';
-  color: green;
+  color: #008000;
 }
 /* ------ */
 
@@ -43,7 +43,7 @@ input{
     position: relative;
     min-width: 20%;
     min-height: 100%;
-    border: 2px solid black;
+    border: 2px solid #000000;
     padding: 0.5rem;
     display: flex;
     justify-content: space-between;
