@@ -1,6 +1,3 @@
-/* importing external styles */
-@import "/Styles/variable.css";
-/* ------------- */
 
 /* Sizing */
 
@@ -41,13 +38,13 @@
   position: relative;
 }
 
-img {
+/* img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   background-size: cover;
   border-radius: 50%;
-}
+} */
 
 .avatar-square {
   border-radius: 0;

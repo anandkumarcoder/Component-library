@@ -5,10 +5,9 @@
 @import "/Styles/variable.css";
 @import "/Styles/button.css";
 @import "/Styles/navbar.css";
-@import "/Styles/simple-grid.css";;
+@import "/Styles/simple-grid.css";
 @import "/Styles/badge.css";
 @import "/Styles/avatar.css";
-@import "/Styles/badge.css";
 
 /****** */
 
@@ -118,7 +117,7 @@ p {
 }
 
 .component-container-avatar {
-  justify-content: space-between;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -156,19 +155,21 @@ pre {
 
 footer {
   grid-area: footer;
-  text-align: center;
+ 
   color: var(--primary-font-color);
+  
 }
 
-footer h4 {
-  display: inline;
-  margin: 1em auto;
-  text-align: center;
-}
+
 
 .footer-items {
   display: flex;
   justify-content: center;
+}
+
+.footer-items > h4 {
+  margin: 1em auto;
+  text-align: center;
 }
 
 .fa {

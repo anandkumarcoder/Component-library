@@ -16,13 +16,6 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
 
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
-      integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    /> -->
 
     <link rel="stylesheet" href="docs.css" />
   </head>
@@ -31,7 +24,6 @@
       <nav class="nav-bar p-xs m-xs">
         <div class="logo">
           <i class="fa fa-rocket text-xl"></i>
-
           <h2 class="fw-600">Falcon UI</h2>
         </div>
 
@@ -40,9 +32,6 @@
             <a href="/index.html"> Home</a>
           </li>
           <li class="nav-links p-xs m-xs"><a href="#">Docs</a></li>
-          <li class="nav-links p-xs m-xs">
-            <i class="fa fa-toggle-on" id="toogle-dark"></i>
-          </li>
         </ul>
       </nav>
     </header>
@@ -50,7 +39,7 @@
     <aside>
       <h2 class="text-md p-xs">Components</h2>
       <ul class="m-sm">
-        <li><a href="#avatar">Avatar</a></li>
+        <li class="p-xs"><a href="#avatar">Avatar</a></li>
         <li class="p-xs"><a href="#alert-section">Alert</a></li>
         <li class="p-xs"><a href="#badge">Badge</a></li>
         <li class="p-xs"><a href="#button">Button</a></li>
@@ -79,47 +68,41 @@
         </div>
 
         <div class="component-container component-container-avatar">
+          
+
           <img
-            class="avatar-xl"
+            class=" avatar avatar-lg"
             src="/assets/image-avatar.png"
             alt="avatar-img"
           />
 
           <img
-            class="avatar-lg"
+            class=" avatar avatar-sm"
             src="/assets/image-avatar.png"
             alt="avatar-img"
           />
 
           <img
-            class="avatar-sm"
+            class=" avatar avatar-xs"
             src="/assets/image-avatar.png"
             alt="avatar-img"
           />
 
           <img
-            class="avatar-xs"
-            src="/assets/image-avatar.png"
-            alt="avatar-img"
-          />
-
-          <img
-            class="avatar-xs"
+            class=" avatar avatar-xxs"
             src="/assets/image-avatar.png"
             alt="avatar-img"
           />
         </div>
 
         <div class="code-snippets">
-          <pre><code class="html">    &lt;img  class=&quot; avatar-xl&quot; src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
-
-              &lt;img class=&quot; avatar-lg&quot; src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
+          <pre><code class="html"> &lt;img class=&quot; avatar-lg&quot; src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
         
               &lt;img class=&quot; avatar-sm&quot; src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
             
               &lt;img class=&quot;avatar-xs&quot; src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
 
-              &lt;img class=&quot;  avatar-xs&quot; src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
+              &lt;img class=&quot;  avatar-xxs&quot; src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
               
 
               
@@ -132,11 +115,7 @@
         </div>
 
         <div class="component-container component-container-avatar">
-          <img
-            class="avatar-square avatar-xl"
-            src="/assets/image-avatar.png"
-            alt="avatar-img"
-          />
+          
 
           <img
             class="avatar-square avatar-lg"
@@ -157,22 +136,20 @@
           />
 
           <img
-            class="avatar-square avatar-xs"
+            class="avatar-square avatar-xxs"
             src="/assets/image-avatar.png"
             alt="avatar-img"
           />
         </div>
 
         <div class="code-snippets">
-          <pre><code class="html">&lt;img  class=&quot;avatar-square avatar-xl&quot; src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
-
-              &lt;img class=&quot;avatar-square avatar-lg&quot; src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
+          <pre><code class="html"> &lt;img class=&quot;avatar-square avatar-lg&quot; src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
         
               &lt;img class=&quot;avatar-square avatar-sm&quot; src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
             
               &lt;img class=&quot;avatar-square avatar-xs&quot; src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
 
-              &lt;img class=&quot; avatar-square avatar-xs&quot; src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
+              &lt;img class=&quot; avatar-square avatar-xxs&quot; src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
            
                             </code></pre>
         </div>
@@ -183,7 +160,6 @@
         </div>
 
         <div class="component-container component-container-avatar">
-          <div class="avatar avatar-xl">AK</div>
           <div class="avatar avatar-lg">AK</div>
           <div class="avatar avatar-sm">AK</div>
           <div class="avatar avatar-xs">AK</div>
@@ -191,8 +167,7 @@
         </div>
 
         <div class="code-snippets">
-          <pre><code class="html">&lt;div class=&quot;avatar avatar-xl&quot;&gt;AK&lt;/div&gt;
-            &lt;div class=&quot;avatar avatar-lg&quot;&gt;AK&lt;/div&gt;
+          <pre><code class="html">&lt;div class=&quot;avatar avatar-lg&quot;&gt;AK&lt;/div&gt;
             &lt;div class=&quot;avatar avatar-sm&quot;&gt;AK&lt;/div&gt;
             &lt;div class=&quot;avatar avatar-xs&quot;&gt;AK&lt;/div&gt;
             &lt;div class=&quot;avatar avatar-xxs&quot;&gt;AK&lt;/div&gt;
@@ -204,17 +179,14 @@
         <div class="text-description">
           <h3>Example of avatar with square border and text</h3>
         </div>
-        <div class="component-container component-container-avatar">
-          <div class="avatar avatar-square avatar-xl">AK</div>
-          <div class="avatar avatar-square avatar-lg">AK</div>
+        <div class="component-container component-container-avatar"><div class="avatar avatar-square avatar-lg">AK</div>
           <div class="avatar avatar-square avatar-sm">AK</div>
           <div class="avatar avatar-square avatar-xs">AK</div>
           <div class="avatar avatar-square avatar-xxs">AK</div>
         </div>
 
         <div class="code-snippets">
-          <pre><code class="html">&lt;div class=&quot;avatar avatar-square avatar-xl&quot;&gt;AK&lt;/div&gt;
-            &lt;div class=&quot;avatar avatar-square avatar-lg&quot;&gt;AK&lt;/div&gt;
+          <pre><code class="html">&lt;div class=&quot;avatar avatar-square avatar-lg&quot;&gt;AK&lt;/div&gt;
             &lt;div class=&quot;avatar avatar-square avatar-sm&quot;&gt;AK&lt;/div&gt;
             &lt;div class=&quot;avatar avatar-square avatar-xs&quot;&gt;AK&lt;/div&gt;
             &lt;div class=&quot;avatar avatar-square avatar-xxs&quot;&gt;AK&lt;/div&gt;
@@ -428,7 +400,7 @@
           <div class="description-box mb-sm">
             <h3>Example of badge on buttons</h3>
             <div class="text-description p-xs mb-sm">
-              <p>USe the below in your project to use the button with badge</p>
+              <p>Use the below in your project to use the button with badge</p>
             </div>
           </div>
 
@@ -477,58 +449,47 @@
           </div>
 
           <div class="component-container component-container-badge">
-            <div class="avatar avatar-xl">
-              <img src="/assets/image-avatar.png" alt="avatar-img" />
-              <div class="status online"></div>
-            </div>
-
+            
             <div class="avatar avatar-lg">
-              <img src="/assets/image-avatar.png" alt="avatar-img" />
+              <img  class="avatar avatar-lg"src="/assets/image-avatar.png" alt="avatar-img" />
               <div class="status online"></div>
             </div>
 
             <div class="avatar avatar-sm">
-              <img src="/assets/image-avatar.png" alt="avatar-img" />
+              <img class="avatar avatar-sm" src="/assets/image-avatar.png" alt="avatar-img" />
               <div class="status online"></div>
             </div>
 
             <div class="avatar avatar-xs">
-              <img src="/assets/image-avatar.png" alt="avatar-img" />
+              <img  class="avatar avatar-xs" src="/assets/image-avatar.png" alt="avatar-img" />
               <div class="status offline"></div>
             </div>
 
             <div class="avatar avatar-xxs">
-              <img src="/assets/image-avatar.png" alt="avatar-img" />
+              <img  class="avatar avatar-xxs" src="/assets/image-avatar.png" alt="avatar-img" />
               <div class="status offline"></div>
             </div>
           </div>
 
           <div class="code-snippets">
-            <pre><code class="html">&lt;div class=&quot;avatar avatar-xl&quot;&gt;
-              &lt;img src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
-            &lt;div class=&quot;status online&quot;&gt;&lt;/div&gt;
-        
-           &lt;/div&gt;
+            <pre><code class="html">&lt;div class=&quot;avatar avatar-lg&quot;&gt;
+              &lt;img  class=&quot;avatar avatar-lg&quot;src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
+              &lt;div class=&quot;status online&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
 
-           &lt;div class=&quot;avatar avatar-lg&quot;&gt;
-            &lt;img src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
-            &lt;div class=&quot;status online&quot;&gt;&lt;/div&gt;
-          &lt;/div&gt;
+            &lt;div class=&quot;avatar avatar-sm&quot;&gt;
+              &lt;img class=&quot;avatar avatar-sm&quot; src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
+              &lt;div class=&quot;status online&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
 
-          &lt;div class=&quot;avatar avatar-sm&quot;&gt;
-            &lt;img src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
-            &lt;div class=&quot;status online&quot;&gt;&lt;/div&gt;
-          &lt;/div&gt;
-
-          &lt;div class=&quot;avatar avatar-xs&quot;&gt;
-            &lt;img src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
-            &lt;div class=&quot;status offline&quot;&gt;&lt;/div&gt;
-          &lt;/div&gt;
-
-          &lt;div class=&quot;avatar avatar-xxs&quot;&gt;
-            &lt;img src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
-            &lt;div class=&quot;status offline&quot;&gt;&lt;/div&gt;
-          &lt;/div&gt;
+            &lt;div class=&quot;avatar avatar-xs&quot;&gt;
+              &lt;img  class=&quot;avatar avatar-xs&quot; src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
+              &lt;div class=&quot;status offline&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;avatar avatar-xxs&quot;&gt;
+              &lt;img  class=&quot;avatar avatar-xxs&quot; src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
+              &lt;div class=&quot;status offline&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
 
             </code></pre>
           </div>
@@ -736,9 +697,9 @@
     </main>
 
     <footer>
-      <h4>made by anand kumar</h4>
       <div class="footer-items">
-        <ul>
+      <h4>made by anand kumar</h4>
+      <ul>
           <li class="footer-links">
             <a href="#"><i class="fa fa-github text-lg mr-sm"></i></a>
           </li>
