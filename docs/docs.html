@@ -749,13 +749,15 @@
           <hr />
 
           <!-- card section starts -->
-          <div class="card-section" id="card">
+        <div class="card-section" id="card">
+
             <div class="heading p-xs mb-sm">
               <h2>Cards</h2>
-              <h5>cards are important part od many ecommerce websites</h5>
+              <h5>cards are important part of many ecommerce websites</h5>
               <p>Simple card/p></p>
             </div>
-          </div>
+         
+          <!-- simple first card -->
 
           <div class="component-container">
             <div class="card-container one">
@@ -770,6 +772,10 @@
                 <h5 class="card-price">$80.00</h5>
               </div>
             </div>
+          </div>
+
+          <!-- card with button -->
+          <div class="component-container">
 
             <div class="card-container one">
               <img
@@ -784,6 +790,10 @@
                 <button class="btn btn-card">View Product</button>
               </div>
             </div>
+          </div>
+          <!-- card with star ratings -->
+
+          <div class="component-container">
 
             <div class="card-container">
               <img
@@ -801,6 +811,11 @@
                 </div>
               </div>
             </div>
+          </div>
+
+          <!-- card with overlay text -->
+
+          <div class="component-container">
 
             <div class="card-container one">
               <div class="card-overlay">Out of stock</div>
@@ -820,71 +835,53 @@
               </div>
             </div>
           </div>
+          
+          
+
+          <!-- card with badge -->
+          <div class="component-container component-container-list">
+            <div class="card-container one">
+              <div class="card-overlay-badge">Sale</div>
+              <img
+                class="card-image"
+                src="/assets/tshirt-image.jpg"
+                alt="T-shirt image"
+              />
+
+              <div class="card-details">
+                <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
+                <div class="card-rating-box">
+                  <h5 class="card-price">$80.00</h5>
+                  <button class="btn btn-card">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- code snippet for card with badge -->
 
           <div class="code-snippets">
-            <pre><code class="html"> 
-            &lt;div class=&quot;card-container one&quot;&gt;
-            &lt;img
-              class=&quot;card-image&quot;
-              src=&quot;/assets/tshirt-image.jpg&quot;
-              alt=&quot;T-shirt image&quot;
-            /&gt;
-
-            &lt;div class=&quot;card-details&quot;&gt;
-              &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
-              &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-
-          &lt;div class=&quot;card-container one&quot;&gt;
-            &lt;img
-              class=&quot;card-image&quot;
-              src=&quot;/assets/tshirt-image.jpg&quot;
-              alt=&quot;T-shirt image&quot;
-            /&gt;
-
-            &lt;div class=&quot;card-details&quot;&gt;
-              &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
-              &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
-              &lt;button class=&quot;btn btn-card&quot;&gt;View Product&lt;/button&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-
-          &lt;div class=&quot;card-container one&quot;&gt;
-            &lt;img
-              class=&quot;card-image&quot;
-              src=&quot;/assets/tshirt-image.jpg&quot;
-              alt=&quot;T-shirt image&quot;
-            /&gt;
-
-            &lt;div class=&quot;card-details&quot;&gt;
-              &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
-              &lt;div class=&quot;card-rating-box&quot;&gt;
-                &lt;i class=&quot;material-icons star&quot;&gt; star star star star star &lt;/i&gt;
-
-                &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
+            <pre><code class="html">
+              &lt;div class=&quot;card-container one&quot;&gt;
+                &lt;div class=&quot;card-overlay-badge&quot;&gt;Sale&lt;/div&gt;
+                &lt;img
+                  class=&quot;card-image&quot;
+                  src=&quot;/assets/tshirt-image.jpg&quot;
+                  alt=&quot;T-shirt image&quot;
+                /&gt;
+  
+                &lt;div class=&quot;card-details&quot;&gt;
+                  &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
+                  &lt;div class=&quot;card-rating-box&quot;&gt;
+                    &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
+                    &lt;button class=&quot;btn btn-card&quot;&gt;View Product&lt;/button&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
               &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-
-          &lt;div class=&quot;card-container one&quot;&gt;
-            &lt;div class=&quot;card-overlay&quot;&gt;Out of stock&lt;/div&gt;
-            &lt;img
-              class=&quot;card-image&quot;
-              src=&quot;/assets/tshirt-image.jpg&quot;
-              alt=&quot;T-shirt image&quot;
-            /&gt;
-
-            &lt;div class=&quot;card-details&quot;&gt;
-              &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
-              &lt;div class=&quot;card-rating-box&quot;&gt;
-                &lt;i class=&quot;material-icons star&quot;&gt; star star star star star &lt;/i&gt;
-
-                &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;   
-          </code></pre>
+              
+              
+            </code></pre>
           </div>
+    
 
           <!-- card with text -->
           <div class="description-box mb-sm">
@@ -896,7 +893,6 @@
 
           <div class="component-container component-container-list">
             <div class="card-container card-text">
-              
               <h2 class="price-details-header">Price details</h2>
 
               <div class="price-details">
@@ -922,11 +918,10 @@
                   <button class="btn btn-icon place-order">Place order</button>
                 </div>
               </div>
-
-              
             </div>
           </div>
 
+         <!-- card with text code snippets -->
           <div class="code-snippets">
             <pre><code class="html">
               &lt;div class=&quot;card-container card-text&quot;&gt;
@@ -957,6 +952,7 @@
                 &lt;/div&gt;
               &lt;/div&gt;
 
+
               
             &lt;/div&gt;
           &lt;/div&gt;
@@ -965,9 +961,9 @@
                 </code></pre>
           </div>
 
-          <!-- big card example -->
+          <!-- Horizontal card -->
           <div class="description-box mb-sm">
-            <h3>Example of main big card</h3>
+            <h3>Horizontal card</h3>
           </div>
 
           <div class="component-container big">
@@ -1023,6 +1019,7 @@
               </div>
             </div>
           </div>
+          <!-- code snippets for horizontal card -->
           <div class="code-snippets">
             <pre><code class="html"> &lt;div class=&quot;card-details right-col&quot;&gt;
             &lt;div class=&quot;prd-name&quot;&gt;
@@ -1069,9 +1066,13 @@
             
               
           </code></pre>
+          
           </div>
-        </div>
+       </div> 
+         <!-- closing tag of card id -->
         <hr />
+
+         <!-- ---------------------- -->
 
         <!-- image section starts -->
 

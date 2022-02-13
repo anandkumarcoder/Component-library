@@ -15,12 +15,27 @@
   position: absolute;
   inset: 0;
   font-size: 3rem;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #0000004d;
   border-radius: 1.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--txt-color-secondary);
+}
+
+.card-overlay-badge {
+  position: absolute;
+
+  top: 1.5rem;
+  left: 1rem;
+  font-size: 1rem;
+  background-color: #e71f1f;
+  border-radius: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--txt-color-secondary);
+  padding: 0 1rem;
 }
 
 .card-image {
@@ -47,7 +62,6 @@
   flex-direction: column;
   margin-top: 1rem;
   align-items: center;
-  border: 1px solid red;
 }
 
 .btn-card {
@@ -60,6 +74,8 @@
   margin: 1rem;
   width: 100%;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .star {
@@ -124,7 +140,6 @@
   margin: 1.5rem;
   display: flex;
   gap: 1rem;
-
 }
 
 .color {
@@ -163,46 +178,45 @@
 }
 
 .action-btn > .btn {
-  background: black;
-  color: white;
+  background: #000000;
+  color: #ffffff;
 }
 
 .price-details-header {
   font-size: 1rem;
   font-weight: var(--font-bolder);
-padding: 1rem 0.5rem;
+  padding: 1rem 0.5rem;
   width: 100%;
   text-align: center;
   border-bottom: 1px solid #000000;
   margin-bottom: 0.5rem;
-
 }
 
-
-
-.price-box , .discount-box, .delivery-box,.total-amount-box{
+.price-box,
+.discount-box,
+.delivery-box,
+.total-amount-box {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
 }
 
-.checkout-text{
+.checkout-text {
   font-size: 1rem;
   font-weight: var(--font-light);
 }
 
-.total-amount-box{
-  
+.total-amount-box {
   border-bottom: 1px solid #000000;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
 }
-.delivery-box{
+.delivery-box {
   border-bottom: 1px solid #000000;
   padding-bottom: 0.5rem;
 }
 
-.place-order{
+.place-order {
   background: #000000;
   color: var(--txt-color-secondary);
   margin-top: 1rem;
