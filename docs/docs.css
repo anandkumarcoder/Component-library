@@ -6,6 +6,7 @@
 @import "/Styles/button.css";
 @import "/Styles/navbar.css";
 @import "/Styles/list.css";
+@import "/Styles/card.css";
 @import "/Styles/simple-grid.css";
 @import "/Styles/badge.css";
 @import "/Styles/avatar.css";
@@ -152,6 +153,7 @@ pre {
   overflow: auto;
   white-space: pre-line;
   background-color: #e5e7eb;
+  max-height: 30vh;
 }
 .hljs-tag,
 .hljs-name,
