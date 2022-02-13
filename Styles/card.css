@@ -3,11 +3,11 @@
   margin: 2rem 1rem;
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: var(--light);
   padding: 1rem;
   align-items: center;
   border-radius: 2rem;
-  border: 3px solid grey;
+  border: 3px solid var(--dark);
   position: relative;
 }
 
@@ -15,7 +15,7 @@
   position: absolute;
   inset: 0;
   font-size: 3rem;
-  background-color: #0000004d;
+  background-color: var(--card-overlay-color);
   border-radius: 1.6rem;
   display: flex;
   justify-content: center;
@@ -25,11 +25,10 @@
 
 .card-overlay-badge {
   position: absolute;
-
   top: 1.5rem;
   left: 1rem;
   font-size: 1rem;
-  background-color: #e71f1f;
+  background-color: var(--card-overlay-badge-bg);
   border-radius: 1.6rem;
   display: flex;
   justify-content: center;
@@ -65,7 +64,7 @@
 }
 
 .btn-card {
-  background-color: #000000;
+  background-color: var(--dark);
 }
 
 .card-rating-box {
@@ -178,8 +177,8 @@
 }
 
 .action-btn > .btn {
-  background: #000000;
-  color: #ffffff;
+  background: var(--dark);
+  color: var(--light);
 }
 
 .price-details-header {
@@ -188,7 +187,7 @@
   padding: 1rem 0.5rem;
   width: 100%;
   text-align: center;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid var(--dark);
   margin-bottom: 0.5rem;
 }
 
@@ -207,17 +206,17 @@
 }
 
 .total-amount-box {
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid var(--dark);
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
 }
 .delivery-box {
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid var(--dark);
   padding-bottom: 0.5rem;
 }
 
 .place-order {
-  background: #000000;
+  background: var(--dark);
   color: var(--txt-color-secondary);
   margin-top: 1rem;
 }

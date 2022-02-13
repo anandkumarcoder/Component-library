@@ -1,25 +1,13 @@
 /********Component imports *******/
-@import "/Styles/lenght.css";
-@import "/Styles/typography.css";
-@import "/Styles/alert.css";
-@import "/Styles/variable.css";
-@import "/Styles/button.css";
-@import "/Styles/navbar.css";
-@import "/Styles/list.css";
-@import "/Styles/card.css";
-@import "/Styles/simple-grid.css";
-@import "/Styles/badge.css";
-@import "/Styles/card.css";
-@import "/Styles/avatar.css";
-@import "/Styles/image.css";
-@import "/Styles/input.css";
-
+@import "/Styles/main.css";
 /****** */
 
 /* importing fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap");
 /* ------------ */
+
+
 * {
   padding: 0;
   margin: 0;
@@ -29,7 +17,6 @@
 body {
   font-family: var(--primary-font);
   background-color: var(--primary-background-color);
-
   color: var(--txt-color-primary);
   display: grid;
   grid-template-columns: 20vw minmax(0, 1fr);

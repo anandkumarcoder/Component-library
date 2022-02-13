@@ -6,12 +6,9 @@
 }
 
 .round-image{
-    /* object-fit: contain; */
      max-width: 100%;
      width: 20rem;
      height: 20rem;
      aspect-ratio: 1/1;
-  
      border-radius:50% ;
-  
 }
