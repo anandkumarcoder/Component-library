@@ -9,7 +9,9 @@
 @import "/Styles/card.css";
 @import "/Styles/simple-grid.css";
 @import "/Styles/badge.css";
+@import "/Styles/card.css";
 @import "/Styles/avatar.css";
+
 /****** */
 
 /* importing fonts */
@@ -29,6 +31,7 @@
 body {
   font-family: var(--primary-font);
   background-color: var(--primary-background-color);
+ 
   color: var(--txt-color-primary);
   display: grid;
   grid-template-columns: 20vw minmax(0, 1fr);
@@ -130,6 +133,10 @@ display: block;
 }
 
 
+
+.component-container-image{
+  justify-content: center;
+}
 .component-container-avatar {
   gap: 2rem;
   align-items: center;

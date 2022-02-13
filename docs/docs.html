@@ -50,7 +50,6 @@
         <li class="p-xs"><a href="#text-utils">Text Utilities</a></li>
         <li class="p-xs"><a href="#lists">Lists</a></li>
         <li class="p-xs"><a href="#grid">Grid</a></li>
-
       </ul>
     </aside>
 
@@ -645,91 +644,185 @@
             
                   &lti class="material-icons icon-only">notifications&lt/i>
                 </code></pre>
-
           </div>
         </div>
       </div>
 
-      <!-- card section starts -->
-      <div class="card-section" id="card">
+      <hr />
+      <!-- --------Input section starts----- -->
+
+      <div class="input-section" id="input">
         <div class="heading p-xs mb-sm">
-          <h2>Cards</h2>
-          <h5>cards are important part od many ecommerce websites</h5>
+          <h2>Input</h2>
+          <h5>Various Types of input used</h5>
         </div>
 
         <div class="description-box mb-sm">
           <h3>Example</h3>
           <div class="text-description p-xs mb-sm">
-            <p>Simple card/p></p>
+            <p>Simple input</p>
           </div>
-        </div>
 
-        <div class="component-container">
-          <div class="card-container one">
-            <img
-              class="card-image"
-              src="/assets/tshirt-image.jpg"
-              alt="T-shirt image"
-            />
+          <div class="component-container component-container-input">
+            <div class="input-holder">
+              <label class="label" for="username">Username </label>
+              <input
+                id="username"
+                placeholder="type username here"
+                type="text"
+                required
+              />
+              <span></span>
+            </div>
 
-            <div class="card-details">
-              <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
-              <h5 class="card-price">$80.00</h5>
+            <div class="input-holder">
+              <label class="label" for="email">Email </label>
+              <input type="email" placeholder="type email here here" />
+            </div>
+
+            <div class="input-holder">
+              <label for="pwd">Password:</label>
+              <input type="password" id="pwd" name="pwd" />
             </div>
           </div>
 
-          <div class="card-container one">
-            <img
-              class="card-image"
-              src="/assets/tshirt-image.jpg"
-              alt="T-shirt image"
-            />
+          <div class="code-snippets">
+            <pre><code class="html">&lt;div class=&quot;input-holder&quot;&gt;
+              &lt;label  class=&quot;label&quot; for=&quot;username&quot;&gt;Username
+               
+              &lt;/label&gt;
+              &lt;input id=&quot;username&quot; placeholder=&quot;type username here&quot; type=&quot;text&quot; required&gt;
+              &lt;span&gt;&lt;/span&gt;
+            &lt;/div&gt;
 
-            <div class="card-details">
-              <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
-              <h5 class="card-price">$80.00</h5>
-              <button class="btn btn-card">View Product</button>
+            &lt;div class=&quot;input-holder&quot;&gt;
+              &lt;label  class=&quot;label&quot; for=&quot;email&quot;&gt;Email  
+              &lt;/label&gt;
+              &lt;input type=&quot;email&quot; placeholder=&quot;type email here here&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;input-holder&quot;&gt;
+              &lt;label for=&quot;pwd&quot;&gt;Password:&lt;/label&gt;
+             &lt;input type=&quot;password&quot; id=&quot;pwd&quot; name=&quot;pwd&quot;&gt;
+            &lt;/div&gt;
+               
+              </code></pre>
+          </div>
+
+          <div class="description-box mb-sm">
+            <h3>Example</h3>
+            <div class="text-description p-xs mb-sm">
+              <p>Simple input with icons</p>
+            </div>
+
+            <div class="component-container component-container-input">
+              <div class="search">
+                Search something
+                <i class="material-icons search-icon"> search </i>
+              </div>
+              <select class="input">
+                <option selected disabled>Select</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option disabled>XL</option>
+              </select>
+            </div>
+          </div>
+          <div class="code-snippets">
+            <pre><code class="html">&lt;div class=&quot;search&quot;&gt;
+                  Search something
+                  &lt;i class=&quot;material-icons search-icon&quot;&gt; 
+                    search  
+                  &lt;/i&gt;
+                &lt;/div&gt;
+    
+                &lt;select class=&quot;input&quot;&gt;
+                  &lt;option selected disabled&gt;Select&lt;/option&gt;
+                  &lt;option&gt;S&lt;/option&gt;
+                  &lt;option&gt;M&lt;/option&gt;
+                  &lt;option &gt;L&lt;/option&gt;
+                  &lt;option disabled &gt;XL&lt;/option&gt;
+              &lt;/select&gt;
+                  </code></pre>
+          </div>
+          <hr />
+
+          <!-- card section starts -->
+          <div class="card-section" id="card">
+            <div class="heading p-xs mb-sm">
+              <h2>Cards</h2>
+              <h5>cards are important part od many ecommerce websites</h5>
+              <p>Simple card/p></p>
             </div>
           </div>
 
-          <div class="card-container">
-            <img
-              class="card-image"
-              src="/assets/tshirt-image.jpg"
-              alt="T-shirt image"
-            />
+          <div class="component-container">
+            <div class="card-container one">
+              <img
+                class="card-image"
+                src="/assets/tshirt-image.jpg"
+                alt="T-shirt image"
+              />
 
-            <div class="card-details">
-              <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
-              <div class="card-rating-box">
-                <i class="material-icons star"> star star star star star </i>
-
+              <div class="card-details">
+                <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
                 <h5 class="card-price">$80.00</h5>
+              </div>
+            </div>
+
+            <div class="card-container one">
+              <img
+                class="card-image"
+                src="/assets/tshirt-image.jpg"
+                alt="T-shirt image"
+              />
+
+              <div class="card-details">
+                <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
+                <h5 class="card-price">$80.00</h5>
+                <button class="btn btn-card">View Product</button>
+              </div>
+            </div>
+
+            <div class="card-container">
+              <img
+                class="card-image"
+                src="/assets/tshirt-image.jpg"
+                alt="T-shirt image"
+              />
+
+              <div class="card-details">
+                <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
+                <div class="card-rating-box">
+                  <i class="material-icons star"> star star star star star </i>
+
+                  <h5 class="card-price">$80.00</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-container one">
+              <div class="card-overlay">Out of stock</div>
+              <img
+                class="card-image"
+                src="/assets/tshirt-image.jpg"
+                alt="T-shirt image"
+              />
+
+              <div class="card-details">
+                <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
+                <div class="card-rating-box">
+                  <i class="material-icons star"> star star star star star </i>
+
+                  <h5 class="card-price">$80.00</h5>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="card-container one">
-            <div class="card-overlay">Out of stock</div>
-            <img
-              class="card-image"
-              src="/assets/tshirt-image.jpg"
-              alt="T-shirt image"
-            />
-
-            <div class="card-details">
-              <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
-              <div class="card-rating-box">
-                <i class="material-icons star"> star star star star star </i>
-
-                <h5 class="card-price">$80.00</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="code-snippets">
-          <pre><code class="html"> 
+          <div class="code-snippets">
+            <pre><code class="html"> 
             &lt;div class=&quot;card-container one&quot;&gt;
             &lt;img
               class=&quot;card-image&quot;
@@ -791,69 +884,161 @@
               &lt;/div&gt;
             &lt;/div&gt;   
           </code></pre>
-        </div>
+          </div>
 
-        <!-- big card example -->
-        <div class="description-box mb-sm">
-          <h3>Example of main big card</h3>
-        </div>
+          <!-- big card example -->
+          <div class="description-box mb-sm">
+            <h3>Example of main big card</h3>
+          </div>
 
-        <div class="component-container big">
-          <div class="card-container big">
-            <div class="card-main-big">
-              <i class="material-icons icon-only"> favorite</i>
-              <img
-                class="card-image"
-                src="/assets/tshirt-image.jpg"
-                alt="T-shirt image"
-              />
+          <div class="component-container big">
+            <div class="card-container big">
+              <div class="card-main-big">
+                <i class="material-icons icon-only"> favorite</i>
+                <img
+                  class="card-image"
+                  src="/assets/tshirt-image.jpg"
+                  alt="T-shirt image"
+                />
+              </div>
+
+              <div class="card-details right-col">
+                <div class="prd-name">
+                  <h3 class="brand-name">Venum</h3>
+                  <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
+                </div>
+
+                <div class="card-price-box">
+                  <h5 class="card-price">$80.00</h5>
+                </div>
+
+                <div class="colors-holder">
+                  <div class="color black"></div>
+                  <div class="color red"></div>
+                  <div class="color green"></div>
+                </div>
+
+                <div class="size">
+                  <select class="input">
+                    <option selected disabled>Select</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option disabled>XL</option>
+                  </select>
+                </div>
+
+                <div class="action-btn">
+                  <button class="btn btn-icon btn-icon-favorite">
+                    <i class="material-icons"> favorite</i> Add to wishlist
+                  </button>
+
+                  <button class="btn btn-icon btn-icon-add-to-cart">
+                    <i class="material-icons">shopping_cart</i>Add to cart
+                  </button>
+
+                  <button class="btn btn-icon btn-icon-add-to-cart">
+                    <i class="material-icons">share</i>Share
+                  </button>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="code-snippets">
+            <pre><code class="html"> &lt;div class=&quot;card-details right-col&quot;&gt;
+            &lt;div class=&quot;prd-name&quot;&gt;
+              &lt;h3 class=&quot;brand-name&quot;&gt;Venum&lt;/h3&gt;
+              &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
+            &lt;/div&gt;
 
-            <div class="card-details right-col">
-              <div class="prd-name">
-                <h3 class="brand-name">Venum</h3>
-                <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
-              </div>
+            &lt;div class=&quot;card-rating-box&quot;&gt;
+              &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
+            &lt;/div&gt;
 
-              <div class="card-price-box">
-                <h5 class="card-price">$80.00</h5>
-              </div>
+            &lt;div class=&quot;colors-holder&quot;&gt;
+              &lt;div class=&quot;color black&quot;&gt;&lt;/div&gt;
+              &lt;div class=&quot;color red&quot;&gt;&lt;/div&gt;
+              &lt;div class=&quot;color green&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
 
-              <div class="colors-holder">
-                <div class="color black"></div>
-                <div class="color red"></div>
-                <div class="color green"></div>
-              </div>
+            &lt;div class=&quot;size&quot;&gt;
+              &lt;select class=&quot;input&quot;&gt;
+                &lt;option selected disabled&gt;Select&lt;/option&gt;
+                &lt;option&gt;S&lt;/option&gt;
+                &lt;option&gt;M&lt;/option&gt;
+                &lt;option&gt;L&lt;/option&gt;
+                &lt;option disabled&gt;XL&lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
 
-              <div class="size">
-                <select class="input">
-                  <option selected disabled>Select</option>
-                  <option>S</option>
-                  <option>M</option>
-                  <option>L</option>
-                  <option disabled>XL</option>
-                </select>
-              </div>
+            &lt;div class=&quot;action-btn&quot;&gt;
+              &lt;button class=&quot;btn btn-icon btn-icon-favorite&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt; favorite&lt;/i&gt; Move to wishlist
+              &lt;/button&gt;
 
-              <div class="action-btn">
-                <button class="btn btn-icon btn-icon-favorite">
-                  <i class="material-icons"> favorite</i> Add to wishlist
-                </button>
+              &lt;button class=&quot;btn btn-icon btn-icon-add-to-cart&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;shopping_cart&lt;/i&gt;Add to cart
+              &lt;/button&gt;
 
-                <button class="btn btn-icon btn-icon-add-to-cart">
-                  <i class="material-icons">shopping_cart</i>Add to cart
-                </button>
-
-                <button class="btn btn-icon btn-icon-add-to-cart">
-                  <i class="material-icons">share</i>Share
-                </button>
-              </div>
-            </div>
-
+              &lt;button class=&quot;btn btn-icon btn-icon-add-to-cart&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;Share
+              &lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+            
+              
+          </code></pre>
           </div>
         </div>
+        <hr />
+
+        <div id="image">
+          <div class="heading p-xs mb-sm">
+            <h2>Image</h2>
+            <h5>Small desc below heading</h5>
+          </div>
+
+          <div class="description-box mb-sm">
+            <h3>Example:full size <picture></picture></h3>
+            <div class="text-description p-xs mb-sm">
+              <p>Desc explaining example</p>
+            </div>
+          </div>
+
+          <div class="component-container component-container-image">
+            <img
+              class="full-image"
+              src="/assets/flying-kite.jpg"
+              alt=""
+              srcset=""
+            />
+          </div>
+
+          <div class="code-snippets">
+            <pre><code class="html">&lt;img class=&quot;full-image&quot; src=&quot;/assets/flying-kite.jpg&quot; alt=&quot;&quot; srcset=&quot;&quot;&gt;
+           </code></pre>
+          </div>
+        </div>
+
+        <div class="component-container component-container-image">
+          <img
+            class="round-image"
+            src="/assets/flying-kite.jpg"
+            alt=""
+            srcset=""
+          />
+        </div>
+
+        <div class="code-snippets">
+          <pre><code class="html">   &lt;img class=&quot;round-image&quot; src=&quot;/assets/flying-kite.jpg&quot; alt=&quot;&quot; srcset=&quot;&quot;&gt;
+          &lt;/div&gt;
+        
+            
+          </code></pre>
+        </div>
       </div>
-      <hr />
 
       <!-- text-utility starts here -->
 
@@ -1115,58 +1300,10 @@
             <div class="col-1">col 1</div>
             <div class="col-2">col 2</div>
             <div class="col-3">col 3</div>
-
           </div>
         </div>
 
         <div class="code-snippets">
-
-          <pre><code class="html"> &lt;div class=&quot;card-details right-col&quot;&gt;
-            &lt;div class=&quot;prd-name&quot;&gt;
-              &lt;h3 class=&quot;brand-name&quot;&gt;Venum&lt;/h3&gt;
-              &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
-            &lt;/div&gt;
-
-            &lt;div class=&quot;card-rating-box&quot;&gt;
-              &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
-            &lt;/div&gt;
-
-            &lt;div class=&quot;colors-holder&quot;&gt;
-              &lt;div class=&quot;color black&quot;&gt;&lt;/div&gt;
-              &lt;div class=&quot;color red&quot;&gt;&lt;/div&gt;
-              &lt;div class=&quot;color green&quot;&gt;&lt;/div&gt;
-            &lt;/div&gt;
-
-            &lt;div class=&quot;size&quot;&gt;
-              &lt;select class=&quot;input&quot;&gt;
-                &lt;option selected disabled&gt;Select&lt;/option&gt;
-                &lt;option&gt;S&lt;/option&gt;
-                &lt;option&gt;M&lt;/option&gt;
-                &lt;option&gt;L&lt;/option&gt;
-                &lt;option disabled&gt;XL&lt;/option&gt;
-              &lt;/select&gt;
-            &lt;/div&gt;
-
-            &lt;div class=&quot;action-btn&quot;&gt;
-              &lt;button class=&quot;btn btn-icon btn-icon-favorite&quot;&gt;
-                &lt;i class=&quot;material-icons&quot;&gt; favorite&lt;/i&gt; Move to wishlist
-              &lt;/button&gt;
-
-              &lt;button class=&quot;btn btn-icon btn-icon-add-to-cart&quot;&gt;
-                &lt;i class=&quot;material-icons&quot;&gt;shopping_cart&lt;/i&gt;Add to cart
-              &lt;/button&gt;
-
-              &lt;button class=&quot;btn btn-icon btn-icon-add-to-cart&quot;&gt;
-                &lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;Share
-              &lt;/button&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-            
-              
-          </code></pre>
-
           <pre><code class="html">
             &lt;div class=&quot;grid-three-col&quot;&gt;
             &lt;div class=&quot;col-1&quot;&gt;col 1&lt;/div&gt;
@@ -1175,18 +1312,15 @@
           &lt;/div&gt;
 
         </code></pre>
-
-
-
         </div>
       </div>
     </main>
     <hr />
 
-
     <footer>
       <div class="footer-items">
         <h4>made by anand kumar</h4>
+
         <ul class="footer-icon-holder list-style-none">
 
           <li class="footer-links">
