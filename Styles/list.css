@@ -1,0 +1,43 @@
+.list-container{
+    background-color:var(--list-bg) ;
+    line-height: 1.6rem;
+    padding: 0.5rem 2.5rem;
+    margin: 0.5rem 1rem;
+}
+
+
+.list-style-alpha{
+    list-style-type: lower-alpha;
+}
+
+
+.list-style-circle{
+    
+    list-style-type: disc;
+}
+
+.list-style-square{
+    list-style-type: square;
+  
+}
+
+.list-style-none{
+    list-style: none;
+    display: inline-block;
+}
+
+.list-stacked{
+    list-style: none;
+    
+}
+
+.list-spaced{
+    background: none;
+}
+
+.list-spaced >.spaced{
+    background-color: var(--list-bg) ;
+    padding: 0.5rem 1rem;
+    list-style: none;
+    margin-bottom: 0.5rem;
+}

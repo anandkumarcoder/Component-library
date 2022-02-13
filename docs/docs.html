@@ -16,7 +16,6 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
 
-
     <link rel="stylesheet" href="docs.css" />
   </head>
   <body>
@@ -24,6 +23,7 @@
       <nav class="nav-bar p-xs m-xs">
         <div class="logo">
           <i class="fa fa-rocket text-xl"></i>
+
           <h2 class="fw-600">Falcon UI</h2>
         </div>
 
@@ -38,7 +38,7 @@
 
     <aside>
       <h2 class="text-md p-xs">Components</h2>
-      <ul class="m-sm">
+      <ul class="m-sm list-style-none">
         <li class="p-xs"><a href="#avatar">Avatar</a></li>
         <li class="p-xs"><a href="#alert-section">Alert</a></li>
         <li class="p-xs"><a href="#badge">Badge</a></li>
@@ -67,28 +67,26 @@
         </div>
 
         <div class="component-container component-container-avatar">
-          
-
           <img
-            class=" avatar avatar-lg"
+            class="avatar avatar-lg"
             src="/assets/image-avatar.png"
             alt="avatar-img"
           />
 
           <img
-            class=" avatar avatar-sm"
+            class="avatar avatar-sm"
             src="/assets/image-avatar.png"
             alt="avatar-img"
           />
 
           <img
-            class=" avatar avatar-xs"
+            class="avatar avatar-xs"
             src="/assets/image-avatar.png"
             alt="avatar-img"
           />
 
           <img
-            class=" avatar avatar-xxs"
+            class="avatar avatar-xxs"
             src="/assets/image-avatar.png"
             alt="avatar-img"
           />
@@ -114,8 +112,6 @@
         </div>
 
         <div class="component-container component-container-avatar">
-          
-
           <img
             class="avatar-square avatar-lg"
             src="/assets/image-avatar.png"
@@ -178,7 +174,8 @@
         <div class="text-description">
           <h3>Example of avatar with square border and text</h3>
         </div>
-        <div class="component-container component-container-avatar"><div class="avatar avatar-square avatar-lg">AK</div>
+        <div class="component-container component-container-avatar">
+          <div class="avatar avatar-square avatar-lg">AK</div>
           <div class="avatar avatar-square avatar-sm">AK</div>
           <div class="avatar avatar-square avatar-xs">AK</div>
           <div class="avatar avatar-square avatar-xxs">AK</div>
@@ -352,6 +349,7 @@
           </code></pre>
         </div>
       </div>
+
       <hr />
 
       <div id="badge">
@@ -448,24 +446,39 @@
           </div>
 
           <div class="component-container component-container-badge">
-            
             <div class="avatar avatar-lg">
-              <img  class="avatar avatar-lg"src="/assets/image-avatar.png" alt="avatar-img" />
+              <img
+                class="avatar avatar-lg"
+                src="/assets/image-avatar.png"
+                alt="avatar-img"
+              />
               <div class="status online"></div>
             </div>
 
             <div class="avatar avatar-sm">
-              <img class="avatar avatar-sm" src="/assets/image-avatar.png" alt="avatar-img" />
+              <img
+                class="avatar avatar-sm"
+                src="/assets/image-avatar.png"
+                alt="avatar-img"
+              />
               <div class="status online"></div>
             </div>
 
             <div class="avatar avatar-xs">
-              <img  class="avatar avatar-xs" src="/assets/image-avatar.png" alt="avatar-img" />
+              <img
+                class="avatar avatar-xs"
+                src="/assets/image-avatar.png"
+                alt="avatar-img"
+              />
               <div class="status offline"></div>
             </div>
 
             <div class="avatar avatar-xxs">
-              <img  class="avatar avatar-xxs" src="/assets/image-avatar.png" alt="avatar-img" />
+              <img
+                class="avatar avatar-xxs"
+                src="/assets/image-avatar.png"
+                alt="avatar-img"
+              />
               <div class="status offline"></div>
             </div>
           </div>
@@ -842,6 +855,225 @@
       </div>
       <hr />
 
+      <!-- text-utility starts here -->
+
+      <div id="text-utilis">
+        <div class="heading p-xs mb-sm">
+          <h2>Text Utilities</h2>
+          <h5>There are various text utility classes.</h5>
+        </div>
+
+        <div class="description-box mb-sm">
+          <h3>Example: Headings</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>
+              From h1 to h5, there are 5 heading text with 5 different sizes.
+              Just add class h1 to h5 in to any h tag to use the below
+            </p>
+          </div>
+
+          <div class="component-container component-container-text-utility">
+            <h1 class="h1">This is Heading h1</h1>
+            <h2 class="h2">This is Heading h2</h2>
+            <h3 class="h3">This is Heading h3</h3>
+            <h4 class="h4">This is Heading h4</h4>
+            <h5 class="h5">This is Heading h5</h5>
+          </div>
+        </div>
+      </div>
+      <div class="code-snippets">
+        <pre><code class="html"> &lt;h1 class=&quot;h1&quot;&gt;This is Heading 1&lt;/h1&gt;
+          &lt;h2 class=&quot;h2&quot;&gt;This is Heading 2&lt;/h2&gt;
+          &lt;h3 class=&quot;h3&quot;&gt;This is Heading 3&lt;/h3&gt;
+          &lt;h4 class=&quot;h4&quot;&gt;This is Heading 4&lt;/h4&gt;
+          &lt;h5 class=&quot;h5&quot;&gt;This is Heading 5&lt;/h5&gt;
+              
+            </code></pre>
+      </div>
+
+      <div class="description-box mb-sm">
+        <h3>Example:Text alignment</h3>
+        <div class="text-description p-xs mb-sm">
+          <p>Text can start from left center and right side</p>
+        </div>
+
+        <div
+          class="component-container component-container-text-utility text-alignment"
+        >
+          <p class="ta-start">This text on the left side</p>
+          <p class="ta-center">This text on the center side</p>
+          <p class="ta-end">This text on the right side</p>
+          <p class="ta-justify">This text is justify</p>
+        </div>
+      </div>
+
+      <div class="code-snippets">
+        <pre><code class="html">&lt;p class=&quot;ta-start&quot;&gt;This text on the left side&lt;/p&gt;
+          &lt;p class=&quot;ta-center&quot;&gt; This text on the center side&lt;/p&gt;
+          &lt;p class=&quot;ta-end&quot;&gt;This text on the right side&lt;/p&gt;
+          &lt;p class=&quot;ta-justify&quot;&gt;This text is justify &lt;/p&gt;
+        </code></pre>
+      </div>
+
+      <div class="description-box mb-sm">
+        <h3>Example:Grey Text</h3>
+        <div class="text-description p-xs mb-sm">
+          <p>
+            Text in grey color used to denote less important or not availability
+          </p>
+        </div>
+
+        <div class="component-container component-container-list">
+          <p class="txt-grey">
+            Lorem ipsum is placeholder text commonly used in the graphic, print,
+            and publishing industries for previewing layouts and visual mockups.
+          </p>
+        </div>
+      </div>
+      <div class="code-snippets">
+        <pre><code class="html">&lt;p class=&quot;txt-grey&quot;&gt;
+          Lorem ipsum is placeholder text commonly used in the graphic, print,
+          and publishing industries for previewing layouts and visual mockups.
+        &lt;/p&gt;  
+        </code></pre>
+      </div>
+
+      <hr />
+
+      <!-- list section starts heere -->
+
+      <div id="text-utilis">
+        <div class="heading p-xs mb-sm">
+          <h2>List</h2>
+          <h5>
+            Lists are used to arrange items together and present information
+            using numbered text or bullets.
+          </h5>
+        </div>
+
+        <div class="description-box mb-sm">
+          <h3>Example:Normal list</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>
+              Normal lists can be used to present information items together, as
+              numbered (ordered) or not-numbered (unordered).
+            </p>
+          </div>
+
+          <div class="component-container component-container-list">
+            <ol class="list-container">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 1</li>
+            </ol>
+
+            <ol class="list-container">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 1</li>
+            </ol>
+
+            <ol class="list-container list-style-circle">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 1</li>
+            </ol>
+
+            <ol class="list-container list-style-square">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 1</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="code-snippets">
+        <pre><code class="html">
+          &lt;ol class=&quot;list-container&quot;&gt;
+          &lt;li&gt;Item 1&lt;/li&gt;
+          &lt;li&gt;Item 2&lt;/li&gt;
+          &lt;li&gt;Item 3&lt;/li&gt;
+          &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;/ol&gt;
+
+        &lt;ol class=&quot;list-container list-style-alpha&quot;&gt;
+          &lt;li&gt;Item 1&lt;/li&gt;
+          &lt;li&gt;Item 2&lt;/li&gt;
+          &lt;li&gt;Item 3&lt;/li&gt;
+          &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;/ol&gt;
+
+        &lt;ol class=&quot;list-container list-style-circle&quot;&gt;
+          &lt;li&gt;Item 1&lt;/li&gt;
+          &lt;li&gt;Item 2&lt;/li&gt;
+          &lt;li&gt;Item 3&lt;/li&gt;
+          &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;/ol&gt;
+
+        &lt;ol class=&quot;list-container list-style-square&quot;&gt;
+          &lt;li&gt;Item 1&lt;/li&gt;
+          &lt;li&gt;Item 2&lt;/li&gt;
+          &lt;li&gt;Item 3&lt;/li&gt;
+          &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/div&gt; 
+              
+            </code></pre>
+      </div>
+
+      <div class="description-box mb-sm">
+        <h3>Example:Stacked list</h3>
+        <p>Add list-stacked to ul tag.</p>
+      </div>
+
+      <div class="component-container component-container-list">
+        <ul class="list-container list-stacked">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+      </div>
+
+      <div class="code-snippets">
+        <pre><code class="html">&lt;ul class=&quot;list-container list-stacked&quot;&gt;
+          &lt;li&gt;Item 1&lt;/li&gt;
+          &lt;li&gt;Item 2&lt;/li&gt;
+          &lt;li&gt;Item 3&lt;/li&gt;
+          &lt;li&gt;Item 4&lt;/li&gt;
+        &lt;/ul&gt;
+            </code></pre>
+      </div>
+      <div class="description-box mb-sm">
+        <h3>Example:Spaced list</h3>
+        <div class="text-description p-xs mb-sm">
+          <p>Add list-spaced to ul tag and spaced to li tag</p>
+        </div>
+
+        <div class="component-container component-container-list">
+          <ul class="list-container list-spaced">
+            <li class="spaced">Item 1</li>
+            <li class="spaced">Item 2</li>
+            <li class="spaced">Item 3</li>
+            <li class="spaced">Item 4</li>
+          </ul>
+        </div>
+      </div>
+      <div class="code-snippets">
+        <pre><code class="html"> &lt;ul class=&quot;list-container list-spaced&quot;&gt;
+                   &lt;li class=&quot;spaced&quot;&gt;Item 1&lt;/li&gt;
+          &lt;li class=&quot;spaced&quot;&gt;Item 2&lt;/li&gt;
+          &lt;li class=&quot;spaced&quot;&gt;Item 3&lt;/li&gt;
+          &lt;li class=&quot;spaced&quot;&gt;Item 4&lt;/li&gt;
+        &lt;/ul&gt;
+        </code></pre>
+      </div>
+      <hr />
+
       <!-- grid section starts here -->
       <div id="grid">
         <div class="heading p-xs mb-sm">
@@ -870,7 +1102,6 @@
             &lt;/div&gt;
             </code></pre>
         </div>
-
 
         <div class="description-box mb-sm">
           <h3>Example:Simple grid with three items</h3>
@@ -943,17 +1174,20 @@
             &lt;div class=&quot;col-3&quot;&gt;col 3&lt;/div&gt;
           &lt;/div&gt;
 
+        </code></pre>
+
+
+
         </div>
       </div>
-
-      <hr />
     </main>
+    <hr />
 
 
     <footer>
       <div class="footer-items">
-      <h4>made by anand kumar</h4>
-      <ul>
+        <h4>made by anand kumar</h4>
+        <ul class="footer-icon-holder list-style-none">
 
           <li class="footer-links">
             <a href="#"><i class="fa fa-github text-lg mr-sm"></i></a>
