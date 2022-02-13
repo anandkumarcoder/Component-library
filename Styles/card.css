@@ -1,0 +1,168 @@
+.card-container {
+  width: 40%;
+  margin: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 1rem;
+  align-items: center;
+  border-radius: 2rem;
+  border: 3px solid grey;
+  position: relative;
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--txt-color-secondary);
+}
+
+.card-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: var(--font-bolder);
+  padding: 1rem auto;
+  width: 100%;
+  text-align: center;
+}
+
+.card-price {
+  font-size: 1rem;
+  font-weight: var(--font-semi-bold);
+  display: inline-block;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.btn-card {
+  background-color: #000000;
+}
+
+.card-rating-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.star {
+  font-size: 1.2rem;
+}
+
+/* main big card */
+
+.big {
+  padding: 0.3rem auto;
+  gap: 2rem;
+  width: 100%;
+  height: 50%;
+  flex-direction: row;
+}
+.card-main-big > .card-image {
+  width: 100%;
+  object-fit: contain;
+  height: auto;
+}
+
+.right-col {
+  width: 50%;
+}
+
+.card-main-big {
+  position: relative;
+  width: 100%;
+}
+
+.card-main-big > .icon-only {
+  position: absolute;
+  right: 0;
+  font-size: 3.5rem;
+  color: #b3b3b3;
+}
+
+.card-main-big > .icon-only:hover {
+  color: #333333;
+}
+
+.prd-name {
+  margin-top: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.prd-name > .card-title {
+  font-size: 1.2rem;
+  display: block;
+  width: 100%;
+  padding: 1rem auto;
+  margin-top: 0.5rem;
+}
+.card-price-box > .card-price {
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
+
+.colors-holder {
+  margin: 1.5rem;
+  display: flex;
+  gap: 1rem;
+
+}
+
+.color {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.red {
+  background-color: #ad1f1f;
+}
+.black {
+  background: black;
+}
+
+.green {
+  background: #008000be;
+}
+
+.size {
+  margin: 1rem;
+}
+
+.input {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  font-weight: var(--font-semi-bold);
+}
+
+.action-btn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  /* flex-wrap: wrap; */
+}
+
+.action-btn > .btn {
+  background: black;
+  color: white;
+}

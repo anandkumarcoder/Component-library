@@ -5,10 +5,10 @@
 @import "/Styles/variable.css";
 @import "/Styles/button.css";
 @import "/Styles/navbar.css";
+@import "/Styles/card.css";
 @import "/Styles/simple-grid.css";
 @import "/Styles/badge.css";
 @import "/Styles/avatar.css";
-
 /****** */
 
 /* importing fonts */
@@ -139,6 +139,7 @@ pre {
   overflow: auto;
   white-space: pre-line;
   background-color: #e5e7eb;
+  max-height: 30vh;
 }
 .hljs-tag,
 .hljs-name,
