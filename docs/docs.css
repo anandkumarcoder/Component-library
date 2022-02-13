@@ -5,10 +5,14 @@
 @import "/Styles/variable.css";
 @import "/Styles/button.css";
 @import "/Styles/navbar.css";
+
 @import "/Styles/input.css";
 @import "/Styles/image.css";
-@import "/Styles/simple-grid.css";;
+@import "/Styles/simple-grid.css";
 @import "/Styles/badge.css";
+@import "/Styles/card.css";
+@import "/Styles/avatar.css";
+
 /****** */
 
 /* importing fonts */
@@ -122,7 +126,7 @@ p {
   justify-content: center;
 }
 .component-container-avatar {
-  justify-content: space-between;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -144,6 +148,7 @@ pre {
   overflow: auto;
   white-space: pre-line;
   background-color: #e5e7eb;
+  max-height: 30vh;
 }
 .hljs-tag,
 .hljs-name,
@@ -160,19 +165,21 @@ pre {
 
 footer {
   grid-area: footer;
-  text-align: center;
+ 
   color: var(--primary-font-color);
+  
 }
 
-footer h4 {
-  display: inline;
-  margin: 1em auto;
-  text-align: center;
-}
+
 
 .footer-items {
   display: flex;
   justify-content: center;
+}
+
+.footer-items > h4 {
+  margin: 1em auto;
+  text-align: center;
 }
 
 .fa {
