@@ -649,6 +649,7 @@
       </div>
 
       <hr />
+      <!-- --------------- -->
       <!-- --------Input section starts----- -->
 
       <div class="input-section" id="input">
@@ -753,13 +754,13 @@
 
             <div class="heading p-xs mb-sm">
               <h2>Cards</h2>
-              <h5>cards are important part of many ecommerce websites</h5>
-              <p>Simple card/p></p>
+              <h5>Example:Simple Vertical card</h5>
+              <!-- <p>Example:Simple card</p> -->
             </div>
          
-          <!-- simple first card -->
+          <!-- simple vertical card -->
 
-          <div class="component-container">
+          <div class="component-container component-container-card">
             <div class="card-container one">
               <img
                 class="card-image"
@@ -770,33 +771,84 @@
               <div class="card-details">
                 <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
                 <h5 class="card-price">$80.00</h5>
+                <button class="btn btn-card">Add to cart</button>
               </div>
             </div>
           </div>
+          <div class="code-snippets">
+            <pre><code class="html">&lt;div class=&quot;card-container one&quot;&gt;
+              &lt;img
+                class=&quot;card-image&quot;
+                src=&quot;/assets/tshirt-image.jpg&quot;
+                alt=&quot;T-shirt image&quot;
+              /&gt;
 
-          <!-- card with button -->
-          <div class="component-container">
-
-            <div class="card-container one">
-              <img
-                class="card-image"
-                src="/assets/tshirt-image.jpg"
-                alt="T-shirt image"
-              />
-
-              <div class="card-details">
-                <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
-                <h5 class="card-price">$80.00</h5>
-                <button class="btn btn-card">View Product</button>
-              </div>
-            </div>
+              &lt;div class=&quot;card-details&quot;&gt;
+                &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
+                &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+                  
+                </code></pre>
           </div>
-          <!-- card with star ratings -->
+    
 
-          <div class="component-container">
+          <!-- card with dismiss button -->
+          <div class="description-box mb-sm">
+            <h3>Example:Card with dismiss button</h3>
+            <div class="text-description p-xs mb-sm">
+              <p>Copy the below code to use it</p>
+            </div>
+
+          <div class="component-container component-container-card ">
 
             <div class="card-container">
               <img
+                class="card-image image-with-dismiss"
+                src="/assets/tshirt-image.jpg"
+                alt="T-shirt image"
+              /> <i class="material-icons card-close-btn">
+                close
+              </i>
+
+              <div class="card-details">
+                <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
+                <h5 class="card-price">$80.00</h5>
+                <button class="btn btn-card">Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="code-snippets">
+          <pre><code class="html">&lt;div class=&quot;card-container&quot;&gt;
+            &lt;img
+              class=&quot;card-image image-with-dismiss&quot;
+              src=&quot;/assets/tshirt-image.jpg&quot;
+              alt=&quot;T-shirt image&quot;
+            /&gt; &lt;i class=&quot;material-icons card-close-btn&quot;&gt;
+              close
+            &lt;/i&gt;
+
+            &lt;div class=&quot;card-details&quot;&gt;
+              &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
+              &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
+              &lt;button class=&quot;btn btn-card&quot;&gt;Add to cart&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+             </code></pre>
+          </div>
+
+          <!-- card with star ratings -->
+          <div class="description-box mb-sm">
+            <h3>Example:Card with shadow</h3>
+            <div class="text-description p-xs mb-sm">
+              <p>Copy the below code to use it</p>
+            </div>
+
+          <div class="component-container component-container-card">
+
+            <div class="card-container card-shadow">
+              <img
                 class="card-image"
                 src="/assets/tshirt-image.jpg"
                 alt="T-shirt image"
@@ -804,18 +856,35 @@
 
               <div class="card-details">
                 <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
-                <div class="card-rating-box">
-                  <i class="material-icons star"> star star star star star </i>
-
-                  <h5 class="card-price">$80.00</h5>
-                </div>
+                <h5 class="card-price">$80.00</h5>
+                <button class="btn btn-card">Add to cart</button>
               </div>
             </div>
           </div>
 
+          <div class="code-snippets">
+            <pre><code class="html">&lt;div class=&quot;card-container card-shadow&quot;&gt;
+                &lt;img
+                  class=&quot;card-image&quot;
+                  src=&quot;/assets/tshirt-image.jpg&quot;
+                  alt=&quot;T-shirt image&quot;
+                /&gt;
+  
+                &lt;div class=&quot;card-details&quot;&gt;
+                  &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
+                  &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
+                  &lt;button class=&quot;btn btn-card&quot;&gt;Add to cart&lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              
+               
+                </code></pre>
+          </div>
+    
+
           <!-- card with overlay text -->
 
-          <div class="component-container">
+          <div class="component-container component-container-card">
 
             <div class="card-container one">
               <div class="card-overlay">Out of stock</div>
@@ -835,6 +904,29 @@
               </div>
             </div>
           </div>
+
+          <div class="code-snippets">
+            <pre><code class="html">  &lt;div class=&quot;card-overlay&quot;&gt;Out of stock&lt;/div&gt;
+              &lt;img
+                class=&quot;card-image&quot;
+                src=&quot;/assets/tshirt-image.jpg&quot;
+                alt=&quot;T-shirt image&quot;
+              /&gt;
+
+              &lt;div class=&quot;card-details&quot;&gt;
+                &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
+                &lt;div class=&quot;card-rating-box&quot;&gt;
+                  &lt;i class=&quot;material-icons star&quot;&gt; star star star star star &lt;/i&gt;
+
+                  &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+              
+                  
+                </code></pre>
+          </div>
+    
           
           
 

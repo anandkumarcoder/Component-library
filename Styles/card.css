@@ -220,3 +220,18 @@
   color: var(--txt-color-secondary);
   margin-top: 1rem;
 }
+.card-close-btn{
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  color: var(--icon-colors);
+
+}
+
+.image-with-dismiss{
+  padding-top: 2.3rem;
+}
+
+.card-shadow{
+  box-shadow:15px 20px 50px 10px;
+}

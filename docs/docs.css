@@ -109,6 +109,11 @@ p {
   align-items: center;
 }
 
+.component-container-card{
+  justify-content: center;
+
+}
+
 .text-alignment {
   display: block;
 }
