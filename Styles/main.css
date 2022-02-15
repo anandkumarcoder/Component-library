@@ -1,0 +1,17 @@
+/* --importing component css */
+@import "/Styles/lenght.css";
+@import "/Styles/typography.css";
+@import "/Styles/alert.css";
+@import "/Styles/variable.css";
+@import "/Styles/button.css";
+@import "/Styles/navbar.css";
+@import "/Styles/list.css";
+@import "/Styles/card.css";
+@import "/Styles/simple-grid.css";
+@import "/Styles/badge.css";
+@import "/Styles/card.css";
+@import "/Styles/avatar.css";
+@import "/Styles/image.css";
+@import "/Styles/input.css";
+
+/* -------- */

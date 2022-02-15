@@ -1,6 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap"); */
-@import "/Styles/avatar.css";
-
 .icon-btn {
   position: relative;
   display: flex;
@@ -15,13 +12,13 @@
 
 .icon-btn-badge {
   position: absolute;
-  background-color: #ff0000c7;
+  background-color: var(--badge-bg);
   top: -0.1rem;
   right: 0.5rem;
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  color: #ffffff;
+  color: var(--txt-color-secondary);
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -46,9 +43,8 @@
 }
 
 .btn-box-badge {
-  /* background-color: #ff0000c7; */
-  border: 1px solid #ffffff;
-  color: #ffffff;
+  border: 1px solid var(--txt-color-secondary);
+  color: var(--txt-color-secondary);
   vertical-align: middle;
   border-radius: 45%;
   padding: 0.2rem 0.5rem;
@@ -78,11 +74,11 @@
 }
 
 .online {
-  background-color: #008000;
-  border: 5px solid #008000;
+  background-color: var(--online-badge);
+  border: 5px solid var(--online-badge);
 }
 
 .offline {
-  background-color: #cccccc;
-  border: 5px solid #cccccc;
+  background-color: var(--offline-badge);
+  border: 5px solid var(--offline-badge);
 }
