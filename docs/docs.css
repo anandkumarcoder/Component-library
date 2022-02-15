@@ -114,6 +114,10 @@ p {
 
 }
 
+.component-container-navigation{
+  justify-content: center;
+}
+
 .text-alignment {
   display: block;
 }
@@ -192,6 +196,8 @@ footer {
 .fa {
   color: var(--primary-font-color);
 }
+
+
 
 
 
