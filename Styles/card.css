@@ -95,14 +95,11 @@
 .card-main-big {
   position: relative;
   max-width: 40%;
-  
 }
 
 .card-main-big > .card-image {
-  
   object-fit: contain;
   width: 100%;
-  /* aspect-ratio: 1/2; */
 }
 
 .card-main-big > .icon-only {
@@ -111,7 +108,6 @@
   top: 5px;
   font-size: 1.4rem;
 }
-
 
 .card-main-big > .icon-only:hover {
   color: var(--dark);
@@ -199,9 +195,7 @@
 .action-btn > .btn{
   justify-content: left;
   font-size: 0.8rem;
-  padding: 0.5rem;
-
- 
+  padding: 0.5rem; 
 }
 
 .action-btn > button .material-icons{
