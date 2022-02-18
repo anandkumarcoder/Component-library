@@ -38,7 +38,7 @@
 
     <aside>
       <h2 class="text-md p-xs">Components</h2>
-      <ul class="m-sm list-style-none">
+      <ul class=" component-list m-sm list-style-none">
         <li class="p-xs"><a href="#avatar">Avatar</a></li>
         <li class="p-xs"><a href="#alert-section">Alert</a></li>
         <li class="p-xs"><a href="#badge">Badge</a></li>
@@ -985,29 +985,14 @@
 
           <div class="component-container component-container-list">
             <div class="card-container card-text">
-              <h2 class="price-details-header">Price details</h2>
-
-              <div class="price-details">
-                <div class="price-box">
-                  <p class="checkout-text">Price</p>
-                  <p class="checkout-text">$80</p>
-                </div>
-
-                <div class="discount-box">
-                  <p class="checkout-text">Discount</p>
-                  <p class="checkout-text">$0</p>
-                </div>
-
-                <div class="delivery-box">
-                  <p class="checkout-text">Delivery</p>
-                  <p class="checkout-text">$100</p>
-                </div>
-                <div class="total-amount-box">
-                  <p class="checkout-text">Total</p>
-                  <p class="checkout-text">$180</p>
-                </div>
-                <div>
-                  <button class="btn btn-icon place-order">Place order</button>
+              <h2 class="price-details-header fw-700">Price details</h2>
+              <ul class="price-details">
+                <li class="checkout-text">Price <span>$80</span></li>
+                <li class="checkout-text">Discount <span>$0</span></li>
+                <li class="checkout-text">Shipping <span>$20</span></li>
+                <li class="checkout-text fw-700">Total <span>$100</span></li>
+              </ul>
+               <button class="btn btn-icon place-order">Place order</button>
                 </div>
               </div>
             </div>
@@ -1015,41 +1000,19 @@
 
          <!-- card with text code snippets -->
           <div class="code-snippets">
-            <pre><code class="html">
-              &lt;div class=&quot;card-container card-text&quot;&gt;
-              
-              &lt;h2 class=&quot;price-details-header&quot;&gt;Price details&lt;/h2&gt;
-
-              &lt;div class=&quot;price-details&quot;&gt;
-                &lt;div class=&quot;price-box&quot;&gt;
-                  &lt;p class=&quot;checkout-text&quot;&gt;Price&lt;/p&gt;
-                  &lt;p class=&quot;checkout-text&quot;&gt;$80&lt;/p&gt;
-                &lt;/div&gt;
-
-                &lt;div class=&quot;discount-box&quot;&gt;
-                  &lt;p class=&quot;checkout-text&quot;&gt;Discount&lt;/p&gt;
-                  &lt;p class=&quot;checkout-text&quot;&gt;$0&lt;/p&gt;
-                &lt;/div&gt;
-
-                &lt;div class=&quot;delivery-box&quot;&gt;
-                  &lt;p class=&quot;checkout-text&quot;&gt;Delivery&lt;/p&gt;
-                  &lt;p class=&quot;checkout-text&quot;&gt;$100&lt;/p&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;total-amount-box&quot;&gt;
-                  &lt;p class=&quot;checkout-text&quot;&gt;Total&lt;/p&gt;
-                  &lt;p class=&quot;checkout-text&quot;&gt;$180&lt;/p&gt;
-                &lt;/div&gt;
-                &lt;div&gt;
-                  &lt;button class=&quot;btn btn-icon place-order&quot;&gt;Place order&lt;/button&gt;
+            <pre><code class="html">&lt;div class=&quot;card-container card-text&quot;&gt;
+              &lt;h2 class=&quot;price-details-header fw-700&quot;&gt;Price details&lt;/h2&gt;
+              &lt;ul class=&quot;price-details&quot;&gt;
+                &lt;li class=&quot;checkout-text&quot;&gt;Price &lt;span&gt;$80&lt;/span&gt;&lt;/li&gt;
+                &lt;li class=&quot;checkout-text&quot;&gt;Discount &lt;span&gt;$0&lt;/span&gt;&lt;/li&gt;
+                &lt;li class=&quot;checkout-text&quot;&gt;Shipping &lt;span&gt;$20&lt;/span&gt;&lt;/li&gt;
+                &lt;li class=&quot;checkout-text fw-700&quot;&gt;Total &lt;span&gt;$100&lt;/span&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+               &lt;button class=&quot;btn btn-icon place-order&quot;&gt;Place order&lt;/button&gt;
                 &lt;/div&gt;
               &lt;/div&gt;
-
-
-              
             &lt;/div&gt;
-          &lt;/div&gt;
-              
-                  
+             
                 </code></pre>
           </div>
 

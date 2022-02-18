@@ -48,7 +48,7 @@ aside > ul {
   font-size: 1.3rem;
 }
 
-ul > li:hover {
+.component-list > li:hover {
   background-color: #fee2e2;
   cursor: pointer;
 }
