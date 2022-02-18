@@ -86,36 +86,39 @@
 .horizontal {
   padding: 0.3rem auto;
   gap: 2rem;
-  width: 100%;
-  height: 50%;
+  width: 40rem;
   flex-direction: row;
   align-items: flex-start;
   color: var(--dark);
 }
-.card-main-big > .card-image {
-  width: 100%;
-  object-fit: contain;
-}
-
-.right-col {
-  width: 90%;
-}
 
 .card-main-big {
   position: relative;
+  max-width: 40%;
+}
+
+.card-main-big > .card-image {
+  object-fit: contain;
   width: 100%;
 }
 
 .card-main-big > .icon-only {
   position: absolute;
-  right: 0;
+  right: -15px;
   top: 5px;
-  font-size: 2.5rem;
+  font-size: 1.4rem;
 }
 
 .card-main-big > .icon-only:hover {
   color: var(--dark);
 }
+/* ---- */
+
+.right-col {
+  width: 45%;
+  margin-top: 0;
+}
+
 
 .prd-name {
   margin-top: 0rem;
@@ -127,29 +130,37 @@
 
 .brand-name {
   padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+    color:var(--light-grey);
 }
 .prd-name > .card-title {
-  font-size: 1.2rem;
-  display: block;
-  width: 100%;
-  padding: 1rem auto;
-  margin: 0.5rem 0;
+  font-size: 1rem;
+  display:inline-block;
+  padding: 0.5rem auto;
+  margin-bottom: 0.5rem;
+  font-weight: var(--font-medium);
+}
+
+.card-price-box{
+  display: inline-block;
+  margin-top:-0.5rem ;
 }
 .card-price-box > .card-price {
-  font-size: 1.3rem;
+  font-size: 1rem;
   padding: 0.5rem;
 }
 
 .price-cancelled {
   text-decoration: line-through;
   color: var(--cancelled-price);
-  line-height: 2rem;
+  font-size: 0.9rem;
+
 }
 
 .action-btn {
   display: flex;
-  flex-direction: column;
-  margin-top: 1rem;
+  flex-wrap: nowrap;
+  margin-top: 0.5rem;
 }
 
 .delete-btn-card {
@@ -161,15 +172,41 @@
 .quantity {
   display: flex;
   justify-content: center;
-  padding: 1rem 1rem;
+  padding: 0.5rem;
   align-items: center;
   margin: 0 auto;
+}
+.quantity > i {
+  font-size: 1.5rem;
 }
 
 .input-qty {
   display: inline;
-  font-size: 1rem;
+  font-size: 0.5rem;
   width: 10%;
+}
+
+
+.action-btn {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.action-btn > .btn{
+  justify-content: left;
+  font-size: 0.8rem;
+  padding: 0.5rem; 
+}
+
+.action-btn > button .material-icons{
+  font-size: 1rem;
+  padding: 0;
+}
+
+.delete-btn-card {
+  background: var(--light);
+  color: var(--dark);
+  border: 1px solid;
 }
 
 /* card with text */
