@@ -36,6 +36,7 @@
       </nav>
     </header>
 
+
     <aside>
       <h2 class="text-md p-xs">Components</h2>
       <ul class=" component-list m-sm list-style-none">
@@ -50,6 +51,7 @@
         <li class="p-xs"><a href="#text-utils">Text Utilities</a></li>
         <li class="p-xs"><a href="#lists">Lists</a></li>
         <li class="p-xs"><a href="#grid">Grid</a></li>
+        <li class="p-xs"><a href="#form">Grid</a></li>
       </ul>
     </aside>
 
@@ -1495,6 +1497,209 @@
         </div>
      </div> 
 
+     <hr>
+
+     <div id="form">
+      <div class="heading p-xs mb-sm">
+        <h2>Form</h2>
+        
+      </div>
+
+      <div class="description-box mb-sm">
+      <h3>Example:Login form</h3>
+      <div class="text-description p-xs mb-sm">
+        <p>Sign up form onboarding a client</p>
+      </div>
+     </div>  
+
+
+      <div class="component-container component-container-form">
+        
+        <div class="wrapper">
+          <div class="login-header">Sign in</div>
+          <form action="#">
+            <div class="field email">
+              <div class="input-area">
+                <input
+                  type="text"
+                  class="email-input"
+                  placeholder="Email Address"
+                />
+                <span class="icon material-icons"> email </span>
+    
+                <span class="error error-icon material-icons"> error </span>
+              </div>
+              <div class="error error-text">Email cant be blank</div>
+            </div>
+    
+            <div class="field password">
+              <div class="input-area">
+                <input
+                  type="password"
+                  class="password-input"
+                  placeholder="password"
+                />
+                <span class="icon material-icons"> lock</span>
+    
+                <span class="error error-icon material-icons"> error </span>
+              </div>
+              <div class="error error-text">password cant be blank</div>
+            </div>
+    
+            <div class="pass-link"><a href="#">Forgot password?</a></div>
+    
+            <input type="submit" value="Login" />
+          </form>
+          <div class="signup-link">Not yet member? <a href="#">Signup Now</a></div>
+        </div>
+      </div> 
+   
+    <div class="code-snippets">
+      <pre><code class="html">&lt;div class=&quot;wrapper&quot;&gt;
+        &lt;div class=&quot;login-header&quot;&gt;Sign in&lt;/div&gt;
+        &lt;form action=&quot;#&quot;&gt;
+          &lt;div class=&quot;field email&quot;&gt;
+            &lt;div class=&quot;input-area&quot;&gt;
+              &lt;input
+                type=&quot;text&quot;
+                class=&quot;email-input&quot;
+                placeholder=&quot;Email Address&quot;
+              /&gt;
+              &lt;span class=&quot;icon material-icons&quot;&gt; email &lt;/span&gt;
+  
+              &lt;span class=&quot;error error-icon material-icons&quot;&gt; error &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;error error-text&quot;&gt;Email cant be blank&lt;/div&gt;
+          &lt;/div&gt;
+  
+          &lt;div class=&quot;field password&quot;&gt;
+            &lt;div class=&quot;input-area&quot;&gt;
+              &lt;input
+                type=&quot;password&quot;
+                class=&quot;password-input&quot;
+                placeholder=&quot;password&quot;
+              /&gt;
+              &lt;span class=&quot;icon material-icons&quot;&gt; lock&lt;/span&gt;
+  
+              &lt;span class=&quot;error error-icon material-icons&quot;&gt; error &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;error error-text&quot;&gt;password cant be blank&lt;/div&gt;
+          &lt;/div&gt;
+  
+          &lt;div class=&quot;pass-link&quot;&gt;&lt;a href=&quot;#&quot;&gt;Forgot password?&lt;/a&gt;&lt;/div&gt;
+  
+          &lt;input type=&quot;submit&quot; value=&quot;Login&quot; /&gt;
+        &lt;/form&gt;
+        &lt;div class=&quot;signup-link&quot;&gt;Not yet member? &lt;a href=&quot;#&quot;&gt;Signup Now&lt;/a&gt;&lt;/div&gt;
+      &lt;/div&gt;
+
+        
+            
+          </code></pre>
+    </div>
+    <div class="description-box mb-sm">
+      <h3>Example:Sign up form</h3>
+      <div class="text-description p-xs mb-sm">
+       
+      </div> 
+    </div>
+
+
+     <div class="component-container component-container-list">
+      <div class="wrapper">
+        <div class="login-header">Sign up</div>
+        <form action="#">
+          <div class="field email">
+            <div class="input-area">
+              <input
+                type="text"
+                class="email-input"
+                placeholder="Email Address"
+              />
+              <span class="icon material-icons"> email </span>
+  
+              <span class="error error-icon material-icons"> error </span>
+            </div>
+            <div class="error error-text">Email cant be blank</div>
+          </div>
+  
+          <div class="field password">
+            <div class="input-area">
+              <input
+                type="password"
+                class="password-input"
+                placeholder="Password"
+              />
+              <span class="icon material-icons"> lock</span>
+  
+              <span class="error error-icon material-icons"> error </span>
+            </div>
+            <div class="error error-text">Password cant be blank</div>
+          </div>
+  
+          <div class="check-box">
+            <input type="checkbox" id="tnc" />
+            I accept all Terms & Conditions
+          </div>
+  
+          <input type="submit" value="Sign up" />
+          <input type="button" value="Already have an account" />
+        </form>
+      </div>
+        
+     </div>
+   
+    <div class="code-snippets">
+      <pre><code class="html">&lt;div class=&quot;wrapper&quot;&gt;
+        &lt;div class=&quot;login-header&quot;&gt;Sign up&lt;/div&gt;
+        &lt;form action=&quot;#&quot;&gt;
+          &lt;div class=&quot;field email&quot;&gt;
+            &lt;div class=&quot;input-area&quot;&gt;
+              &lt;input
+                type=&quot;text&quot;
+                class=&quot;email-input&quot;
+                placeholder=&quot;Email Address&quot;
+              /&gt;
+              &lt;span class=&quot;icon material-icons&quot;&gt; email &lt;/span&gt;
+  
+              &lt;span class=&quot;error error-icon material-icons&quot;&gt; error &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;error error-text&quot;&gt;Email cant be blank&lt;/div&gt;
+          &lt;/div&gt;
+  
+          &lt;div class=&quot;field password&quot;&gt;
+            &lt;div class=&quot;input-area&quot;&gt;
+              &lt;input
+                type=&quot;password&quot;
+                class=&quot;password-input&quot;
+                placeholder=&quot;Password&quot;
+              /&gt;
+              &lt;span class=&quot;icon material-icons&quot;&gt; lock&lt;/span&gt;
+  
+              &lt;span class=&quot;error error-icon material-icons&quot;&gt; error &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;error error-text&quot;&gt;Password cant be blank&lt;/div&gt;
+          &lt;/div&gt;
+  
+          &lt;div class=&quot;check-box&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;tnc&quot; /&gt;
+            I accept all Terms &amp; Conditions
+          &lt;/div&gt;
+  
+          &lt;input type=&quot;submit&quot; value=&quot;Sign up&quot; /&gt;
+          &lt;input type=&quot;button&quot; value=&quot;Already have an account&quot; /&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+        
+            
+          </code></pre>
+    
+
+    </div>
+
+    <hr />
+
+
 
 
     </main>
@@ -1516,6 +1721,7 @@
     </footer>
 
     <script src="/javascript/highlight.min.js"></script>
+    <script src="../javascript/form.js"></script>
     <script>
       hljs.highlightAll();
     </script>

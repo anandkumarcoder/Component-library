@@ -43,5 +43,12 @@
   --cancelled-price:#4d4d4d;
   --navigation-bg:#bae6fd;
   --light-grey:#666666;
+  --input-border:#bfbfbf;
+  --input-error:#dc3545;
+  --input-valid:#008000;
+  /* --signup-bg:#5372f0; */
+  --signup-bg:#5171f0;
+  --signup-bg-dark:#2c52ed;
+  --login-bg:#bdbdbd;
  
 }

@@ -26,6 +26,7 @@ body {
     "footer footer";
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
+
 }
 
 /* aside area starts here */
@@ -131,6 +132,10 @@ p {
 .component-container-avatar {
   gap: 2rem;
   align-items: center;
+}
+
+.component-container-form{
+  justify-content: center;
 }
 
 hr {
