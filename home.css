@@ -12,6 +12,8 @@
   --secondary-background-color: #212121;
   --primary-font-color: #ffffff;
   --secondary-font-color: #000000;
+  --home-bg: #fffbeb;
+  --nav-bar-bt:#b3b3b3;
 }
 
 body {
@@ -25,7 +27,7 @@ body {
     "footer";
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
-  background:#fffbeb; 
+  background: var(--home-bg);
 }
 
 header {
@@ -60,9 +62,8 @@ a {
   justify-content: space-between;
   align-items: center;
   font-weight: 600;
-  border-bottom: 2px solid #b3b3b3;
+  border-bottom: 2px solid var(--nav-bar-bt);
   border-width: 2px;
-  
 }
 
 .nav-links {
@@ -118,7 +119,8 @@ button {
   font-size: 1em;
   font-weight: 500;
   background: #000000;
-  color: #ffffff;
+  color: var(--primary-font-color);
+  cursor: pointer;
 }
 
 .material-icons {
@@ -143,9 +145,7 @@ footer > h4 {
   display: inline-block;
   list-style: none;
   display: inline-block;
- 
 }
-
 
 .footer-items {
   display: flex;
@@ -160,7 +160,7 @@ footer > h4 {
   flex-direction: row;
   gap: 20px;
   list-style: none;
-  margin-top:1rem ;
+  margin-top: 1rem;
 }
 
 .fa {
@@ -171,5 +171,3 @@ footer > h4 {
 h4 {
   font-size: 1.5em;
 }
-
-
