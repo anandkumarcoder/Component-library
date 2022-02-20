@@ -2,7 +2,7 @@
 
 header {
   grid-area: header;
-  background: #fec8c8;
+  margin-top: -1rem;
   
 }
 
@@ -12,6 +12,8 @@ header {
   align-items: center;
   flex-wrap: wrap;
   font-weight: var(--font-semi-bold);
+  border-bottom: 2px solid var(--nav-bar-bt);
+ 
 }
 
 .logo {
