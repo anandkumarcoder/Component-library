@@ -1,0 +1,28 @@
+.snackbar {
+  border: 1px solid black;
+  position: fixed;
+  color: var(--light);
+  bottom: 0;
+  margin-bottom: 1rem;
+  left: 40%;
+  background: var(--input-error);
+  visibility: hidden;
+}
+
+.leading-snackbar {
+  left: 2%;
+}
+
+.stacked-snackbar {
+  left: 45%;
+}
+
+.snackbar-wrapper {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.snackbar-wrapper > * {
+  margin-right: 1rem;
+}
