@@ -38,7 +38,9 @@
 
 
     <aside>
-      <h2 class="text-md p-xs">Components</h2>
+
+      <a href="#getting-started"><h4 class="text-md p-xs">Getting started</h4></a>
+      <h4 class="text-md p-xs">Components</h4>
       <ul class=" component-list m-sm list-style-none">
         <li class="p-xs"><a href="#avatar">Avatar</a></li>
         <li class="p-xs"><a href="#alert-section">Alert</a></li>
@@ -52,10 +54,30 @@
         <li class="p-xs"><a href="#grid">Grid</a></li>
         <li class="p-xs"><a href="#navigation">Navigation</a></li>
         <li class="p-xs"><a href="#form">Form</a></li>
+        <li class="p-xs"><a href="#rating">Ratings</a></li>
+        <li class="p-xs"><a href="#slider">Slider</a></li>
+        <li class="p-xs"><a href="#snackbar">Snackbar</a></li>
       </ul>
     </aside>
 
     <main>
+
+      <!-- getting started -->
+      <div id="getting-started">
+      <div class="text-description">
+        <h3>Use the below link to for using CL in your project</h3>
+      </div>
+      
+      <div class="code-snippets">
+        <pre><code class="html">  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://falconui.vercel.app/Styles/main.css&quot;&gt;
+  
+             </code></pre>
+      </div>
+
+    </div>
+
+
+
       <!-- avatar section -->
 
       <div class="avatar-section" id="avatar">
@@ -1035,6 +1057,134 @@
                 </code></pre>
           </div>
 
+
+          <!-- single page product card -->
+
+          <div class="description-box mb-sm">
+            <h3>Example of main big card</h3>
+          </div>
+  
+          <div class="component-container component-container-single-page">
+            <div class="card-container single-page">
+              <div class="card-main-big single-page-card">
+                
+                <img
+                  class="card-image"
+                  src="/assets/tshirt-image.jpg"
+                  alt="T-shirt image"
+                />
+              </div>
+  
+              <div class="card-details right-col">
+                <div class="prd-name">
+                  <h3 class="brand-name">Venum</h3>
+                  <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
+                </div>
+  
+                <div class="card-price-box">
+                  <h5 class="card-price">$80.00</h5>
+                </div>
+  
+                <div class="colors-holder">
+                  <div class="color black"></div>
+                  <div class="color red"></div>
+                  <div class="color green"></div>
+                </div>
+  
+                <div class="size">
+                  <select class="input">
+                    <option selected disabled>Select</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option disabled>XL</option>
+                  </select>
+                </div>
+  
+                <div class="action-btn">
+                  <button class="btn btn-icon btn-icon-favorite">
+                    <i class="material-icons"> favorite</i> Add to wishlist
+                  </button>
+  
+                  <button class="btn btn-icon btn-icon-add-to-cart">
+                    <i class="material-icons">shopping_cart</i>Add to cart
+                  </button>
+  
+                  <button class="btn btn-icon btn-icon-add-to-cart">
+                    <i class="material-icons">share</i>Share
+                  </button>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+
+        <div class="code-snippets">
+          <pre><code class="html">&lt;div class=&quot;component-container component-container-single-page&quot;&gt;
+            &lt;div class=&quot;card-container single-page&quot;&gt;
+              &lt;div class=&quot;card-main-big single-page-card&quot;&gt;
+                
+                &lt;img
+                  class=&quot;card-image&quot;
+                  src=&quot;/assets/tshirt-image.jpg&quot;
+                  alt=&quot;T-shirt image&quot;
+                /&gt;
+              &lt;/div&gt;
+  
+              &lt;div class=&quot;card-details right-col&quot;&gt;
+                &lt;div class=&quot;prd-name&quot;&gt;
+                  &lt;h3 class=&quot;brand-name&quot;&gt;Venum&lt;/h3&gt;
+                  &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
+                &lt;/div&gt;
+  
+                &lt;div class=&quot;card-price-box&quot;&gt;
+                  &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
+                &lt;/div&gt;
+  
+                &lt;div class=&quot;colors-holder&quot;&gt;
+                  &lt;div class=&quot;color black&quot;&gt;&lt;/div&gt;
+                  &lt;div class=&quot;color red&quot;&gt;&lt;/div&gt;
+                  &lt;div class=&quot;color green&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+  
+                &lt;div class=&quot;size&quot;&gt;
+                  &lt;select class=&quot;input&quot;&gt;
+                    &lt;option selected disabled&gt;Select&lt;/option&gt;
+                    &lt;option&gt;S&lt;/option&gt;
+                    &lt;option&gt;M&lt;/option&gt;
+                    &lt;option&gt;L&lt;/option&gt;
+                    &lt;option disabled&gt;XL&lt;/option&gt;
+                  &lt;/select&gt;
+                &lt;/div&gt;
+  
+                &lt;div class=&quot;action-btn&quot;&gt;
+                  &lt;button class=&quot;btn btn-icon btn-icon-favorite&quot;&gt;
+                    &lt;i class=&quot;material-icons&quot;&gt; favorite&lt;/i&gt; Add to wishlist
+                  &lt;/button&gt;
+  
+                  &lt;button class=&quot;btn btn-icon btn-icon-add-to-cart&quot;&gt;
+                    &lt;i class=&quot;material-icons&quot;&gt;shopping_cart&lt;/i&gt;Add to cart
+                  &lt;/button&gt;
+  
+                  &lt;button class=&quot;btn btn-icon btn-icon-add-to-cart&quot;&gt;
+                    &lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;Share
+                  &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+  
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+            
+                
+              </code></pre>
+        </div>
+
+        <hr>
+  
+
           <!-- Horizontal card -->
           <div class="description-box mb-sm">
             <h3>Example:Card with shadow</h3>
@@ -1131,8 +1281,6 @@
       </div> 
          <!-- closing tag of card id -->
         <hr />
-
-         <!-- ---------------------- -->
 
         <!-- image section starts -->
 
@@ -1709,15 +1857,238 @@
       &lt;/div&gt;
         
             
-          </code></pre>
+     </code></pre>
     
 
     </div>
 
     <hr />
 
+    <div id="slider">
+        <div class="heading p-xs mb-sm">
+          <h2>Slider</h2>
+          <h5>
+            Slider is used for giving the range value 
+          </h5>
+        </div> 
+
+      <div class="description-box mb-sm">
+        <h3>ExamplePrice range slider</h3>
+        <div class="text-description p-xs mb-sm">
+          <p>These types of sliders are used in filtering products withing the price range</p>
+        </div> 
+      </div>
 
 
+       <div class="component-container component-container-slider">
+         <div class="box">
+           <div class="slider">
+             <input class="input-slider" type="range" min="0" max="100" value="25">
+           </div>
+           <div class="value">100</div>
+         </div> 
+       </div> 
+     
+      <div class="code-snippets">
+        <pre><code class="html">
+          &lt;div class=&quot;box&quot;&gt;
+           &lt;div class=&quot;slider&quot;&gt;
+             &lt;input class=&quot;input-slider&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;100&quot; value=&quot;25&quot;&gt;
+           &lt;/div&gt;
+           &lt;div class=&quot;value&quot;&gt;100&lt;/div&gt;
+         &lt;/div&gt;
+          
+              
+            </code></pre>
+      </div>
+
+
+      <div class="code-snippets">
+        <pre><code > const slider = document.querySelector(".input-slider")
+          const value = document.querySelector(".value")
+          value.textContent = slider.value;
+          
+          slider.oninput = function (){
+              value.textContent = this.value;
+          }
+            </code></pre>
+       </div>
+    </div> 
+    <hr />
+
+     <!-- rating starts -->
+    <div id="rating">
+      <div class="heading p-xs mb-sm">
+        <h2>Rating</h2>
+        <h5>
+          Rating components can be used as read-only badge or in reviews section. Can be used in reviews section as form too.
+        </h5>
+      </div> 
+
+    <div class="description-box mb-sm">
+      <h3>Example of read-only ratings
+      </h3>
+      <div class="text-description p-xs mb-sm">
+        <p>There are two types, input read-only and badge</p>
+      </div> 
+    </div>
+
+
+     <div class="component-container component-container-rating">
+       <div class="rating">
+         <div class="rating-badge">
+           <span>4.5</span><i class="material-icons star"> star </i>
+         </div>
+        </div> 
+
+         <i class="material-icons star"> star star star star star </i>
+         
+       
+     </div> 
+   
+    <div class="code-snippets">
+      <pre><code class="html">&lt;div class=&quot;component-container component-container-rating&quot;&gt;
+       &lt;div class=&quot;rating&quot;&gt;
+         &lt;div class=&quot;rating-badge&quot;&gt;
+           &lt;span&gt;4.5&lt;/span&gt;&lt;i class=&quot;material-icons star&quot;&gt; star &lt;/i&gt;
+         &lt;/div&gt;
+        &lt;/div&gt; 
+        
+         &lt;i class=&quot;material-icons star&quot;&gt; star star star star star &lt;/i&gt;
+         
+       
+     &lt;/div&gt; 
+        
+            
+          </code></pre>
+    </div>
+  </div> 
+  <hr>
+
+  <!-- snackbar starts -->
+
+  <div id="snackbar">
+    <div class="heading p-xs mb-sm">
+      <h2>Snackbar</h2>
+      <h5>
+        This component can be used for toast or snackbar component. Toast is mostly used to show feedback message. Snackbar is to used show message that need user action
+      </h5>
+    </div> 
+
+   <div class="description-box mb-sm">
+    
+    <div class="text-description p-xs mb-sm">
+      <p>Just add class as baseline_snackbar, leading_snackbar and stacked_snackbar along with snackbar_container. Also add id as baseline_snackbar, leading_snackbar and stacked_snackbar for functionality</p>
+    </div> 
+   </div>
+
+
+   <div class="component-container component-container-snackbar">
+    <button class="btn btn-primary" id="base">Base</button>
+    <button class="btn btn-primary" id="leading">Leading</button>
+    <button class="btn btn-primary" id="stacked">Stacked</button> 
+   </div> 
+
+   <div class="snackbar  base-snackbar" id="base-snackbar">
+     <div class="snackbar-wrapper">
+     <p>Sorry something went wrong</p>
+     <span><a href="#">Retry</a></span>
+     <span><a href="#" id="base-snackbar-close-btn">X</a></span>
+    </div>
+   </div>
+
+   <div class="snackbar  leading-snackbar" id="leading-snackbar">
+    <div class="snackbar-wrapper">
+    <p>Sorry something went wrong</p>
+    <span><a href="#">Retry</a></span>
+    <span><a href="#" id="nackbar-close-btn">X</a></span>
+   </div>
+  </div>
+
+  <div class="snackbar  stacked-snackbar" id="stacked-snackbar">
+    <div class="snackbar-wrapper">
+    <p>Sorry something went wrong</p>
+    <span><a href="#">Retry</a></span>
+    <span><a href="#" id="nackbar-close-btn">X</a></span>
+   </div>
+  </div>
+
+ 
+   <div class="code-snippets">
+    <pre><code class="html"> &lt;button class=&quot;btn btn-primary&quot; id=&quot;base&quot;&gt;Base&lt;/button&gt;
+      &lt;button class=&quot;btn btn-primary&quot; id=&quot;leading&quot;&gt;Leading&lt;/button&gt;
+      &lt;button class=&quot;btn btn-primary&quot; id=&quot;stacked&quot;&gt;Stacked&lt;/button&gt; 
+     &lt;/div&gt; 
+  
+     &lt;div class=&quot;snackbar  base-snackbar&quot; id=&quot;base-snackbar&quot;&gt;
+       &lt;div class=&quot;snackbar-wrapper&quot;&gt;
+       &lt;p&gt;Sorry something went wrong&lt;/p&gt;
+       &lt;span&gt;&lt;a href=&quot;#&quot;&gt;Retry&lt;/a&gt;&lt;/span&gt;
+       &lt;span&gt;&lt;a href=&quot;#&quot; id=&quot;base-snackbar-close-btn&quot;&gt;X&lt;/a&gt;&lt;/span&gt;
+      &lt;/div&gt;
+     &lt;/div&gt;
+  
+     &lt;div class=&quot;snackbar  leading-snackbar&quot; id=&quot;leading-snackbar&quot;&gt;
+      &lt;div class=&quot;snackbar-wrapper&quot;&gt;
+      &lt;p&gt;Sorry something went wrong&lt;/p&gt;
+      &lt;span&gt;&lt;a href=&quot;#&quot;&gt;Retry&lt;/a&gt;&lt;/span&gt;
+      &lt;span&gt;&lt;a href=&quot;#&quot; id=&quot;nackbar-close-btn&quot;&gt;X&lt;/a&gt;&lt;/span&gt;
+     &lt;/div&gt;
+    &lt;/div&gt;
+  
+    &lt;div class=&quot;snackbar  stacked-snackbar&quot; id=&quot;stacked-snackbar&quot;&gt;
+      &lt;div class=&quot;snackbar-wrapper&quot;&gt;
+      &lt;p&gt;Sorry something went wrong&lt;/p&gt;
+      &lt;span&gt;&lt;a href=&quot;#&quot;&gt;Retry&lt;/a&gt;&lt;/span&gt;
+      &lt;span&gt;&lt;a href=&quot;#&quot; id=&quot;nackbar-close-btn&quot;&gt;X&lt;/a&gt;&lt;/span&gt;
+     &lt;/div&gt;
+    &lt;/div&gt;
+      
+          
+        </code></pre>
+   </div>
+
+   <div class="code-snippets">
+    <pre><code > 
+      const baseBtn = document.querySelector("#base");
+const baseSnackbar = document.querySelector("#base-snackbar");
+const baseCloseBtn = document.querySelector("#base-snackbar");
+const leadingBtn = document.querySelector("#leading");
+const leadingSnackbar = document.querySelector("#leading-snackbar");
+const leadingCloseBtn = document.querySelector("#leading-snackbar");
+const stackedBtn = document.querySelector("#stacked");
+const stackedSnackbar = document.querySelector("#stacked-snackbar");
+const stackedCloseBtn = document.querySelector("#stacked-snackbar");
+
+baseBtn.addEventListener("click", () => {
+  baseSnackbar.style.visibility = "visible";
+});
+
+baseCloseBtn.addEventListener("click", () => {
+  baseSnackbar.style.visibility = "hidden";
+});
+
+leadingBtn.addEventListener("click", () => {
+  leadingSnackbar.style.visibility = "visible";
+});
+
+leadingCloseBtn.addEventListener("click", () => {
+  leadingSnackbar.style.visibility = "hidden";
+});
+
+stackedBtn.addEventListener("click", () => {
+  stackedSnackbar.style.visibility = "visible";
+});
+
+stackedCloseBtn.addEventListener("click", () => {
+  stackedSnackbar.style.visibility = "hidden";
+});
+     
+      
+        </code></pre>
+   </div>
+</div> 
+<hr>
 
     </main>
     <hr />
@@ -1739,6 +2110,9 @@
 
     <script src="/javascript/highlight.min.js"></script>
     <script src="../javascript/form.js"></script>
+    <script src="../javascript/slider.js"></script>
+    <script src="../javascript/snackbar.js"></script>
+
     <script>
       hljs.highlightAll();
     </script>

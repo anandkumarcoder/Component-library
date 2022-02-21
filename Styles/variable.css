@@ -46,7 +46,6 @@
   --input-border:#bfbfbf;
   --input-error:#dc3545;
   --input-valid:#008000;
-  /* --signup-bg:#5372f0; */
   --signup-bg:#5171f0;
   --signup-bg-dark:#2c52ed;
   --login-bg:#bdbdbd;
@@ -55,5 +54,7 @@
   --hljs-class:#ec4899;
   --home-bg:#fffbeb;
   --nav-bar-bt:#b3b3b3;
- 
+  --rating-star:#ffd700;
+  --card-shadow:#808080;
+ --input-slider-bg:#f2f2f2;
 }

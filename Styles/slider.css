@@ -1,0 +1,32 @@
+.box {
+  background: var(--light);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box .slider {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.input-slider {
+  width: 20rem;
+  height: 6px;
+  -webkit-appearance: none;
+  background: var(--input-slider-bg);
+  border: 1px solid var(--card-shadow);
+  cursor: pointer;
+  border-radius: 2rem;
+  padding: 0.2rem 0;
+}
+
+.box .value {
+  font-size: 1.2rem;
+  font-weight: var(--font-light);
+  font-family: var(--primary-font);
+  vertical-align: middle;
+}

@@ -6,14 +6,17 @@
 @import "/Styles/button.css";
 @import "/Styles/navbar.css";
 @import "/Styles/list.css";
+@import "/Styles/input.css";
 @import "/Styles/card.css";
 @import "/Styles/simple-grid.css";
 @import "/Styles/badge.css";
 @import "/Styles/card.css";
 @import "/Styles/avatar.css";
 @import "/Styles/image.css";
-@import "/Styles/input.css";
 @import "/Styles/navigation.css";
 @import "/Styles/form.css";
+@import "/Styles/slider.css";
+@import "/Styles/rating.css";
+@import "/Styles/snackbar.css";
 
 /* -------- */
