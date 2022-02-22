@@ -11,6 +11,11 @@ Use below in  `header` section of your project
 ```bash
 <link rel="stylesheet" href="https://falconui.vercel.app/Styles/main.css">
 ```
+## Demo
+
+https://user-images.githubusercontent.com/84398380/155067620-231e652f-5bf7-47d2-9ed4-3533cc18252f.mp4
+
+
     
 ## FalconUI provides
 
