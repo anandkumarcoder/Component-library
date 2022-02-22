@@ -57,6 +57,7 @@
         <li class="p-xs"><a href="#rating">Ratings</a></li>
         <li class="p-xs"><a href="#slider">Slider</a></li>
         <li class="p-xs"><a href="#snackbar">Snackbar</a></li>
+        <li class="p-xs"><a href="#modal">Modal</a></li>
       </ul>
     </aside>
 
@@ -65,9 +66,11 @@
       <div id="getting-started">
         <div class="heading">
           <h2>Installation</h2>
-          <h5>Use the below link to install component library in your project</h5>
+          <h5>
+            Use the below link to install component library in your project
+          </h5>
         </div>
-        
+
         <div class="code-snippets">
           <pre><code class="html">  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://falconui.vercel.app/Styles/main.css&quot;&gt;
           </code></pre>
@@ -714,8 +717,6 @@
         </div>
 
         <!-- simple vertical card -->
-
-
 
         <div class="component-container component-container-card">
           <div class="card-container one">
@@ -1899,12 +1900,53 @@ stackedBtn.addEventListener("click", () => {
 stackedCloseBtn.addEventListener("click", () => {
   stackedSnackbar.style.visibility = "hidden";
 });
-     
-      
         </code></pre>
         </div>
       </div>
       <hr />
+      <!-- modal starts -->
+
+      <div id="modal">
+        <div class="heading p-xs mb-sm">
+          <h2>Modal</h2>
+          <h5>
+            Modals are positioned over everything else in the document and
+            remove scroll from the page. It gets closed only with close button
+            on modal pop-up.
+          </h5>
+        </div>
+        <div class="description-box mb-sm">
+          <h3>Example:Modal</h3>
+        </div>
+
+        <div class="component-container component-container-modal">
+          <button class="btn btn-primary" id="modal">Modal</button>
+        </div>
+
+        <div class="modal-card">
+          <div class="modal-text">
+            <p>this is simple modal</p>
+            <a href="#"> <span id="modal-close">X</span></a>
+          </div>
+        </div>
+
+        <div class="code-snippets">
+          <pre><code class="html">
+            &lt;div class=&quot;component-container component-container-modal&quot;&gt;
+              &lt;button class=&quot;btn btn-primary&quot; id=&quot;modal&quot;&gt;Modal&lt;/button&gt;
+            &lt;/div&gt;
+    
+            &lt;div class=&quot;modal-card&quot;&gt;
+              &lt;div class=&quot;modal-text&quot;&gt;
+                &lt;p&gt;this is simple modal&lt;/p&gt;
+                &lt;a href=&quot;#&quot;&gt; &lt;span id=&quot;modal-close&quot;&gt;X&lt;/span&gt;&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          
+              
+            </code></pre>
+        </div>
+      </div>
     </main>
 
     <footer>
@@ -1933,5 +1975,6 @@ stackedCloseBtn.addEventListener("click", () => {
       hljs.highlightAll();
     </script>
     <script src="/javascript/alert.js"></script>
+    <script src="/javascript/modal.js"></script>
   </body>
 </html>
