@@ -53,7 +53,7 @@ aside > ul {
 }
 
 .component-list > li:hover {
-  background-color: #fee2e2;
+  background-color: var( --list-hover-bg);
   cursor: pointer;
 }
 aside > h3 {
@@ -146,8 +146,8 @@ hr {
 
 /* code snippets */
 .code-snippets {
-  border: var(--general-border-grey);
-  background-color: #e5e7eb;
+  border-color: var(--general-border-grey);
+  background-color: var(--code-snippet-bg);
   padding: 1rem;
   margin: 4rem auto;
   width: 60vw;
@@ -157,7 +157,7 @@ hr {
 pre {
   overflow: auto;
   white-space: pre-line;
-  background-color: #e5e7eb;
+  background-color: var(--code-snippet-bg);
   max-height: 30vh;
 }
 .hljs-tag,

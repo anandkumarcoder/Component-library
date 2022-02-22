@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Docs</title>
-
+    <meta name="author" content="Anand Kumar" />
+    <title>Falcon UI</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -36,12 +36,12 @@
       </nav>
     </header>
 
-
     <aside>
-
-      <a href="#getting-started"><h4 class="text-md p-xs">Getting started</h4></a>
+      <a href="#getting-started"
+        ><h4 class="text-md p-xs">Getting started</h4></a
+      >
       <h4 class="text-md p-xs">Components</h4>
-      <ul class=" component-list m-sm list-style-none">
+      <ul class="component-list m-sm list-style-none">
         <li class="p-xs"><a href="#avatar">Avatar</a></li>
         <li class="p-xs"><a href="#alert-section">Alert</a></li>
         <li class="p-xs"><a href="#badge">Badge</a></li>
@@ -61,22 +61,16 @@
     </aside>
 
     <main>
-
       <!-- getting started -->
       <div id="getting-started">
-      <div class="text-description">
-        <h3>Use the below link to for using CL in your project</h3>
+        <div class="text-description">
+          <h3>Use the below link to for using CL in your project</h3>
+        </div>
+        <div class="code-snippets">
+          <pre><code class="html">  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://falconui.vercel.app/Styles/main.css&quot;&gt;
+          </code></pre>
+        </div>
       </div>
-      
-      <div class="code-snippets">
-        <pre><code class="html">  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://falconui.vercel.app/Styles/main.css&quot;&gt;
-  
-             </code></pre>
-      </div>
-
-    </div>
-
-
 
       <!-- avatar section -->
 
@@ -117,15 +111,9 @@
 
         <div class="code-snippets">
           <pre><code class="html"> &lt;img class=&quot; avatar-lg&quot; src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
-        
               &lt;img class=&quot; avatar-sm&quot; src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
-            
               &lt;img class=&quot;avatar-xs&quot; src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
-
               &lt;img class=&quot;  avatar-xxs&quot; src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
-              
-
-              
                </code></pre>
         </div>
 
@@ -189,7 +177,7 @@
             &lt;div class=&quot;avatar avatar-sm&quot;&gt;AK&lt;/div&gt;
             &lt;div class=&quot;avatar avatar-xs&quot;&gt;AK&lt;/div&gt;
             &lt;div class=&quot;avatar avatar-xxs&quot;&gt;AK&lt;/div&gt;
-               </code></pre>
+          </code></pre>
         </div>
 
         <!-- text avatar with square -->
@@ -205,15 +193,16 @@
         </div>
 
         <div class="code-snippets">
-          <pre><code class="html">&lt;div class=&quot;avatar avatar-square avatar-lg&quot;&gt;AK&lt;/div&gt;
+          <pre><code class="html">&lt;div class=&quot;avatar    avatar-square avatar-lg&quot;&gt;AK&lt;/div&gt;
             &lt;div class=&quot;avatar avatar-square avatar-sm&quot;&gt;AK&lt;/div&gt;
             &lt;div class=&quot;avatar avatar-square avatar-xs&quot;&gt;AK&lt;/div&gt;
             &lt;div class=&quot;avatar avatar-square avatar-xxs&quot;&gt;AK&lt;/div&gt;
-                 </code></pre>
+            </code></pre>
         </div>
       </div>
-
       <hr />
+
+      <!-- alert section -->
 
       <div id="alert-section">
         <div class="heading p-xs mb-sm">
@@ -275,7 +264,6 @@
               Alerts can have icon too . Few types of alert with examples are
               info alert,warning alert, error alert
             </p>
-
             <p>You can copy html part from below code snippet.</p>
           </div>
         </div>
@@ -300,15 +288,12 @@
         <div class="code-snippets">
           <pre><code class="html">
           &ltdiv class="container-alert alert-icon">
-      
            &ltdiv class="alert alert-primary p-sm m-sm">
           &lti class="material-icons ">info&lt/i>
             A simple primary alert message
           &lt/div> 
-    
          &ltdiv class="alert alert-error p-sm m-sm"> &lti class="material-icons btn-only">report_gmailerrorred&lt/i>
           A simple primary error message&lt/div>
-    
           &ltdiv class="alert alert-success p-sm m-sm">
           &lti class="material-icons btn-only">check_circle&lt/i>
            A simple success alert message
@@ -322,7 +307,6 @@
           <h4>Example of alert bar with close button</h4>
           <div class="text-description p-xs mb-sm">
             <p>Alerts can have close button as well.</p>
-
             <p>You can copy html and Js from below</p>
           </div>
         </div>
@@ -349,12 +333,9 @@
         <div class="code-snippets">
           <pre><code class="html">
           &ltdiv class="container-alert" id="alert-box-close">
-      
            &ltdiv class="alert alert-warning p-sm m-sm">
             &lti class="material-icons btn-only">report_problem&lt/i>
-            
             A simple primary alert message with close button
-      
             &ltbutton type="button" class="btn-close" id="alert-example-close-btn">&lt/button>
             &lt/div>
            </code></pre>
@@ -364,16 +345,14 @@
           <pre><code class="js">
          const alertBox = document.querySelector("#alert-box-close");
           const closeBtn = document.querySelector("#alert-example-close-btn");
-
             closeBtn.addEventListener("click", ()=> {
           alertBox.style.display = "none"
             })
-
           </code></pre>
         </div>
       </div>
 
-      <hr />
+      <!-- button section -->
 
       <div id="badge">
         <div class="heading p-xs mb-sm">
@@ -386,23 +365,24 @@
           <div class="text-description p-xs mb-sm">
             <p>Badges with icons</p>
           </div>
+        </div>
 
-          <div class="component-container component-container-badge">
-            <button type="button" class="icon-btn">
-              <i class="material-icons">notifications</i>
-              <span class="icon-btn-badge">5</span>
-            </button>
+        <div class="component-container component-container-badge">
+          <button type="button" class="icon-btn">
+            <i class="material-icons">notifications</i>
+            <span class="icon-btn-badge">5</span>
+          </button>
 
-            <button type="button" class="icon-btn">
-              <i class="material-icons" class="material-icons-outlined">
-                shopping_bag
-              </i>
-              <span class="icon-btn-badge">5</span>
-            </button>
-          </div>
+          <button type="button" class="icon-btn">
+            <i class="material-icons" class="material-icons-outlined">
+              shopping_bag
+            </i>
+            <span class="icon-btn-badge">5</span>
+          </button>
+        </div>
 
-          <div class="code-snippets">
-            <pre><code class="html">&lt;button type=&quot;button&quot; class=&quot;icon-button&quot;&gt;
+        <div class="code-snippets">
+          <pre><code class="html">&lt;button type=&quot;button&quot; class=&quot;icon-button&quot;&gt;
                 &lt;i class=&quot;material-icons &quot;&gt;notifications&lt;/i&gt;
                 &lt;span class=&quot;button-badge&quot;&gt;5&lt;/span&gt;
               &lt;/button&gt;
@@ -414,100 +394,96 @@
                 &lt;span class=&quot;button-badge&quot;&gt;5&lt;/span&gt;
               &lt;/button&gt;
 
-              </code></pre>
+            </code></pre>
+        </div>
+
+        <div class="description-box mb-sm">
+          <h3>Example of badge on buttons</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>Use the below in your project to use the button with badge</p>
           </div>
+        </div>
 
-          <div class="description-box mb-sm">
-            <h3>Example of badge on buttons</h3>
-            <div class="text-description p-xs mb-sm">
-              <p>Use the below in your project to use the button with badge</p>
-            </div>
-          </div>
+        <div class="component-container component-container-badge">
+          <button type="button" class="btn-box">
+            Inbox
+            <span class="btn-box-badge">5</span>
+          </button>
 
-          <div class="component-container component-container-badge">
-            <button type="button" class="btn-box">
-              Inbox
-              <span class="btn-box-badge">5</span>
-            </button>
+          <button type="button" class="btn-box outlined">
+            Notifications
+            <span class="btn-box-badge outlined">999+</span>
+          </button>
 
-            <button type="button" class="btn-box outlined">
-              Notifications
-              <span class="btn-box-badge outlined">999+</span>
-            </button>
+          <button type="button" class="btn-box version">
+            Version
+            <span class="btn-box-badge version">NEW</span>
+          </button>
+        </div>
 
-            <button type="button" class="btn-box version">
-              Version
-              <span class="btn-box-badge version">NEW</span>
-            </button>
-          </div>
-
-          <div class="code-snippets">
-            <pre><code class="html">&lt;button type=&quot;button&quot; class=&quot;btn-box&quot;&gt;
+        <div class="code-snippets">
+          <pre><code class="html">&lt;button type=&quot;button&quot; class=&quot;btn-box&quot;&gt;
                 Inbox
                 &lt;span class=&quot;btn-box-badge&quot;&gt;5&lt;/span&gt;
               &lt;/button&gt;
-
               &lt;button type=&quot;button&quot; class=&quot;btn-box outlined&quot;&gt;
                 Notifications
                 &lt;span class=&quot;btn-box-badge outlined&quot;&gt;999+&lt;/span&gt;
               &lt;/button&gt;
-
               &lt;button type=&quot;button&quot; class=&quot;btn-box version&quot;&gt;
                 Version
                 &lt;span class=&quot;btn-box-badge version&quot;&gt;NEW&lt;/span&gt;
               &lt;/button&gt;
-                
-
               </code></pre>
+        </div>
+
+        <div class="description-box mb-sm">
+          <h3>Example of badge with different status</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>USe the below in your project to use the button with badge</p>
+          </div>
+        </div>
+
+        <div class="component-container component-container-badge">
+          <div class="avatar avatar-lg">
+            <img
+              class="avatar avatar-lg"
+              src="/assets/image-avatar.png"
+              alt="avatar-img"
+            />
+            <div class="status online"></div>
           </div>
 
-          <div class="description-box mb-sm">
-            <h3>Example of badge with different status</h3>
-            <div class="text-description p-xs mb-sm">
-              <p>USe the below in your project to use the button with badge</p>
-            </div>
+          <div class="avatar avatar-sm">
+            <img
+              class="avatar avatar-sm"
+              src="/assets/image-avatar.png"
+              alt="avatar-img"
+            />
+            <div class="status online"></div>
           </div>
 
-          <div class="component-container component-container-badge">
-            <div class="avatar avatar-lg">
-              <img
-                class="avatar avatar-lg"
-                src="/assets/image-avatar.png"
-                alt="avatar-img"
-              />
-              <div class="status online"></div>
-            </div>
-
-            <div class="avatar avatar-sm">
-              <img
-                class="avatar avatar-sm"
-                src="/assets/image-avatar.png"
-                alt="avatar-img"
-              />
-              <div class="status online"></div>
-            </div>
-
-            <div class="avatar avatar-xs">
-              <img
-                class="avatar avatar-xs"
-                src="/assets/image-avatar.png"
-                alt="avatar-img"
-              />
-              <div class="status offline"></div>
-            </div>
-
-            <div class="avatar avatar-xxs">
-              <img
-                class="avatar avatar-xxs"
-                src="/assets/image-avatar.png"
-                alt="avatar-img"
-              />
-              <div class="status offline"></div>
-            </div>
+          <div class="avatar avatar-xs">
+            <img
+              class="avatar avatar-xs"
+              src="/assets/image-avatar.png"
+              alt="avatar-img"
+            />
+            <div class="status offline"></div>
           </div>
 
-          <div class="code-snippets">
-            <pre><code class="html">&lt;div class=&quot;avatar avatar-lg&quot;&gt;
+          <div class="avatar avatar-xxs">
+            <img
+              class="avatar avatar-xxs"
+              src="/assets/image-avatar.png"
+              alt="avatar-img"
+            />
+            <div class="status offline"></div>
+          </div>
+        </div>
+
+        <div class="code-snippets">
+          <pre><code class="html">&lt;div class=&quot;avatar avatar-lg&quot;&gt;
               &lt;img  class=&quot;avatar avatar-lg&quot;src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
               &lt;div class=&quot;status online&quot;&gt;&lt;/div&gt;
             &lt;/div&gt;
@@ -525,155 +501,143 @@
               &lt;img  class=&quot;avatar avatar-xxs&quot; src=&quot;/assets/image-avatar.png&quot; alt=&quot;avatar-img&quot; /&gt;
               &lt;div class=&quot;status offline&quot;&gt;&lt;/div&gt;
             &lt;/div&gt;
-
             </code></pre>
-          </div>
-        </div>
-        <hr />
-
-        <!-- button section starts here -->
-        <div class="button-section" id="button">
-          <div class="heading p-xs mb-sm">
-            <h2>Buttons</h2>
-            <h5>
-              Buttons are also known as call to action. below are few types of
-              button. Add respective classes are you are good to go
-            </h5>
-          </div>
-
-          <div class="description-box mb-sm">
-            <h3>Example</h3>
-            <div class="text-description p-xs mb-sm">
-              <p>buttons without border</p>
-            </div>
-          </div>
-
-          <div class="component-container">
-            <button class="btn btn-primary">Primary</button>
-            <button class="btn btn-secondary">Secondary</button>
-            <button class="btn btn-success">Success</button>
-            <button class="btn btn-error">Error</button>
-          </div>
-
-          <div class="code-snippets">
-            <pre><code class="html">
-                  &ltbutton class="btn btn-primary">Primary&lt/button>
-                  &ltbutton class="btn btn-secondary">Secondary&lt/button>
-                  &ltbutton class="btn btn-success">Success&lt/button>
-                  &ltbutton class="btn btn-error">Error&lt/button>
-                </code></pre>
-          </div>
-
-          <!-- outline buttons -->
-
-          <div class="description-box mb-sm">
-            <h3>Example of buttons with outlined</h3>
-            <div class="text-description p-xs mb-sm">
-              <p>If you want to use outlined button add class outlined</p>
-            </div>
-          </div>
-
-          <div class="component-container">
-            <button class="btn btn-primary-outlined">Primary</button>
-            <button class="btn btn-secondary-outlined">Secondary</button>
-            <button class="btn btn-success-outlined">Success</button>
-            <button class="btn btn-error-outlined">Error</button>
-          </div>
-
-          <div class="code-snippets">
-            <pre><code class="html">
-                  &ltbutton class="btn btn-primary-outlined">Primary&lt/button>
-                  &ltbutton class="btn btn-secondary-outlined">Secondary&lt/button>
-                  &ltbutton class="btn btn-success-outlined">Success&lt/button>
-                  &ltbutton class="btn btn-error-outlined">Error&lt/button>
-                  
-                </code></pre>
-          </div>
-
-          <!-- buttons with icons -->
-
-          <div class="description-box mb-sm">
-            <h3>Example of buttons with icons</h3>
-            <div class="text-description p-xs mb-sm">
-              <p>
-                If you want to use buttons with icons just add btn-icon and
-                respective action button class name
-              </p>
-            </div>
-          </div>
-
-          <div class="component-container">
-            <button class="btn btn-icon btn-icon-delete">
-              <i class="material-icons"> delete </i>Remove from cart
-            </button>
-
-            <button class="btn btn-icon btn-icon-favorite">
-              <i class="material-icons"> favorite</i> Move to wishlist
-            </button>
-
-            <button class="btn btn-icon btn-icon-add-to-cart">
-              <i class="material-icons">shopping_cart</i>Add to cart
-            </button>
-          </div>
-
-          <div class="code-snippets">
-            <pre><code class="html">
-                  &ltbutton class="btn btn-icon btn-icon-delete">
-                    &lti class="material-icons"> delete &lt/i>Remove
-                  &lt/button>
-            
-                  &ltbutton class="btn btn-icon btn-icon-favorite">
-                    &lti class="material-icons"> favorite&lt/i> Move to wishlist
-                  &lt/button>
-            
-                  &ltbutton class="btn btn-icon btn-icon-add-to-cart">
-                    &lti class="material-icons">shopping_cart&lt/i>Add to cart
-                  &lt/button>
-                  
-                </code></pre>
-          </div>
-
-          <!-- only icons button -->
-
-          <div class="description-box mb-sm">
-            <h4>Example of icon buttons</h4>
-            <div class="text-description p-xs mb-sm">
-              <p>
-                If you want to use icons buttons just add icon-only class name
-              </p>
-            </div>
-          </div>
-
-          <div class="component-container">
-            <i class="material-icons icon-only"> delete </i>
-            <i class="material-icons icon-only"> favorite</i>
-            <i class="material-icons icon-only">shopping_cart</i>
-
-            <i class="material-icons icon-only">account_circle</i>
-
-            <i class="material-icons icon-only">share</i>
-
-            <i class="material-icons icon-only">notifications</i>
-          </div>
-
-          <div class="code-snippets">
-            <pre><code class="html">
-                  &lti class="material-icons icon-only"> delete &lt/i>
-                  &lti class="material-icons icon-only"> favorite&lt/i>
-                  &lti class="material-icons icon-only">shopping_cart&lt/i>
-            
-                  &lti class="material-icons icon-only">account_circle&lt/i>
-            
-                  &lti class="material-icons icon-only">share&lt/i>
-            
-                  &lti class="material-icons icon-only">notifications&lt/i>
-                </code></pre>
-          </div>
         </div>
       </div>
-
       <hr />
-      <!-- --------------- -->
+
+      <!-- button section starts here -->
+      <div class="button-section" id="button">
+        <div class="heading p-xs mb-sm">
+          <h2>Buttons</h2>
+          <h5>
+            Buttons are also known as call to action. below are few types of
+            button. Add respective classes are you are good to go
+          </h5>
+        </div>
+
+        <div class="description-box mb-sm">
+          <h3>Example</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>buttons without border</p>
+          </div>
+        </div>
+
+        <div class="component-container">
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-secondary">Secondary</button>
+          <button class="btn btn-success">Success</button>
+          <button class="btn btn-error">Error</button>
+        </div>
+
+        <div class="code-snippets">
+          <pre><code class="html">
+                &ltbutton class="btn btn-primary">Primary&lt/button>
+                &ltbutton class="btn btn-secondary">Secondary&lt/button>
+                &ltbutton class="btn btn-success">Success&lt/button>
+                &ltbutton class="btn btn-error">Error&lt/button>
+              </code></pre>
+        </div>
+
+        <!-- outline buttons -->
+
+        <div class="description-box mb-sm">
+          <h3>Example of buttons with outlined</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>If you want to use outlined button add class outlined</p>
+          </div>
+        </div>
+
+        <div class="component-container">
+          <button class="btn btn-primary-outlined">Primary</button>
+          <button class="btn btn-secondary-outlined">Secondary</button>
+          <button class="btn btn-success-outlined">Success</button>
+          <button class="btn btn-error-outlined">Error</button>
+        </div>
+
+        <div class="code-snippets">
+          <pre><code class="html">
+                &ltbutton class="btn btn-primary-outlined">Primary&lt/button>
+                &ltbutton class="btn btn-secondary-outlined">Secondary&lt/button>
+                &ltbutton class="btn btn-success-outlined">Success&lt/button>
+                &ltbutton class="btn btn-error-outlined">Error&lt/button>
+              </code></pre>
+        </div>
+
+        <!-- buttons with icons -->
+
+        <div class="description-box mb-sm">
+          <h3>Example of buttons with icons</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>
+              If you want to use buttons with icons just add btn-icon and
+              respective action button class name
+            </p>
+          </div>
+        </div>
+
+        <div class="component-container">
+          <button class="btn btn-icon btn-icon-delete">
+            <i class="material-icons"> delete </i>Remove from cart
+          </button>
+
+          <button class="btn btn-icon btn-icon-favorite">
+            <i class="material-icons"> favorite</i> Move to wishlist
+          </button>
+
+          <button class="btn btn-icon btn-icon-add-to-cart">
+            <i class="material-icons">shopping_cart</i>Add to cart
+          </button>
+        </div>
+
+        <div class="code-snippets">
+          <pre><code class="html">
+                &ltbutton class="btn btn-icon btn-icon-delete">
+                  &lti class="material-icons"> delete &lt/i>Remove
+                &lt/button>
+                &ltbutton class="btn btn-icon btn-icon-favorite">
+                  &lti class="material-icons"> favorite&lt/i> Move to wishlist
+                &lt/button>
+                &ltbutton class="btn btn-icon btn-icon-add-to-cart">
+                  &lti class="material-icons">shopping_cart&lt/i>Add to cart
+                &lt/button>
+                
+              </code></pre>
+        </div>
+
+        <!-- only icons button -->
+
+        <div class="description-box mb-sm">
+          <h4>Example of icon buttons</h4>
+          <div class="text-description p-xs mb-sm">
+            <p>
+              If you want to use icons buttons just add icon-only class name
+            </p>
+          </div>
+        </div>
+
+        <div class="component-container">
+          <i class="material-icons icon-only"> delete </i>
+          <i class="material-icons icon-only"> favorite</i>
+          <i class="material-icons icon-only">shopping_cart</i>
+          <i class="material-icons icon-only">account_circle</i>
+          <i class="material-icons icon-only">share</i>
+          <i class="material-icons icon-only">notifications</i>
+        </div>
+
+        <div class="code-snippets">
+          <pre><code class="html">
+                &lti class="material-icons icon-only"> delete &lt/i>
+                &lti class="material-icons icon-only"> favorite&lt/i>
+                &lti class="material-icons icon-only">shopping_cart&lt/i>
+                &lti class="material-icons icon-only">account_circle&lt/i>
+                &lti class="material-icons icon-only">share&lt/i>
+                &lti class="material-icons icon-only">notifications&lt/i>
+            </code></pre>
+        </div>
+      </div>
+      <hr />
+
       <!-- --------Input section starts----- -->
 
       <div class="input-section" id="input">
@@ -687,75 +651,72 @@
           <div class="text-description p-xs mb-sm">
             <p>Use below code to copy it</p>
           </div>
+        </div>
 
-          <div class="component-container component-container-input">
-            <div class="input-holder">
-              <label class="label" for="username">Username </label>
-              <input
-                id="username"
-                placeholder="type username here"
-                type="text"
-                required
-              />
-              <span></span>
-            </div>
-
-            <div class="input-holder">
-              <label class="label" for="email">Email </label>
-              <input type="email" placeholder="type email here here" />
-            </div>
-
-            <div class="input-holder">
-              <label for="pwd">Password:</label>
-              <input type="password" id="pwd" name="pwd" />
-            </div>
+        <div class="component-container component-container-input">
+          <div class="input-holder">
+            <label class="label" for="username">Username </label>
+            <input
+              id="username"
+              placeholder="type username here"
+              type="text"
+              required
+            />
+            <span></span>
           </div>
 
-          <div class="code-snippets">
-            <pre><code class="html">&lt;div class=&quot;input-holder&quot;&gt;
+          <div class="input-holder">
+            <label class="label" for="email">Email </label>
+            <input type="email" placeholder="type email here here" />
+          </div>
+
+          <div class="input-holder">
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" />
+          </div>
+        </div>
+
+        <div class="code-snippets">
+          <pre><code class="html">&lt;div class=&quot;input-holder&quot;&gt;
               &lt;label  class=&quot;label&quot; for=&quot;username&quot;&gt;Username
-               
               &lt;/label&gt;
               &lt;input id=&quot;username&quot; placeholder=&quot;type username here&quot; type=&quot;text&quot; required&gt;
               &lt;span&gt;&lt;/span&gt;
             &lt;/div&gt;
-
             &lt;div class=&quot;input-holder&quot;&gt;
               &lt;label  class=&quot;label&quot; for=&quot;email&quot;&gt;Email  
               &lt;/label&gt;
               &lt;input type=&quot;email&quot; placeholder=&quot;type email here here&quot;&gt;
             &lt;/div&gt;
-
             &lt;div class=&quot;input-holder&quot;&gt;
               &lt;label for=&quot;pwd&quot;&gt;Password:&lt;/label&gt;
              &lt;input type=&quot;password&quot; id=&quot;pwd&quot; name=&quot;pwd&quot;&gt;
-            &lt;/div&gt;
-               
+            &lt;/div&gt; 
               </code></pre>
+        </div>
+
+        <div class="description-box mb-sm">
+          <h3>Example:simple input for selection and search</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>Use below HTML code to use it</p>
           </div>
 
-          <div class="description-box mb-sm">
-            <h3>Example:simple input for selection and search</h3>
-            <div class="text-description p-xs mb-sm">
-              <p>Use below HTML code to use it</p>
+          <div class="component-container component-container-input">
+            <div class="search">
+              Search something
+              <i class="material-icons search-icon"> search </i>
             </div>
-
-            <div class="component-container component-container-input">
-              <div class="search">
-                Search something
-                <i class="material-icons search-icon"> search </i>
-              </div>
-              <select class="input">
-                <option selected disabled>Select</option>
-                <option>S</option>
-                <option>M</option>
-                <option>L</option>
-                <option disabled>XL</option>
-              </select>
-            </div>
+            <select class="input">
+              <option selected disabled>Select</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option disabled>XL</option>
+            </select>
           </div>
-          <div class="code-snippets">
-            <pre><code class="html">&lt;div class=&quot;search&quot;&gt;
+        </div>
+        <div class="code-snippets">
+          <pre><code class="html">&lt;div class=&quot;search&quot;&gt;
                   Search something
                   &lt;i class=&quot;material-icons search-icon&quot;&gt; 
                     search  
@@ -769,549 +730,499 @@
                   &lt;option &gt;L&lt;/option&gt;
                   &lt;option disabled &gt;XL&lt;/option&gt;
               &lt;/select&gt;
-                  </code></pre>
-          </div>
-          </div>
-          </div>
-          
-          <hr />
-
-          <!-- card section starts -->
-      <div class="card-section" id="card">
-
-            <div class="heading p-xs mb-sm">
-              <h2>Cards</h2>
-              <h5>Example:Simple Vertical card</h5>
-              <!-- <p>Example:Simple card</p> -->
-            </div>
-         
-          <!-- simple vertical card -->
-
-          <div class="component-container component-container-card">
-            <div class="card-container one">
-              <img
-                class="card-image"
-                src="/assets/tshirt-image.jpg"
-                alt="T-shirt image"
-              />
-
-              <div class="card-details">
-                <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
-                <h5 class="card-price">$80.00</h5>
-                <button class="btn btn-card">Add to cart</button>
-              </div>
-            </div>
-          </div>
-          <div class="code-snippets">
-            <pre><code class="html">&lt;div class=&quot;card-container one&quot;&gt;
-              &lt;img
-                class=&quot;card-image&quot;
-                src=&quot;/assets/tshirt-image.jpg&quot;
-                alt=&quot;T-shirt image&quot;
-              /&gt;
-
-              &lt;div class=&quot;card-details&quot;&gt;
-                &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
-                &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-                  
-                </code></pre>
-          </div>
-    
-
-          <!-- card with dismiss button -->
-          <div class="description-box mb-sm">
-            <h3>Example:Card with dismiss button</h3>
-            <div class="text-description p-xs mb-sm">
-              <p>Copy the below code to use it</p>
-            </div>
-
-          <div class="component-container component-container-card ">
-
-            <div class="card-container">
-              <img
-                class="card-image image-with-dismiss"
-                src="/assets/tshirt-image.jpg"
-                alt="T-shirt image"
-              /> <i class="material-icons card-close-btn">
-                close
-              </i>
-
-              <div class="card-details">
-                <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
-                <h5 class="card-price">$80.00</h5>
-                <button class="btn btn-card">Add to cart</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="code-snippets">
-          <pre><code class="html">&lt;div class=&quot;card-container&quot;&gt;
-            &lt;img
-              class=&quot;card-image image-with-dismiss&quot;
-              src=&quot;/assets/tshirt-image.jpg&quot;
-              alt=&quot;T-shirt image&quot;
-            /&gt; &lt;i class=&quot;material-icons card-close-btn&quot;&gt;
-              close
-            &lt;/i&gt;
-
-            &lt;div class=&quot;card-details&quot;&gt;
-              &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
-              &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
-              &lt;button class=&quot;btn btn-card&quot;&gt;Add to cart&lt;/button&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-             </code></pre>
-          </div>
-
-          <!-- card with shadow -->
-          <div class="description-box mb-sm">
-            <h3>Example:Card with shadow</h3>
-            <div class="text-description p-xs mb-sm">
-              <p>Copy the below code to use it</p>
-            </div>
-
-          <div class="component-container component-container-card">
-
-            <div class="card-container card-shadow">
-              <div class="card-overlay-badge">Sale</div>
-              <img
-                class="card-image"
-                src="/assets/tshirt-image.jpg"
-                alt="T-shirt image"
-              />
-
-              <div class="card-details">
-                <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
-                <h5 class="card-price">$80.00</h5>
-                <button class="btn btn-card">Add to cart</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="code-snippets">
-            <pre><code class="html">&lt;div class=&quot;card-container card-shadow&quot;&gt;
-              &lt;div class=&quot;card-overlay-badge&quot;&gt;Sale&lt;/div&gt;  
-              &lt;img
-                  class=&quot;card-image&quot;
-                  src=&quot;/assets/tshirt-image.jpg&quot;
-                  alt=&quot;T-shirt image&quot;
-                /&gt;
-  
-                &lt;div class=&quot;card-details&quot;&gt;
-                  &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
-                  &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
-                  &lt;button class=&quot;btn btn-card&quot;&gt;Add to cart&lt;/button&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-              
-               
-                </code></pre>
-          </div>
-    
-
-          <!-- card with overlay text -->
-          <div class="description-box mb-sm">
-            <h3>Example:Card with overlay text</h3>
-            <div class="text-description p-xs mb-sm">
-              <p>Copy the below code to use it</p>
-            </div>
-
-          <div class="component-container component-container-card">
-
-            <div class="card-container one">
-              <div class="card-overlay">Out of stock</div>
-              <img
-                class="card-image"
-                src="/assets/tshirt-image.jpg"
-                alt="T-shirt image"
-              />
-
-              <div class="card-details">
-                <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
-               
-                  <i class="material-icons star"> star star star star star </i>
-
-                  <h5 class="card-price">$80.00</h5>
-                  <button class="btn btn-card">Add to cart</button>
-                
-              </div>
-            </div>
-          </div>
-
-          <div class="code-snippets">
-            <pre><code class="html">  &lt;div class=&quot;card-overlay&quot;&gt;Out of stock&lt;/div&gt;
-              &lt;img
-                class=&quot;card-image&quot;
-                src=&quot;/assets/tshirt-image.jpg&quot;
-                alt=&quot;T-shirt image&quot;
-              /&gt;
-
-              &lt;div class=&quot;card-details&quot;&gt;
-                &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
-                &lt;div class=&quot;card-rating-box&quot;&gt;
-                  &lt;i class=&quot;material-icons star&quot;&gt; star star star star star &lt;/i&gt;
-
-                  &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
-                  &lt;button class=&quot;btn btn-card&quot;&gt;Add to cart&lt;/button&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-              
-                  
-                </code></pre>
-          </div>
-    
-          
-          
-
-          <!-- card with badge -->
-          <div class="description-box mb-sm">
-            <h3>Example:Card with badge</h3>
-            <div class="text-description p-xs mb-sm">
-              <p>Copy the below code to use it</p>
-            </div>
-          <div class="component-container component-container-list">
-            <div class="card-container one">
-              <div class="card-overlay-badge">Sale</div>
-              <img
-                class="card-image"
-                src="/assets/tshirt-image.jpg"
-                alt="T-shirt image"
-              />
-
-              <div class="card-details">
-                <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
-               
-                  <h5 class="card-price">$80.00</h5>
-                  <button class="btn btn-card">Add to cart</button>
-                
-              </div>
-            </div>
-          </div>
-          <!-- code snippet for card with badge -->
-
-          <div class="code-snippets">
-            <pre><code class="html">
-              &lt;div class=&quot;card-container one&quot;&gt;
-                &lt;div class=&quot;card-overlay-badge&quot;&gt;Sale&lt;/div&gt;
-                &lt;img
-                  class=&quot;card-image&quot;
-                  src=&quot;/assets/tshirt-image.jpg&quot;
-                  alt=&quot;T-shirt image&quot;
-                /&gt;
-  
-                &lt;div class=&quot;card-details&quot;&gt;
-                  &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
-                  &lt;div class=&quot;card-rating-box&quot;&gt;
-                    &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
-                    &lt;button class=&quot;btn btn-card&quot;&gt;View Product&lt;/button&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-              
-              
             </code></pre>
-          </div>
-    
+        </div>
+      </div>
+      <hr />
+      <!-- card section starts -->
+      <div class="card-section" id="card">
+        <div class="heading p-xs mb-sm">
+          <h2>Cards</h2>
+          <h5>Example:Simple Vertical card</h5>
+        </div>
 
-          <!-- card with text -->
-          <div class="description-box mb-sm">
-            <h3>Example:Card with text</h3>
-            <div class="text-description p-xs mb-sm">
-              <p>Card with text used in check out</p>
-            </div>
-          </div>
+        <!-- simple vertical card -->
 
-          <div class="component-container component-container-list">
-            <div class="card-container card-text">
-              <h2 class="price-details-header fw-700">Price details</h2>
-              <ul class="price-details">
-                <li class="checkout-text">Price <span>$80</span></li>
-                <li class="checkout-text">Discount <span>$0</span></li>
-                <li class="checkout-text">Shipping <span>$20</span></li>
-                <li class="checkout-text fw-700">Total <span>$100</span></li>
-              </ul>
-               <button class="btn btn-icon place-order">Place order</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-         <!-- card with text code snippets -->
-          <div class="code-snippets">
-            <pre><code class="html">&lt;div class=&quot;card-container card-text&quot;&gt;
-              &lt;h2 class=&quot;price-details-header fw-700&quot;&gt;Price details&lt;/h2&gt;
-              &lt;ul class=&quot;price-details&quot;&gt;
-                &lt;li class=&quot;checkout-text&quot;&gt;Price &lt;span&gt;$80&lt;/span&gt;&lt;/li&gt;
-                &lt;li class=&quot;checkout-text&quot;&gt;Discount &lt;span&gt;$0&lt;/span&gt;&lt;/li&gt;
-                &lt;li class=&quot;checkout-text&quot;&gt;Shipping &lt;span&gt;$20&lt;/span&gt;&lt;/li&gt;
-                &lt;li class=&quot;checkout-text fw-700&quot;&gt;Total &lt;span&gt;$100&lt;/span&gt;&lt;/li&gt;
-              &lt;/ul&gt;
-               &lt;button class=&quot;btn btn-icon place-order&quot;&gt;Place order&lt;/button&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-             
-                </code></pre>
-          </div>
-
-
-          <!-- single page product card -->
-
-          <div class="description-box mb-sm">
-            <h3>Example of main big card</h3>
-          </div>
-  
-          <div class="component-container component-container-single-page">
-            <div class="card-container single-page">
-              <div class="card-main-big single-page-card">
-                
-                <img
-                  class="card-image"
-                  src="/assets/tshirt-image.jpg"
-                  alt="T-shirt image"
-                />
-              </div>
-  
-              <div class="card-details right-col">
-                <div class="prd-name">
-                  <h3 class="brand-name">Venum</h3>
-                  <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
-                </div>
-  
-                <div class="card-price-box">
-                  <h5 class="card-price">$80.00</h5>
-                </div>
-  
-                <div class="colors-holder">
-                  <div class="color black"></div>
-                  <div class="color red"></div>
-                  <div class="color green"></div>
-                </div>
-  
-                <div class="size">
-                  <select class="input">
-                    <option selected disabled>Select</option>
-                    <option>S</option>
-                    <option>M</option>
-                    <option>L</option>
-                    <option disabled>XL</option>
-                  </select>
-                </div>
-  
-                <div class="action-btn">
-                  <button class="btn btn-icon btn-icon-favorite">
-                    <i class="material-icons"> favorite</i> Add to wishlist
-                  </button>
-  
-                  <button class="btn btn-icon btn-icon-add-to-cart">
-                    <i class="material-icons">shopping_cart</i>Add to cart
-                  </button>
-  
-                  <button class="btn btn-icon btn-icon-add-to-cart">
-                    <i class="material-icons">share</i>Share
-                  </button>
-                </div>
-              </div>
-  
+        <div class="component-container component-container-card">
+          <div class="card-container one">
+            <img
+              class="card-image"
+              src="/assets/tshirt-image.jpg"
+              alt="T-shirt image"
+            />
+            <div class="card-details">
+              <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
+              <h5 class="card-price">$80.00</h5>
+              <button class="btn btn-card">Add to cart</button>
             </div>
           </div>
         </div>
 
         <div class="code-snippets">
-          <pre><code class="html">&lt;div class=&quot;component-container component-container-single-page&quot;&gt;
-            &lt;div class=&quot;card-container single-page&quot;&gt;
-              &lt;div class=&quot;card-main-big single-page-card&quot;&gt;
-                
-                &lt;img
-                  class=&quot;card-image&quot;
-                  src=&quot;/assets/tshirt-image.jpg&quot;
-                  alt=&quot;T-shirt image&quot;
-                /&gt;
-              &lt;/div&gt;
-  
-              &lt;div class=&quot;card-details right-col&quot;&gt;
-                &lt;div class=&quot;prd-name&quot;&gt;
-                  &lt;h3 class=&quot;brand-name&quot;&gt;Venum&lt;/h3&gt;
-                  &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
-                &lt;/div&gt;
-  
-                &lt;div class=&quot;card-price-box&quot;&gt;
-                  &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
-                &lt;/div&gt;
-  
-                &lt;div class=&quot;colors-holder&quot;&gt;
-                  &lt;div class=&quot;color black&quot;&gt;&lt;/div&gt;
-                  &lt;div class=&quot;color red&quot;&gt;&lt;/div&gt;
-                  &lt;div class=&quot;color green&quot;&gt;&lt;/div&gt;
-                &lt;/div&gt;
-  
-                &lt;div class=&quot;size&quot;&gt;
-                  &lt;select class=&quot;input&quot;&gt;
-                    &lt;option selected disabled&gt;Select&lt;/option&gt;
-                    &lt;option&gt;S&lt;/option&gt;
-                    &lt;option&gt;M&lt;/option&gt;
-                    &lt;option&gt;L&lt;/option&gt;
-                    &lt;option disabled&gt;XL&lt;/option&gt;
-                  &lt;/select&gt;
-                &lt;/div&gt;
-  
-                &lt;div class=&quot;action-btn&quot;&gt;
-                  &lt;button class=&quot;btn btn-icon btn-icon-favorite&quot;&gt;
-                    &lt;i class=&quot;material-icons&quot;&gt; favorite&lt;/i&gt; Add to wishlist
-                  &lt;/button&gt;
-  
-                  &lt;button class=&quot;btn btn-icon btn-icon-add-to-cart&quot;&gt;
-                    &lt;i class=&quot;material-icons&quot;&gt;shopping_cart&lt;/i&gt;Add to cart
-                  &lt;/button&gt;
-  
-                  &lt;button class=&quot;btn btn-icon btn-icon-add-to-cart&quot;&gt;
-                    &lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;Share
-                  &lt;/button&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-  
-            &lt;/div&gt;
+          <pre><code class="html">&lt;div class=&quot;card-container one&quot;&gt;
+         &lt;img
+        class=&quot;card-image&quot;
+        src=&quot;/assets/tshirt-image.jpg&quot;
+        alt=&quot;T-shirt image&quot;
+         /&gt;
+       &lt;div class=&quot;card-details&quot;&gt;
+        &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
+        &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;  
+        </code></pre>
+        </div>
+
+        <!-- card with dismiss button -->
+        <div class="description-box mb-sm">
+          <h3>Example:Card with dismiss button</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>Copy the below code to use it</p>
+          </div>
+        </div>
+
+        <div class="component-container component-container-card">
+          <div class="card-container">
+            <img
+              class="card-image image-with-dismiss"
+              src="/assets/tshirt-image.jpg"
+              alt="T-shirt image"
+            />
+            <i class="material-icons card-close-btn"> close </i>
+            <div class="card-details">
+              <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
+              <h5 class="card-price">$80.00</h5>
+              <button class="btn btn-card">Add to cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="code-snippets">
+          <pre><code class="html">&lt;div class=&quot;card-container&quot;&gt;
+    &lt;img
+      class=&quot;card-image image-with-dismiss&quot;
+      src=&quot;/assets/tshirt-image.jpg&quot;
+      alt=&quot;T-shirt image&quot;
+    /&gt; &lt;i class=&quot;material-icons card-close-btn&quot;&gt;
+      close
+    &lt;/i&gt;
+    &lt;div class=&quot;card-details&quot;&gt;
+      &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
+      &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
+      &lt;button class=&quot;btn btn-card&quot;&gt;Add to cart&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    </code></pre>
+        </div>
+
+        <!-- card with shadow -->
+        <div class="description-box mb-sm">
+          <h3>Example:Card with shadow</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>Copy the below code to use it</p>
+          </div>
+        </div>
+
+        <div class="component-container component-container-card">
+          <div class="card-container card-shadow">
+            <div class="card-overlay-badge">Sale</div>
+            <img
+              class="card-image"
+              src="/assets/tshirt-image.jpg"
+              alt="T-shirt image"
+            />
+
+            <div class="card-details">
+              <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
+              <h5 class="card-price">$80.00</h5>
+              <button class="btn btn-card">Add to cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="code-snippets">
+          <pre><code class="html">&lt;div class=&quot;card-container card-shadow&quot;&gt;
+      &lt;div class=&quot;card-overlay-badge&quot;&gt;Sale&lt;/div&gt;  
+      &lt;img
+          class=&quot;card-image&quot;
+          src=&quot;/assets/tshirt-image.jpg&quot;
+          alt=&quot;T-shirt image&quot;
+        /&gt;
+
+        &lt;div class=&quot;card-details&quot;&gt;
+          &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
+          &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
+          &lt;button class=&quot;btn btn-card&quot;&gt;Add to cart&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+        </code></pre>
+        </div>
+
+        <!-- card with overlay text -->
+        <div class="description-box mb-sm">
+          <h3>Example:Card with overlay text</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>Copy the below code to use it</p>
+          </div>
+        </div>
+
+        <div class="component-container component-container-card">
+          <div class="card-container one">
+            <div class="card-overlay">Out of stock</div>
+            <img
+              class="card-image"
+              src="/assets/tshirt-image.jpg"
+              alt="T-shirt image"
+            />
+            <div class="card-details">
+              <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
+              <i class="material-icons star"> star star star star star </i>
+              <h5 class="card-price">$80.00</h5>
+              <button class="btn btn-card">Add to cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="code-snippets">
+          <pre><code class="html">  &lt;div class=&quot;card-overlay&quot;  &  gt;Out of stock&lt;/div&gt;
+      &lt;img
+        class=&quot;card-image&quot;
+        src=&quot;/assets/tshirt-image.jpg&quot;
+        alt=&quot;T-shirt image&quot;
+      /&gt;
+      &lt;div class=&quot;card-details&quot;&gt;
+        &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
+        &lt;div class=&quot;card-rating-box&quot;&gt;
+          &lt;i class=&quot;material-icons star&quot;&gt; star star star star star &lt;/i&gt;
+          &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
+          &lt;button class=&quot;btn btn-card&quot;&gt;Add to cart&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+       &lt;/div&gt;  
+    </code></pre>
+        </div>
+        <!-- card with badge -->
+        <div class="description-box mb-sm">
+          <h3>Example:Card with badge</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>Copy the below code to use it</p>
+          </div>
+        </div>
+
+        <div class="component-container component-container-list">
+          <div class="card-container one">
+            <div class="card-overlay-badge">Sale</div>
+            <img
+              class="card-image"
+              src="/assets/tshirt-image.jpg"
+              alt="T-shirt image"
+            />
+
+            <div class="card-details">
+              <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
+              <h5 class="card-price">$80.00</h5>
+              <button class="btn btn-card">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- code snippet for card with badge -->
+
+        <div class="code-snippets">
+          <pre><code class="html">
+      &lt;div class=&quot;card-container one&quot;&gt;
+        &lt;div class=&quot;card-overlay-badge&quot;&gt;Sale&lt;/div&gt;
+        &lt;img
+          class=&quot;card-image&quot;
+          src=&quot;/assets/tshirt-image.jpg&quot;
+          alt=&quot;T-shirt image&quot;
+        /&gt;
+        &lt;div class=&quot;card-details&quot;&gt;
+          &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
+          &lt;div class=&quot;card-rating-box&quot;&gt;
+            &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
+            &lt;button class=&quot;btn btn-card&quot;&gt;View Product&lt;/button&gt;
           &lt;/div&gt;
         &lt;/div&gt;
-
-            
-                
-              </code></pre>
+        &lt;/div&gt;
+       </code></pre>
         </div>
 
-        <hr>
-  
-
-          <!-- Horizontal card -->
-          <div class="description-box mb-sm">
-            <h3>Example:Card with shadow</h3>
-            <div class="text-description p-xs mb-sm">
-              <p>Copy the below code to use it</p>
+        <!-- card with text -->
+        <div class="description-box mb-sm">
+          <h3>Example:Card with text</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>Card with text used in check out</p>
           </div>
+        </div>
 
-          <div class="component-container ">
-            <div class="card-container horizontal">
-              <div class="card-main-big">
-                <i class="material-icons icon-only ">share</i>
-                <img
-                  class="card-image"
-                  src="/assets/tshirt-image.jpg"
-                  alt="T-shirt image"
+        <div class="component-container component-container-list">
+          <div class="card-container card-text">
+            <h2 class="price-details-header fw-700">Price details</h2>
+            <ul class="price-details">
+              <li class="checkout-text">Price <span>$80</span></li>
+              <li class="checkout-text">Discount <span>$0</span></li>
+              <li class="checkout-text">Shipping <span>$20</span></li>
+              <li class="checkout-text fw-700">Total <span>$100</span></li>
+            </ul>
+            <button class="btn btn-icon place-order">Place order</button>
+          </div>
+        </div>
+
+        <!-- card with text code snippets -->
+        <div class="code-snippets">
+          <pre><code class="html">&lt;div class=&quot;card-container card-text&quot;&gt;
+      &lt;h2 class=&quot;price-details-header fw-700&quot;&gt;Price details&lt;/h2&gt;
+      &lt;ul class=&quot;price-details&quot;&gt;
+        &lt;li class=&quot;checkout-text&quot;&gt;Price &lt;span&gt;$80&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;checkout-text&quot;&gt;Discount &lt;span&gt;$0&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;checkout-text&quot;&gt;Shipping &lt;span&gt;$20&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;checkout-text fw-700&quot;&gt;Total &lt;span&gt;$100&lt;/span&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+       &lt;button class=&quot;btn btn-icon place-order&quot;&gt;Place order&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+     
+        </code></pre>
+        </div>
+
+        <!-- single page product card -->
+
+        <div class="description-box mb-sm">
+          <h3>Example of main big card</h3>
+        </div>
+
+        <div class="component-container component-container-single-page">
+          <div class="card-container single-page">
+            <div class="card-main-big single-page-card">
+              <img
+                class="card-image"
+                src="/assets/tshirt-image.jpg"
+                alt="T-shirt image"
+              />
+            </div>
+
+            <div class="card-details right-col">
+              <div class="prd-name">
+                <h3 class="brand-name">Venum</h3>
+                <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
+              </div>
+
+              <div class="card-price-box">
+                <h5 class="card-price">$80.00</h5>
+              </div>
+
+              <div class="colors-holder">
+                <div class="color black"></div>
+                <div class="color red"></div>
+                <div class="color green"></div>
+              </div>
+
+              <div class="size">
+                <select class="input">
+                  <option selected disabled>Select</option>
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                  <option disabled>XL</option>
+                </select>
+              </div>
+
+              <div class="action-btn">
+                <button class="btn btn-icon btn-icon-favorite">
+                  <i class="material-icons"> favorite</i> Add to wishlist
+                </button>
+                <button class="btn btn-icon btn-icon-add-to-cart">
+                  <i class="material-icons">shopping_cart</i>Add to cart
+                </button>
+                <button class="btn btn-icon btn-icon-add-to-cart">
+                  <i class="material-icons">share</i>Share
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="code-snippets">
+          <pre><code class="html">&lt;div class=&quot;component-container   component-container-single-page&quot;&gt;
+    &lt;div class=&quot;card-container single-page&quot;&gt;
+      &lt;div class=&quot;card-main-big single-page-card&quot;&gt;
+        
+        &lt;img
+          class=&quot;card-image&quot;
+          src=&quot;/assets/tshirt-image.jpg&quot;
+          alt=&quot;T-shirt image&quot;
+        /&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;card-details right-col&quot;&gt;
+        &lt;div class=&quot;prd-name&quot;&gt;
+          &lt;h3 class=&quot;brand-name&quot;&gt;Venum&lt;/h3&gt;
+          &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-price-box&quot;&gt;
+          &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;colors-holder&quot;&gt;
+          &lt;div class=&quot;color black&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;color red&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;color green&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;size&quot;&gt;
+          &lt;select class=&quot;input&quot;&gt;
+            &lt;option selected disabled&gt;Select&lt;/option&gt;
+            &lt;option&gt;S&lt;/option&gt;
+            &lt;option&gt;M&lt;/option&gt;
+            &lt;option&gt;L&lt;/option&gt;
+            &lt;option disabled&gt;XL&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;action-btn&quot;&gt;
+          &lt;button class=&quot;btn btn-icon btn-icon-favorite&quot;&gt;
+            &lt;i class=&quot;material-icons&quot;&gt; favorite&lt;/i&gt; Add to wishlist
+          &lt;/button&gt;
+          &lt;button class=&quot;btn btn-icon btn-icon-add-to-cart&quot;&gt;
+            &lt;i class=&quot;material-icons&quot;&gt;shopping_cart&lt;/i&gt;Add to cart
+          &lt;/button&gt;
+          &lt;button class=&quot;btn btn-icon btn-icon-add-to-cart&quot;&gt;
+            &lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;Share
+          &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+     &lt;/div&gt;      
+   </code></pre>
+        </div>
+
+        <!-- Horizontal card -->
+        <div class="description-box mb-sm">
+          <h3>Example:Card with shadow</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>Copy the below code to use it</p>
+          </div>
+        </div>
+
+        <div class="component-container">
+          <div class="card-container horizontal">
+            <div class="card-main-big">
+              <i class="material-icons icon-only">share</i>
+              <img
+                class="card-image"
+                src="/assets/tshirt-image.jpg"
+                alt="T-shirt image"
+              />
+            </div>
+
+            <div class="card-details right-col">
+              <div class="prd-name">
+                <h3 class="brand-name">Venum</h3>
+                <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
+              </div>
+
+              <div class="card-price-box">
+                <h5 class="card-price">$80.00</h5>
+                <span class="price-cancelled">$120</span>
+              </div>
+
+              <div class="quantity">
+                <i class="material-icons icon-only"> add_circle_outline </i>
+                <input
+                  type="text"
+                  min="1"
+                  max=""
+                  class="input-qty"
+                  id="quanity-txt"
                 />
+                <i class="material-icons icon-only"> remove_circle_outline </i>
               </div>
 
-              <div class="card-details right-col">
-                <div class="prd-name">
-                  <h3 class="brand-name">Venum</h3>
-                  <h2 class="card-title">AUTHENTIC MEN'S WALKOUT JERSEY</h2>
-                </div>
-
-                <div class="card-price-box">
-                  <h5 class="card-price">$80.00</h5> 
-                  <span class="price-cancelled">$120</span>
-                </div>
-
-                <div class="quantity">
-                  <i class="material-icons icon-only"> add_circle_outline </i>
-                  <input type="text" min="1" max=""   class="input-qty"  id="quanity-txt"> 
-                  <i class="material-icons icon-only"> remove_circle_outline </i>
-                </div>
-
-                <div class="action-btn">
-                  <button class="btn btn-icon btn-icon-favorite">
-                    <i class="material-icons"> favorite</i> Wishlist It
-                  </button>
-                  <button class="btn btn-icon btn-icon-delete delete-btn-card">
-                    <i class="material-icons"> delete </i>Delete
-                  </button>
-                  
-            
-                </div>
+              <div class="action-btn">
+                <button class="btn btn-icon btn-icon-favorite">
+                  <i class="material-icons"> favorite</i> Wishlist It
+                </button>
+                <button class="btn btn-icon btn-icon-delete delete-btn-card">
+                  <i class="material-icons"> delete </i>Delete
+                </button>
               </div>
             </div>
           </div>
-          <!-- code snippets for horizontal card -->
-          <div class="code-snippets">
-            <pre><code class="html">   &lt;div class=&quot;card-container horizontal&quot;&gt;
-              &lt;div class=&quot;card-main-big&quot;&gt;
-                &lt;i class=&quot;material-icons icon-only &quot;&gt;share&lt;/i&gt;
-                &lt;img
-                  class=&quot;card-image&quot;
-                  src=&quot;/assets/tshirt-image.jpg&quot;
-                  alt=&quot;T-shirt image&quot;
-                /&gt;
-              &lt;/div&gt;
+        </div>
+        <!-- code snippets for horizontal card -->
+        <div class="code-snippets">
+          <pre><code class="html">   &lt;div class=&quot;card-container horizontal&quot;&gt;
+    &lt;div class=&quot;card-main-big&quot;&gt;
+      &lt;i class=&quot;material-icons icon-only &quot;&gt;share&lt;/i&gt;
+      &lt;img
+        class=&quot;card-image&quot;
+        src=&quot;/assets/tshirt-image.jpg&quot;
+        alt=&quot;T-shirt image&quot;
+      /&gt;
+    &lt;/div&gt;
 
-              &lt;div class=&quot;card-details right-col&quot;&gt;
-                &lt;div class=&quot;prd-name&quot;&gt;
-                  &lt;h3 class=&quot;brand-name&quot;&gt;Venum&lt;/h3&gt;
-                  &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
-                &lt;/div&gt;
+    &lt;div class=&quot;card-details right-col&quot;&gt;
+      &lt;div class=&quot;prd-name&quot;&gt;
+        &lt;h3 class=&quot;brand-name&quot;&gt;Venum&lt;/h3&gt;
+        &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
+      &lt;/div&gt;
 
-                &lt;div class=&quot;card-price-box&quot;&gt;
-                  &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt; 
-                  &lt;span class=&quot;price-cancelled&quot;&gt;$120&lt;/span&gt;
-                &lt;/div&gt;
+      &lt;div class=&quot;card-price-box&quot;&gt;
+        &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt; 
+        &lt;span class=&quot;price-cancelled&quot;&gt;$120&lt;/span&gt;
+      &lt;/div&gt;
 
-                &lt;div class=&quot;quantity&quot;&gt;
-                  &lt;i class=&quot;material-icons icon-only&quot;&gt; add_circle_outline &lt;/i&gt;
-                  &lt;input type=&quot;text&quot; min=&quot;1&quot; max=&quot;&quot;   class=&quot;input-qty&quot;  id=&quot;quanity-txt&quot;&gt; 
-                  &lt;i class=&quot;material-icons icon-only&quot;&gt; remove_circle_outline &lt;/i&gt;
-                &lt;/div&gt;
+      &lt;div class=&quot;quantity&quot;&gt;
+        &lt;i class=&quot;material-icons icon-only&quot;&gt; add_circle_outline &lt;/i&gt;
+        &lt;input type=&quot;text&quot; min=&quot;1&quot; max=&quot;&quot;   class=&quot;input-qty&quot;  id=&quot;quanity-txt&quot;&gt; 
+        &lt;i class=&quot;material-icons icon-only&quot;&gt; remove_circle_outline &lt;/i&gt;
+      &lt;/div&gt;
 
-                &lt;div class=&quot;action-btn&quot;&gt;
-                  &lt;button class=&quot;btn btn-icon btn-icon-favorite&quot;&gt;
-                    &lt;i class=&quot;material-icons&quot;&gt; favorite&lt;/i&gt; Wishlist It
-                  &lt;/button&gt;
-                  &lt;button class=&quot;btn btn-icon btn-icon-delete delete-btn-card&quot;&gt;
-                    &lt;i class=&quot;material-icons&quot;&gt; delete &lt;/i&gt;Delete
-                  &lt;/button&gt;
-                  
-            
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
- 
-          </code></pre>
-          
-          </div>
-      </div> 
-         <!-- closing tag of card id -->
-        <hr />
+      &lt;div class=&quot;action-btn&quot;&gt;
+        &lt;button class=&quot;btn btn-icon btn-icon-favorite&quot;&gt;
+          &lt;i class=&quot;material-icons&quot;&gt; favorite&lt;/i&gt; Wishlist It
+        &lt;/button&gt;
+        &lt;button class=&quot;btn btn-icon btn-icon-delete delete-btn-card&quot;&gt;
+          &lt;i class=&quot;material-icons&quot;&gt; delete &lt;/i&gt;Delete
+        &lt;/button&gt;
+        
+  
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 
-        <!-- image section starts -->
+</code></pre>
+        </div>
+      </div>
+      
+      <hr />
 
-        <div id="image">
-          <div class="heading p-xs mb-sm">
-            <h2>Image</h2>
-            <h5>Small desc below heading</h5>
-          </div>
+      <!-- image section starts -->
 
-          <div class="description-box mb-sm">
-            <h3>Example:full size <picture></picture></h3>
-            <div class="text-description p-xs mb-sm">
-              <p>Desc explaining example</p>
-            </div>
-          </div>
+      <div id="image">
+        <div class="heading p-xs mb-sm">
+          <h2>Image</h2>
+          <h5>Small desc below heading</h5>
+        </div>
 
-          <div class="component-container component-container-image">
-            <img
-              class="full-image"
-              src="/assets/flying-kite.jpg"
-              alt=""
-              srcset=""
-            />
-          </div>
-
-          <div class="code-snippets">
-            <pre><code class="html">&lt;img class=&quot;full-image&quot; src=&quot;/assets/flying-kite.jpg&quot; alt=&quot;&quot; srcset=&quot;&quot;&gt;
-           </code></pre>
+        <div class="description-box mb-sm">
+          <h3>Example:full size <picture></picture></h3>
+          <div class="text-description p-xs mb-sm">
+            <p>Desc explaining example</p>
           </div>
         </div>
 
+        <div class="component-container component-container-image">
+          <img
+            class="full-image"
+            src="/assets/flying-kite.jpg"
+            alt=""
+            srcset=""
+          />
+        </div>
+
+        <div class="code-snippets">
+          <pre><code class="html">&lt;img class=&quot;full-image&quot; src=&quot;/assets/flying-kite.jpg&quot; alt=&quot;&quot; srcset=&quot;&quot;&gt;
+         </code></pre>
+        </div>
         <div class="component-container component-container-image">
           <img
             class="round-image"
@@ -1323,12 +1234,11 @@
 
         <div class="code-snippets">
           <pre><code class="html">   &lt;img class=&quot;round-image&quot; src=&quot;/assets/flying-kite.jpg&quot; alt=&quot;&quot; srcset=&quot;&quot;&gt;
-          &lt;/div&gt;
-        
-            
-          </code></pre>
+        &lt;/div&gt;
+        </code></pre>
         </div>
       </div>
+      <hr />
 
       <!-- text-utility starts here -->
 
@@ -1346,30 +1256,31 @@
               Just add class h1 to h5 in to any h tag to use the below
             </p>
           </div>
-
-          <div class="component-container component-container-text-utility">
-            <h1 class="h1">This is Heading h1</h1>
-            <h2 class="h2">This is Heading h2</h2>
-            <h3 class="h3">This is Heading h3</h3>
-            <h4 class="h4">This is Heading h4</h4>
-            <h5 class="h5">This is Heading h5</h5>
-          </div>
         </div>
-  
-      <div class="code-snippets">
-        <pre><code class="html"> &lt;h1 class=&quot;h1&quot;&gt;This is Heading 1&lt;/h1&gt;
+
+        <div class="component-container component-container-text-utility">
+          <h1 class="h1">This is Heading h1</h1>
+          <h2 class="h2">This is Heading h2</h2>
+          <h3 class="h3">This is Heading h3</h3>
+          <h4 class="h4">This is Heading h4</h4>
+          <h5 class="h5">This is Heading h5</h5>
+        </div>
+        <!-- </div> -->
+
+        <div class="code-snippets">
+          <pre><code class="html"> &lt;h1 class=&quot;h1&quot;&gt;This is Heading 1&lt;/h1&gt;
           &lt;h2 class=&quot;h2&quot;&gt;This is Heading 2&lt;/h2&gt;
           &lt;h3 class=&quot;h3&quot;&gt;This is Heading 3&lt;/h3&gt;
           &lt;h4 class=&quot;h4&quot;&gt;This is Heading 4&lt;/h4&gt;
-          &lt;h5 class=&quot;h5&quot;&gt;This is Heading 5&lt;/h5&gt;
-              
-            </code></pre>
-      </div>
+          &lt;h5 class=&quot;h5&quot;&gt;This is Heading 5&lt;/h5&gt;  
+          </code></pre>
+        </div>
 
-      <div class="description-box mb-sm">
-        <h3>Example:Text alignment</h3>
-        <div class="text-description p-xs mb-sm">
-          <p>Text can start from left center and right side</p>
+        <div class="description-box mb-sm">
+          <h3>Example:Text alignment</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>Text can start from left center and right side</p>
+          </div>
         </div>
 
         <div
@@ -1380,22 +1291,23 @@
           <p class="ta-end">This text on the right side</p>
           <p class="ta-justify">This text is justify</p>
         </div>
-      
 
-      <div class="code-snippets">
-        <pre><code class="html">&lt;p class=&quot;ta-start&quot;&gt;This text on the left side&lt;/p&gt;
+        <div class="code-snippets">
+          <pre><code class="html">&lt;p class=&quot;ta-start&quot;&gt;This text on the left side&lt;/p&gt;
           &lt;p class=&quot;ta-center&quot;&gt; This text on the center side&lt;/p&gt;
           &lt;p class=&quot;ta-end&quot;&gt;This text on the right side&lt;/p&gt;
           &lt;p class=&quot;ta-justify&quot;&gt;This text is justify &lt;/p&gt;
-        </code></pre>
-      </div>
+         </code></pre>
+        </div>
 
-      <div class="description-box mb-sm">
-        <h3>Example:Grey Text</h3>
-        <div class="text-description p-xs mb-sm">
-          <p>
-            Text in grey color used to denote less important or not availability
-          </p>
+        <div class="description-box mb-sm">
+          <h3>Example:Grey Text</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>
+              Text in grey color used to denote less important or not
+              availability
+            </p>
+          </div>
         </div>
 
         <div class="component-container component-container-list">
@@ -1404,15 +1316,14 @@
             and publishing industries for previewing layouts and visual mockups.
           </p>
         </div>
-      </div>
-      <div class="code-snippets">
-        <pre><code class="html">&lt;p class=&quot;txt-grey&quot;&gt;
+        <div class="code-snippets">
+          <pre><code class="html">&lt;p class=&quot;txt-grey&quot;&gt;
           Lorem ipsum is placeholder text commonly used in the graphic, print,
           and publishing industries for previewing layouts and visual mockups.
         &lt;/p&gt;  
         </code></pre>
+        </div>
       </div>
-
       <hr />
 
       <!-- list section starts heere -->
@@ -1434,40 +1345,40 @@
               numbered (ordered) or not-numbered (unordered).
             </p>
           </div>
-
-          <div class="component-container component-container-list">
-            <ol class="list-container">
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-              <li>Item 1</li>
-            </ol>
-
-            <ol class="list-container">
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-              <li>Item 1</li>
-            </ol>
-
-            <ol class="list-container list-style-circle">
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-              <li>Item 1</li>
-            </ol>
-
-            <ol class="list-container list-style-square">
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-              <li>Item 1</li>
-            </ol>
-          </div>
         </div>
-      </div>
-      <div class="code-snippets">
-        <pre><code class="html">
+
+        <div class="component-container component-container-list">
+          <ol class="list-container">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 1</li>
+          </ol>
+
+          <ol class="list-container">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 1</li>
+          </ol>
+
+          <ol class="list-container list-style-circle">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 1</li>
+          </ol>
+
+          <ol class="list-container list-style-square">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 1</li>
+          </ol>
+        </div>
+
+        <div class="code-snippets">
+          <pre><code class="html">
           &lt;ol class=&quot;list-container&quot;&gt;
           &lt;li&gt;Item 1&lt;/li&gt;
           &lt;li&gt;Item 2&lt;/li&gt;
@@ -1498,35 +1409,37 @@
       &lt;/div&gt; 
               
             </code></pre>
-      </div>
+        </div>
 
-      <div class="description-box mb-sm">
-        <h3>Example:Stacked list</h3>
-        <p>Add list-stacked to ul tag.</p>
-      </div>
+        <div class="description-box mb-sm">
+          <h3>Example:Stacked list</h3>
+          <p>Add list-stacked to ul tag.</p>
+        </div>
 
-      <div class="component-container component-container-list">
-        <ul class="list-container list-stacked">
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-          <li>Item 4</li>
-        </ul>
-      </div>
+        <div class="component-container component-container-list">
+          <ul class="list-container list-stacked">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+          </ul>
+        </div>
 
-      <div class="code-snippets">
-        <pre><code class="html">&lt;ul class=&quot;list-container list-stacked&quot;&gt;
+        <div class="code-snippets">
+          <pre><code class="html">&lt;ul class=&quot;list-container list-stacked&quot;&gt;
           &lt;li&gt;Item 1&lt;/li&gt;
           &lt;li&gt;Item 2&lt;/li&gt;
           &lt;li&gt;Item 3&lt;/li&gt;
           &lt;li&gt;Item 4&lt;/li&gt;
         &lt;/ul&gt;
-            </code></pre>
-      </div>
-      <div class="description-box mb-sm">
-        <h3>Example:Spaced list</h3>
-        <div class="text-description p-xs mb-sm">
-          <p>Add list-spaced to ul tag and spaced to li tag</p>
+           </code></pre>
+        </div>
+
+        <div class="description-box mb-sm">
+          <h3>Example:Spaced list</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>Add list-spaced to ul tag and spaced to li tag</p>
+          </div>
         </div>
 
         <div class="component-container component-container-list">
@@ -1537,15 +1450,16 @@
             <li class="spaced">Item 4</li>
           </ul>
         </div>
-      
-      <div class="code-snippets">
-        <pre><code class="html"> &lt;ul class=&quot;list-container list-spaced&quot;&gt;
+
+        <div class="code-snippets">
+          <pre><code class="html"> &lt;ul class=&quot;list-container list-spaced&quot;&gt;
                    &lt;li class=&quot;spaced&quot;&gt;Item 1&lt;/li&gt;
           &lt;li class=&quot;spaced&quot;&gt;Item 2&lt;/li&gt;
           &lt;li class=&quot;spaced&quot;&gt;Item 3&lt;/li&gt;
           &lt;li class=&quot;spaced&quot;&gt;Item 4&lt;/li&gt;
         &lt;/ul&gt;
         </code></pre>
+        </div>
       </div>
       <hr />
 
@@ -1600,23 +1514,23 @@
             &lt;div class=&quot;col-2&quot;&gt;col 2&lt;/div&gt;
             &lt;div class=&quot;col-3&quot;&gt;col 3&lt;/div&gt;
           &lt;/div&gt;
-
         </code></pre>
         </div>
       </div>
+      <hr />
 
       <!-- navigation starts here -->
 
       <div id="navigation">
         <div class="heading p-xs mb-sm">
           <h2>Navigation</h2>
-         
-        </div> 
+        </div>
 
         <div class="description-box mb-sm">
-        <h3>Example:Simple navigation</h3>
-        <div class="text-description p-xs mb-sm">
-          <p>Use below code to use the </p>
+          <h3>Example:Simple navigation</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>Use below code to use the</p>
+          </div>
         </div>
 
         <div class="component-container component-container-navigation">
@@ -1627,19 +1541,14 @@
                 Search something
                 <i class="material-icons search-icon-navigation"> search </i>
               </div>
-
               <i class="material-icons navigation-icon-only"> favorite</i>
-              <i class="material-icons  navigation-icon-only">shopping_cart</i>
-
-              <i class="material-icons  navigation-icon-only">account_circle</i>
-
-
+              <i class="material-icons navigation-icon-only">shopping_cart</i>
+              <i class="material-icons navigation-icon-only">account_circle</i>
             </div>
           </div>
-          
-        </div> 
-     
-       <div class="code-snippets">
+        </div>
+
+        <div class="code-snippets">
           <pre><code class="html">
             &lt;div class=&quot;navigation-bar&quot;&gt;
             &lt;div class=&quot;logo-name&quot;&gt;Logo name&lt;/div&gt;
@@ -1653,244 +1562,235 @@
               &lt;i class=&quot;material-icons  navigation-icon-only&quot;&gt;shopping_cart&lt;/i&gt;
 
               &lt;i class=&quot;material-icons  navigation-icon-only&quot;&gt;account_circle&lt;/i&gt;
-
-
-            &lt;/div&gt;
-          
-              
+            &lt;/div&gt;    
             </code></pre>
         </div>
-     </div> 
-
-     <hr>
-
-     <div id="form">
-      <div class="heading p-xs mb-sm">
-        <h2>Form</h2>
-        
       </div>
+      <hr />
 
-      <div class="description-box mb-sm">
-      <h3>Example:Login form</h3>
-      <div class="text-description p-xs mb-sm">
-        <p>Sign up form onboarding a client</p>
-      </div>
-     </div>  
+      <!-- Form login -->
 
-
-      <div class="component-container component-container-form">
-        
-        <div class="wrapper">
-          <div class="login-header">Sign in</div>
-          <form action="#">
-            <div class="field email">
-              <div class="input-area">
-                <input
-                  type="text"
-                  class="email-input"
-                  placeholder="Email Address"
-                />
-                <span class="icon material-icons"> email </span>
-    
-                <span class="error error-icon material-icons"> error </span>
-              </div>
-              <div class="error error-text">Email cant be blank</div>
-            </div>
-    
-            <div class="field password">
-              <div class="input-area">
-                <input
-                  type="password"
-                  class="password-input"
-                  placeholder="password"
-                />
-                <span class="icon material-icons"> lock</span>
-    
-                <span class="error error-icon material-icons"> error </span>
-              </div>
-              <div class="error error-text">password cant be blank</div>
-            </div>
-    
-            <div class="pass-link"><a href="#">Forgot password?</a></div>
-    
-            <input type="submit" value="Login" />
-          </form>
-          <div class="signup-link">Not yet member? <a href="#">Signup Now</a></div>
+      <div id="form">
+        <div class="heading p-xs mb-sm">
+          <h2>Form</h2>
         </div>
-      </div> 
-   
-    <div class="code-snippets">
-      <pre><code class="html">&lt;div class=&quot;wrapper&quot;&gt;
-        &lt;div class=&quot;login-header&quot;&gt;Sign in&lt;/div&gt;
-        &lt;form action=&quot;#&quot;&gt;
-          &lt;div class=&quot;field email&quot;&gt;
-            &lt;div class=&quot;input-area&quot;&gt;
-              &lt;input
-                type=&quot;text&quot;
-                class=&quot;email-input&quot;
-                placeholder=&quot;Email Address&quot;
-              /&gt;
-              &lt;span class=&quot;icon material-icons&quot;&gt; email &lt;/span&gt;
-  
-              &lt;span class=&quot;error error-icon material-icons&quot;&gt; error &lt;/span&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;error error-text&quot;&gt;Email cant be blank&lt;/div&gt;
-          &lt;/div&gt;
-  
-          &lt;div class=&quot;field password&quot;&gt;
-            &lt;div class=&quot;input-area&quot;&gt;
-              &lt;input
-                type=&quot;password&quot;
-                class=&quot;password-input&quot;
-                placeholder=&quot;password&quot;
-              /&gt;
-              &lt;span class=&quot;icon material-icons&quot;&gt; lock&lt;/span&gt;
-  
-              &lt;span class=&quot;error error-icon material-icons&quot;&gt; error &lt;/span&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;error error-text&quot;&gt;password cant be blank&lt;/div&gt;
-          &lt;/div&gt;
-  
-          &lt;div class=&quot;pass-link&quot;&gt;&lt;a href=&quot;#&quot;&gt;Forgot password?&lt;/a&gt;&lt;/div&gt;
-  
-          &lt;input type=&quot;submit&quot; value=&quot;Login&quot; /&gt;
-        &lt;/form&gt;
-        &lt;div class=&quot;signup-link&quot;&gt;Not yet member? &lt;a href=&quot;#&quot;&gt;Signup Now&lt;/a&gt;&lt;/div&gt;
-      &lt;/div&gt;
+        <div class="description-box mb-sm">
+          <h3>Example:Login form</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>Sign up form onboarding a client</p>
+          </div>
+        </div>
 
-        
-            
-          </code></pre>
-    </div>
-    <div class="description-box mb-sm">
-      <h3>Example:Sign up form</h3>
-      <div class="text-description p-xs mb-sm">
-       
-      </div> 
-    </div>
+        <div class="component-container component-container-form">
+          <div class="wrapper">
+            <div class="login-header">Sign in</div>
+            <form action="#">
+              <div class="field email">
+                <div class="input-area">
+                  <input
+                    type="text"
+                    class="email-input"
+                    placeholder="Email Address"
+                  />
+                  <span class="icon material-icons"> email </span>
 
+                  <span class="error error-icon material-icons"> error </span>
+                </div>
+                <div class="error error-text">Email cant be blank</div>
+              </div>
 
-     <div class="component-container component-container-list">
-      <div class="wrapper">
-        <div class="login-header">Sign up</div>
-        <form action="#">
-          <div class="field email">
-            <div class="input-area">
-              <input
-                type="text"
-                class="email-input"
-                placeholder="Email Address"
-              />
-              <span class="icon material-icons"> email </span>
-  
-              <span class="error error-icon material-icons"> error </span>
+              <div class="field password">
+                <div class="input-area">
+                  <input
+                    type="password"
+                    class="password-input"
+                    placeholder="password"
+                  />
+                  <span class="icon material-icons"> lock</span>
+
+                  <span class="error error-icon material-icons"> error </span>
+                </div>
+                <div class="error error-text">password cant be blank</div>
+              </div>
+              <div class="pass-link"><a href="#">Forgot password?</a></div>
+              <input type="submit" value="Login" />
+            </form>
+            <div class="signup-link">
+              Not yet member? <a href="#">Signup Now</a>
             </div>
-            <div class="error error-text">Email cant be blank</div>
           </div>
-  
-          <div class="field password">
-            <div class="input-area">
-              <input
-                type="password"
-                class="password-input"
-                placeholder="Password"
-              />
-              <span class="icon material-icons"> lock</span>
-  
-              <span class="error error-icon material-icons"> error </span>
-            </div>
-            <div class="error error-text">Password cant be blank</div>
-          </div>
-  
-          <div class="check-box">
-            <input type="checkbox" id="tnc" />
-            I accept all Terms & Conditions
-          </div>
-  
-          <input type="submit" value="Sign up" />
-          <input type="button" value="Already have an account" />
-        </form>
-      </div>
-        
-     </div>
-   
-    <div class="code-snippets">
-      <pre><code class="html">&lt;div class=&quot;wrapper&quot;&gt;
-        &lt;div class=&quot;login-header&quot;&gt;Sign up&lt;/div&gt;
-        &lt;form action=&quot;#&quot;&gt;
-          &lt;div class=&quot;field email&quot;&gt;
-            &lt;div class=&quot;input-area&quot;&gt;
-              &lt;input
-                type=&quot;text&quot;
-                class=&quot;email-input&quot;
-                placeholder=&quot;Email Address&quot;
-              /&gt;
-              &lt;span class=&quot;icon material-icons&quot;&gt; email &lt;/span&gt;
-  
-              &lt;span class=&quot;error error-icon material-icons&quot;&gt; error &lt;/span&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;error error-text&quot;&gt;Email cant be blank&lt;/div&gt;
-          &lt;/div&gt;
-  
-          &lt;div class=&quot;field password&quot;&gt;
-            &lt;div class=&quot;input-area&quot;&gt;
-              &lt;input
-                type=&quot;password&quot;
-                class=&quot;password-input&quot;
-                placeholder=&quot;Password&quot;
-              /&gt;
-              &lt;span class=&quot;icon material-icons&quot;&gt; lock&lt;/span&gt;
-  
-              &lt;span class=&quot;error error-icon material-icons&quot;&gt; error &lt;/span&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;error error-text&quot;&gt;Password cant be blank&lt;/div&gt;
-          &lt;/div&gt;
-  
-          &lt;div class=&quot;check-box&quot;&gt;
-            &lt;input type=&quot;checkbox&quot; id=&quot;tnc&quot; /&gt;
-            I accept all Terms &amp; Conditions
-          &lt;/div&gt;
-  
-          &lt;input type=&quot;submit&quot; value=&quot;Sign up&quot; /&gt;
-          &lt;input type=&quot;button&quot; value=&quot;Already have an account&quot; /&gt;
-        &lt;/form&gt;
-      &lt;/div&gt;
-        
-            
-     </code></pre>
+        </div>
+
+        <div class="code-snippets">
+          <pre><code class="html">&lt;div class=&quot;wrapper&quot;&gt;
+          &lt;div class=&quot;login-header&quot;&gt;Sign in&lt;/div&gt;
+          &lt;form action=&quot;#&quot;&gt;
+            &lt;div class=&quot;field email&quot;&gt;
+              &lt;div class=&quot;input-area&quot;&gt;
+                &lt;input
+                  type=&quot;text&quot;
+                  class=&quot;email-input&quot;
+                  placeholder=&quot;Email Address&quot;
+                /&gt;
+                &lt;span class=&quot;icon material-icons&quot;&gt; email &lt;/span&gt;
     
+                &lt;span class=&quot;error error-icon material-icons&quot;&gt; error &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;error error-text&quot;&gt;Email cant be blank&lt;/div&gt;
+            &lt;/div&gt;
+    
+            &lt;div class=&quot;field password&quot;&gt;
+              &lt;div class=&quot;input-area&quot;&gt;
+                &lt;input
+                  type=&quot;password&quot;
+                  class=&quot;password-input&quot;
+                  placeholder=&quot;password&quot;
+                /&gt;
+                &lt;span class=&quot;icon material-icons&quot;&gt; lock&lt;/span&gt;
+    
+                &lt;span class=&quot;error error-icon material-icons&quot;&gt; error &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;error error-text&quot;&gt;password cant be blank&lt;/div&gt;
+            &lt;/div&gt;
+    
+            &lt;div class=&quot;pass-link&quot;&gt;&lt;a href=&quot;#&quot;&gt;Forgot password?&lt;/a&gt;&lt;/div&gt;
+    
+            &lt;input type=&quot;submit&quot; value=&quot;Login&quot; /&gt;
+          &lt;/form&gt;
+          &lt;div class=&quot;signup-link&quot;&gt;Not yet member? &lt;a href=&quot;#&quot;&gt;Signup Now&lt;/a&gt;&lt;/div&gt;
+          &lt;/div&gt;  
+        </code></pre>
+        </div>
 
-    </div>
+        <!-- signup form -->
 
-    <hr />
+        <div class="description-box mb-sm">
+          <h3>Example:Sign up form</h3>
+          <div class="text-description p-xs mb-sm"></div>
+        </div>
 
-    <div id="slider">
+        <div class="component-container component-container-form">
+          <div class="wrapper">
+            <div class="login-header">Sign up</div>
+            <form action="#">
+              <div class="field email">
+                <div class="input-area">
+                  <input
+                    type="text"
+                    class="email-input"
+                    placeholder="Email Address"
+                  />
+                  <span class="icon material-icons"> email </span>
+                  <span class="error error-icon material-icons"> error </span>
+                </div>
+                <div class="error error-text">Email cant be blank</div>
+              </div>
+
+              <div class="field password">
+                <div class="input-area">
+                  <input
+                    type="password"
+                    class="password-input"
+                    placeholder="Password"
+                  />
+                  <span class="icon material-icons"> lock</span>
+                  <span class="error error-icon material-icons"> error </span>
+                </div>
+                <div class="error error-text">Password cant be blank</div>
+              </div>
+
+              <div class="check-box">
+                <input type="checkbox" id="tnc" />
+                I accept all Terms & Conditions
+              </div>
+
+              <input type="submit" value="Sign up" />
+              <input type="button" value="Already have an account" />
+            </form>
+          </div>
+        </div>
+
+        <div class="code-snippets">
+          <pre><code class="html">&lt;div class=&quot;wrapper&quot;&gt;
+          &lt;div class=&quot;login-header&quot;&gt;Sign up&lt;/div&gt;
+          &lt;form action=&quot;#&quot;&gt;
+            &lt;div class=&quot;field email&quot;&gt;
+              &lt;div class=&quot;input-area&quot;&gt;
+                &lt;input
+                  type=&quot;text&quot;
+                  class=&quot;email-input&quot;
+                  placeholder=&quot;Email Address&quot;
+                /&gt;
+                &lt;span class=&quot;icon material-icons&quot;&gt; email &lt;/span&gt;
+    
+                &lt;span class=&quot;error error-icon material-icons&quot;&gt; error &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;error error-text&quot;&gt;Email cant be blank&lt;/div&gt;
+            &lt;/div&gt;
+    
+            &lt;div class=&quot;field password&quot;&gt;
+              &lt;div class=&quot;input-area&quot;&gt;
+                &lt;input
+                  type=&quot;password&quot;
+                  class=&quot;password-input&quot;
+                  placeholder=&quot;Password&quot;
+                /&gt;
+                &lt;span class=&quot;icon material-icons&quot;&gt; lock&lt;/span&gt;
+    
+                &lt;span class=&quot;error error-icon material-icons&quot;&gt; error &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;error error-text&quot;&gt;Password cant be blank&lt;/div&gt;
+            &lt;/div&gt;
+    
+            &lt;div class=&quot;check-box&quot;&gt;
+              &lt;input type=&quot;checkbox&quot; id=&quot;tnc&quot; /&gt;
+              I accept all Terms &amp; Conditions
+            &lt;/div&gt;
+    
+            &lt;input type=&quot;submit&quot; value=&quot;Sign up&quot; /&gt;
+            &lt;input type=&quot;button&quot; value=&quot;Already have an account&quot; /&gt;
+          &lt;/form&gt;
+        &lt;/div&gt;   
+       </code></pre>
+        </div>
+      </div>
+      <hr />
+
+      <!-- slider -->
+
+      <div id="slider">
         <div class="heading p-xs mb-sm">
           <h2>Slider</h2>
-          <h5>
-            Slider is used for giving the range value 
-          </h5>
-        </div> 
+          <h5>Slider is used for giving the range value</h5>
+        </div>
 
-      <div class="description-box mb-sm">
-        <h3>ExamplePrice range slider</h3>
-        <div class="text-description p-xs mb-sm">
-          <p>These types of sliders are used in filtering products withing the price range</p>
-        </div> 
-      </div>
+        <div class="description-box mb-sm">
+          <h3>ExamplePrice range slider</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>
+              These types of sliders are used in filtering products withing the
+              price range
+            </p>
+          </div>
+        </div>
 
+        <div class="component-container component-container-slider">
+          <div class="box">
+            <div class="slider">
+              <input
+                class="input-slider"
+                type="range"
+                min="0"
+                max="100"
+                value="25"
+              />
+            </div>
+            <div class="value">100</div>
+          </div>
+        </div>
 
-       <div class="component-container component-container-slider">
-         <div class="box">
-           <div class="slider">
-             <input class="input-slider" type="range" min="0" max="100" value="25">
-           </div>
-           <div class="value">100</div>
-         </div> 
-       </div> 
-     
-      <div class="code-snippets">
-        <pre><code class="html">
+        <div class="code-snippets">
+          <pre><code class="html">
           &lt;div class=&quot;box&quot;&gt;
            &lt;div class=&quot;slider&quot;&gt;
              &lt;input class=&quot;input-slider&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;100&quot; value=&quot;25&quot;&gt;
@@ -1900,11 +1800,10 @@
           
               
             </code></pre>
-      </div>
+        </div>
 
-
-      <div class="code-snippets">
-        <pre><code > const slider = document.querySelector(".input-slider")
+        <div class="code-snippets">
+          <pre><code > const slider = document.querySelector(".input-slider")
           const value = document.querySelector(".value")
           value.textContent = slider.value;
           
@@ -1912,42 +1811,39 @@
               value.textContent = this.value;
           }
             </code></pre>
-       </div>
-    </div> 
-    <hr />
+        </div>
+      </div>
+      <hr />
 
-     <!-- rating starts -->
-    <div id="rating">
-      <div class="heading p-xs mb-sm">
-        <h2>Rating</h2>
-        <h5>
-          Rating components can be used as read-only badge or in reviews section. Can be used in reviews section as form too.
-        </h5>
-      </div> 
+      <!-- rating starts -->
+      <div id="rating">
+        <div class="heading p-xs mb-sm">
+          <h2>Rating</h2>
+          <h5>
+            Rating components can be used as read-only badge or in reviews
+            section. Can be used in reviews section as form too.
+          </h5>
+        </div>
 
-    <div class="description-box mb-sm">
-      <h3>Example of read-only ratings
-      </h3>
-      <div class="text-description p-xs mb-sm">
-        <p>There are two types, input read-only and badge</p>
-      </div> 
-    </div>
+        <div class="description-box mb-sm">
+          <h3>Example of read-only ratings</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>There are two types, input read-only and badge</p>
+          </div>
+        </div>
 
+        <div class="component-container component-container-rating">
+          <div class="rating">
+            <div class="rating-badge">
+              <span>4.5</span><i class="material-icons star"> star </i>
+            </div>
+          </div>
 
-     <div class="component-container component-container-rating">
-       <div class="rating">
-         <div class="rating-badge">
-           <span>4.5</span><i class="material-icons star"> star </i>
-         </div>
-        </div> 
+          <i class="material-icons star"> star star star star star </i>
+        </div>
 
-         <i class="material-icons star"> star star star star star </i>
-         
-       
-     </div> 
-   
-    <div class="code-snippets">
-      <pre><code class="html">&lt;div class=&quot;component-container component-container-rating&quot;&gt;
+        <div class="code-snippets">
+          <pre><code class="html">&lt;div class=&quot;component-container component-container-rating&quot;&gt;
        &lt;div class=&quot;rating&quot;&gt;
          &lt;div class=&quot;rating-badge&quot;&gt;
            &lt;span&gt;4.5&lt;/span&gt;&lt;i class=&quot;material-icons star&quot;&gt; star &lt;/i&gt;
@@ -1955,67 +1851,68 @@
         &lt;/div&gt; 
         
          &lt;i class=&quot;material-icons star&quot;&gt; star star star star star &lt;/i&gt;
-         
-       
      &lt;/div&gt; 
-        
             
           </code></pre>
-    </div>
-  </div> 
-  <hr>
+        </div>
+      </div>
+      <hr />
 
-  <!-- snackbar starts -->
+      <!-- snackbar starts -->
 
-  <div id="snackbar">
-    <div class="heading p-xs mb-sm">
-      <h2>Snackbar</h2>
-      <h5>
-        This component can be used for toast or snackbar component. Toast is mostly used to show feedback message. Snackbar is to used show message that need user action
-      </h5>
-    </div> 
+      <div id="snackbar">
+        <div class="heading p-xs mb-sm">
+          <h2>Snackbar</h2>
+          <h5>
+            This component can be used for toast or snackbar component. Toast is
+            mostly used to show feedback message. Snackbar is to used show
+            message that need user action
+          </h5>
+        </div>
 
-   <div class="description-box mb-sm">
-    
-    <div class="text-description p-xs mb-sm">
-      <p>Just add class as baseline_snackbar, leading_snackbar and stacked_snackbar along with snackbar_container. Also add id as baseline_snackbar, leading_snackbar and stacked_snackbar for functionality</p>
-    </div> 
-   </div>
+        <div class="description-box mb-sm">
+          <div class="text-description p-xs mb-sm">
+            <p>
+              Just add class as baseline_snackbar, leading_snackbar and
+              stacked_snackbar along with snackbar_container. Also add id as
+              baseline_snackbar, leading_snackbar and stacked_snackbar for
+              functionality
+            </p>
+          </div>
+        </div>
 
+        <div class="component-container component-container-snackbar">
+          <button class="btn btn-primary" id="base">Base</button>
+          <button class="btn btn-primary" id="leading">Leading</button>
+          <button class="btn btn-primary" id="stacked">Stacked</button>
+        </div>
 
-   <div class="component-container component-container-snackbar">
-    <button class="btn btn-primary" id="base">Base</button>
-    <button class="btn btn-primary" id="leading">Leading</button>
-    <button class="btn btn-primary" id="stacked">Stacked</button> 
-   </div> 
+        <div class="snackbar base-snackbar" id="base-snackbar">
+          <div class="snackbar-wrapper">
+            <p>Sorry something went wrong</p>
+            <span><a href="#">Retry</a></span>
+            <span><a href="#" id="base-snackbar-close-btn">X</a></span>
+          </div>
+        </div>
 
-   <div class="snackbar  base-snackbar" id="base-snackbar">
-     <div class="snackbar-wrapper">
-     <p>Sorry something went wrong</p>
-     <span><a href="#">Retry</a></span>
-     <span><a href="#" id="base-snackbar-close-btn">X</a></span>
-    </div>
-   </div>
+        <div class="snackbar leading-snackbar" id="leading-snackbar">
+          <div class="snackbar-wrapper">
+            <p>Sorry something went wrong</p>
+            <span><a href="#">Retry</a></span>
+            <span><a href="#" id="nackbar-close-btn">X</a></span>
+          </div>
+        </div>
 
-   <div class="snackbar  leading-snackbar" id="leading-snackbar">
-    <div class="snackbar-wrapper">
-    <p>Sorry something went wrong</p>
-    <span><a href="#">Retry</a></span>
-    <span><a href="#" id="nackbar-close-btn">X</a></span>
-   </div>
-  </div>
+        <div class="snackbar stacked-snackbar" id="stacked-snackbar">
+          <div class="snackbar-wrapper">
+            <p>Sorry something went wrong</p>
+            <span><a href="#">Retry</a></span>
+            <span><a href="#" id="nackbar-close-btn">X</a></span>
+          </div>
+        </div>
 
-  <div class="snackbar  stacked-snackbar" id="stacked-snackbar">
-    <div class="snackbar-wrapper">
-    <p>Sorry something went wrong</p>
-    <span><a href="#">Retry</a></span>
-    <span><a href="#" id="nackbar-close-btn">X</a></span>
-   </div>
-  </div>
-
- 
-   <div class="code-snippets">
-    <pre><code class="html"> &lt;button class=&quot;btn btn-primary&quot; id=&quot;base&quot;&gt;Base&lt;/button&gt;
+        <div class="code-snippets">
+          <pre><code class="html"> &lt;button class=&quot;btn btn-primary&quot; id=&quot;base&quot;&gt;Base&lt;/button&gt;
       &lt;button class=&quot;btn btn-primary&quot; id=&quot;leading&quot;&gt;Leading&lt;/button&gt;
       &lt;button class=&quot;btn btn-primary&quot; id=&quot;stacked&quot;&gt;Stacked&lt;/button&gt; 
      &lt;/div&gt; 
@@ -2046,10 +1943,10 @@
       
           
         </code></pre>
-   </div>
+        </div>
 
-   <div class="code-snippets">
-    <pre><code > 
+        <div class="code-snippets">
+          <pre><code > 
       const baseBtn = document.querySelector("#base");
 const baseSnackbar = document.querySelector("#base-snackbar");
 const baseCloseBtn = document.querySelector("#base-snackbar");
@@ -2086,23 +1983,24 @@ stackedCloseBtn.addEventListener("click", () => {
      
       
         </code></pre>
-   </div>
-</div> 
-<hr>
-
+        </div>
+      </div>
+      <hr />
     </main>
-    <hr />
 
     <footer>
       <div class="footer-items">
         <h4>made by anand kumar</h4>
-
         <ul class="footer-icon-holder list-style-none">
           <li class="footer-links">
-            <a href="#"><i class="fa fa-github text-lg mr-sm"></i></a>
+            <a href="#=https://github.com/anandkumarcoder/component-library"
+              ><i class="fa fa-github text-lg mr-sm"></i
+            ></a>
           </li>
           <li class="footer-links">
-            <a href="#"><i class="fa fa-twitter text-lg"></i></a>
+            <a href="https://twitter.com/5_Anand"
+              ><i class="fa fa-twitter text-lg"></i
+            ></a>
           </li>
         </ul>
       </div>
@@ -2112,7 +2010,6 @@ stackedCloseBtn.addEventListener("click", () => {
     <script src="../javascript/form.js"></script>
     <script src="../javascript/slider.js"></script>
     <script src="../javascript/snackbar.js"></script>
-
     <script>
       hljs.highlightAll();
     </script>
