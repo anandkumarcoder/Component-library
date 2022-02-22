@@ -1,21 +1,21 @@
-.grid-two-col{
-    display: grid;
-    gap: 2rem;
-    grid-template-columns:  repeat(2 , 1fr);
-    width: 100%;
-    
+.grid-two-col {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
 }
 
-.col-1 , .col-2 , .col-3{
-    background: var(--grid-bg);
-    padding: 5rem 0;
-    text-align: center;
+.col-1,
+.col-2,
+.col-3 {
+  background: var(--grid-bg);
+  padding: 5rem 0;
+  text-align: center;
 }
 
-.grid-three-col{
-    display: grid;
-    grid-column-gap: 0.5rem;
-    grid-template-columns:  repeat(3 , auto);
-    width: 100%;
- 
+.grid-three-col {
+  display: grid;
+  grid-column-gap: 0.5rem;
+  grid-template-columns: repeat(3, auto);
+  width: 100%;
 }

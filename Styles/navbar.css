@@ -1,9 +1,6 @@
-
-
 header {
   grid-area: header;
   margin-top: -1rem;
-  
 }
 
 .nav-bar {
@@ -13,7 +10,6 @@ header {
   flex-wrap: wrap;
   font-weight: var(--font-semi-bold);
   border-bottom: 2px solid var(--nav-bar-bt);
- 
 }
 
 .logo {

@@ -1,26 +1,24 @@
-.rating-badge{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 0.4rem;  
+.rating-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.4rem;
 }
 
-.rating{ 
-    background: var(  --light);
-    display: inline-block;
-    border: 1px solid var(--dark);
-    border-radius: 20%;
-    margin-right: 1.5rem;
+.rating {
+  background: var(--light);
+  display: inline-block;
+  border: 1px solid var(--dark);
+  border-radius: 20%;
+  margin-right: 1.5rem;
 }
-
 
 .rating-badge .material-icons {
-    vertical-align: middle;
-    padding: 0 0.2rem;
-    color: var(--rating-star);
+  vertical-align: middle;
+  padding: 0 0.2rem;
+  color: var(--rating-star);
 }
 
-.component-container-rating .material-icons{
-    color:  var(--rating-star);
+.component-container-rating .material-icons {
+  color: var(--rating-star);
 }
-

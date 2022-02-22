@@ -3,13 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap");
 /* ------------ */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-}
-
 .wrapper {
   max-width: 30vw;
   border: 1px solid var(--dark);
