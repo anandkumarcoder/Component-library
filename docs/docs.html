@@ -63,9 +63,11 @@
     <main>
       <!-- getting started -->
       <div id="getting-started">
-        <div class="text-description">
-          <h3>Use the below link to for using CL in your project</h3>
+        <div class="heading">
+          <h2>Installation</h2>
+          <h5>Use the below link to install component library in your project</h5>
         </div>
+        
         <div class="code-snippets">
           <pre><code class="html">  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://falconui.vercel.app/Styles/main.css&quot;&gt;
           </code></pre>
@@ -77,6 +79,10 @@
       <div class="avatar-section" id="avatar">
         <div class="heading">
           <h2>Avatar</h2>
+          <h5>
+            Avatar can be used to show user's profile picture on profile
+            information page, on navigation bar, in blogs grid items.
+          </h5>
         </div>
 
         <div class="text-description">
@@ -209,7 +215,8 @@
           <h2>Alerts</h2>
           <h5>
             Alerts are used to attract user's attention for important
-            information without interrupting the user's flow.
+            information without interrupting the user's flow. different types of
+            alert buttons are simple, with icons, with close buttons.
           </h5>
         </div>
 
@@ -218,17 +225,9 @@
           <div class="text-description p-xs mb-sm">
             <p>
               Alerts are available in 4 types- success alert, error alert, ,
-              primary alert, secondary alert.
+              primary alert, secondary alert. To use this alert just use class
+              name alert-box and also add class accordingly
             </p>
-
-            <p>
-              To use this alert just use class name alert-box and also add class
-              according to alert type- alert-primary, alert-secondary,
-              alert-danger, alert-success, alert-warning. (e.g.class="alert-box
-              alert-primary").
-            </p>
-
-            <p>You can copy html part from below code snippet.</p>
           </div>
         </div>
 
@@ -259,13 +258,6 @@
 
         <div class="description-box mb-sm">
           <h3>Example of alert bar with icons</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>
-              Alerts can have icon too . Few types of alert with examples are
-              info alert,warning alert, error alert
-            </p>
-            <p>You can copy html part from below code snippet.</p>
-          </div>
         </div>
 
         <div class="component-container component-container-alert alert-icon">
@@ -304,11 +296,7 @@
         </div>
 
         <div class="description-box mb-sm">
-          <h4>Example of alert bar with close button</h4>
-          <div class="text-description p-xs mb-sm">
-            <p>Alerts can have close button as well.</p>
-            <p>You can copy html and Js from below</p>
-          </div>
+          <h3>Example of alert bar with close button</h3>
         </div>
 
         <!-- alert bar with close  button -->
@@ -342,7 +330,7 @@
         </div>
 
         <div class="code-snippets">
-          <pre><code class="js">
+          <pre><code>
          const alertBox = document.querySelector("#alert-box-close");
           const closeBtn = document.querySelector("#alert-example-close-btn");
             closeBtn.addEventListener("click", ()=> {
@@ -357,14 +345,15 @@
       <div id="badge">
         <div class="heading p-xs mb-sm">
           <h2>Badges</h2>
-          <h5>Badges are used to as CTA</h5>
+          <h5>
+            Badges are used to highlight to client about new updates or status
+            of something. Types of badges : With icon,badges on button, badges
+            on profile iamges.
+          </h5>
         </div>
 
         <div class="description-box mb-sm">
-          <h3>Example</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>Badges with icons</p>
-          </div>
+          <h3>Example:Badges with icons</h3>
         </div>
 
         <div class="component-container component-container-badge">
@@ -399,9 +388,6 @@
 
         <div class="description-box mb-sm">
           <h3>Example of badge on buttons</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>Use the below in your project to use the button with badge</p>
-          </div>
         </div>
 
         <div class="component-container component-container-badge">
@@ -439,9 +425,6 @@
 
         <div class="description-box mb-sm">
           <h3>Example of badge with different status</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>USe the below in your project to use the button with badge</p>
-          </div>
         </div>
 
         <div class="component-container component-container-badge">
@@ -512,15 +495,13 @@
           <h2>Buttons</h2>
           <h5>
             Buttons are also known as call to action. below are few types of
-            button. Add respective classes are you are good to go
+            button. Add respective classes as per your use. Types of buttons:
+            with border and outlined , with icon and text, with only icons
           </h5>
         </div>
 
         <div class="description-box mb-sm">
-          <h3>Example</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>buttons without border</p>
-          </div>
+          <h3>Example of buttons without border</h3>
         </div>
 
         <div class="component-container">
@@ -543,9 +524,6 @@
 
         <div class="description-box mb-sm">
           <h3>Example of buttons with outlined</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>If you want to use outlined button add class outlined</p>
-          </div>
         </div>
 
         <div class="component-container">
@@ -568,12 +546,6 @@
 
         <div class="description-box mb-sm">
           <h3>Example of buttons with icons</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>
-              If you want to use buttons with icons just add btn-icon and
-              respective action button class name
-            </p>
-          </div>
         </div>
 
         <div class="component-container">
@@ -608,12 +580,7 @@
         <!-- only icons button -->
 
         <div class="description-box mb-sm">
-          <h4>Example of icon buttons</h4>
-          <div class="text-description p-xs mb-sm">
-            <p>
-              If you want to use icons buttons just add icon-only class name
-            </p>
-          </div>
+          <h3>Example of icon buttons</h3>
         </div>
 
         <div class="component-container">
@@ -643,14 +610,14 @@
       <div class="input-section" id="input">
         <div class="heading p-xs mb-sm">
           <h2>Input</h2>
-          <h5>Various Types of input used</h5>
+          <h5>
+            Inputs are used to take input from clients and perform the action on
+            data Types:email,username,password,selection
+          </h5>
         </div>
 
         <div class="description-box mb-sm">
           <h3>Example:simple input</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>Use below code to copy it</p>
-          </div>
         </div>
 
         <div class="component-container component-container-input">
@@ -694,54 +661,61 @@
             &lt;/div&gt; 
               </code></pre>
         </div>
-
+        <!-- simple input selection -->
         <div class="description-box mb-sm">
           <h3>Example:simple input for selection and search</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>Use below HTML code to use it</p>
-          </div>
-
-          <div class="component-container component-container-input">
-            <div class="search">
-              Search something
-              <i class="material-icons search-icon"> search </i>
-            </div>
-            <select class="input">
-              <option selected disabled>Select</option>
-              <option>S</option>
-              <option>M</option>
-              <option>L</option>
-              <option disabled>XL</option>
-            </select>
-          </div>
         </div>
+
+        <div class="component-container component-container-input">
+          <div class="search">
+            Search something
+            <i class="material-icons search-icon"> search </i>
+          </div>
+          <select class="input">
+            <option selected disabled>Select</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option disabled>XL</option>
+          </select>
+        </div>
+
         <div class="code-snippets">
-          <pre><code class="html">&lt;div class=&quot;search&quot;&gt;
-                  Search something
-                  &lt;i class=&quot;material-icons search-icon&quot;&gt; 
-                    search  
-                  &lt;/i&gt;
-                &lt;/div&gt;
-    
-                &lt;select class=&quot;input&quot;&gt;
-                  &lt;option selected disabled&gt;Select&lt;/option&gt;
-                  &lt;option&gt;S&lt;/option&gt;
-                  &lt;option&gt;M&lt;/option&gt;
-                  &lt;option &gt;L&lt;/option&gt;
-                  &lt;option disabled &gt;XL&lt;/option&gt;
-              &lt;/select&gt;
+          <pre><code class="html">&lt;div class=&quot;component-container component-container-input&quot;&gt;
+            &lt;div class=&quot;search&quot;&gt;
+              Search something
+              &lt;i class=&quot;material-icons search-icon&quot;&gt; search &lt;/i&gt;
+            &lt;/div&gt;
+            &lt;select class=&quot;input&quot;&gt;
+              &lt;option selected disabled&gt;Select&lt;/option&gt;
+              &lt;option&gt;S&lt;/option&gt;
+              &lt;option&gt;M&lt;/option&gt;
+              &lt;option&gt;L&lt;/option&gt;
+              &lt;option disabled&gt;XL&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
             </code></pre>
         </div>
       </div>
       <hr />
+
       <!-- card section starts -->
       <div class="card-section" id="card">
         <div class="heading p-xs mb-sm">
           <h2>Cards</h2>
-          <h5>Example:Simple Vertical card</h5>
+          <h5>
+            Cards are used majorly on ecommerce and social media website. A card
+            holds the concise information about the product or user.
+          </h5>
+        </div>
+
+        <div class="description-box mb-sm">
+          <h3>Example:Simple vertical card</h3>
         </div>
 
         <!-- simple vertical card -->
+
+
 
         <div class="component-container component-container-card">
           <div class="card-container one">
@@ -776,9 +750,6 @@
         <!-- card with dismiss button -->
         <div class="description-box mb-sm">
           <h3>Example:Card with dismiss button</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>Copy the below code to use it</p>
-          </div>
         </div>
 
         <div class="component-container component-container-card">
@@ -818,9 +789,6 @@
         <!-- card with shadow -->
         <div class="description-box mb-sm">
           <h3>Example:Card with shadow</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>Copy the below code to use it</p>
-          </div>
         </div>
 
         <div class="component-container component-container-card">
@@ -861,9 +829,6 @@
         <!-- card with overlay text -->
         <div class="description-box mb-sm">
           <h3>Example:Card with overlay text</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>Copy the below code to use it</p>
-          </div>
         </div>
 
         <div class="component-container component-container-card">
@@ -904,9 +869,6 @@
         <!-- card with badge -->
         <div class="description-box mb-sm">
           <h3>Example:Card with badge</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>Copy the below code to use it</p>
-          </div>
         </div>
 
         <div class="component-container component-container-list">
@@ -950,9 +912,6 @@
         <!-- card with text -->
         <div class="description-box mb-sm">
           <h3>Example:Card with text</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>Card with text used in check out</p>
-          </div>
         </div>
 
         <div class="component-container component-container-list">
@@ -989,7 +948,7 @@
         <!-- single page product card -->
 
         <div class="description-box mb-sm">
-          <h3>Example of main big card</h3>
+          <h3>Example of single page card</h3>
         </div>
 
         <div class="component-container component-container-single-page">
@@ -1096,10 +1055,7 @@
 
         <!-- Horizontal card -->
         <div class="description-box mb-sm">
-          <h3>Example:Horizontal</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>Copy the below code to use it</p>
-          </div>
+          <h3>Example of horizontal card</h3>
         </div>
 
         <div class="component-container">
@@ -1192,7 +1148,7 @@
 </code></pre>
         </div>
       </div>
-      
+
       <hr />
 
       <!-- image section starts -->
@@ -1200,14 +1156,14 @@
       <div id="image">
         <div class="heading p-xs mb-sm">
           <h2>Image</h2>
-          <h5>Small desc below heading</h5>
+          <h5>
+            Image tags are used to hold image to be shown on the page.
+            Types:Full image, round image
+          </h5>
         </div>
 
         <div class="description-box mb-sm">
-          <h3>Example:full size <picture></picture></h3>
-          <div class="text-description p-xs mb-sm">
-            <p>Desc explaining example</p>
-          </div>
+          <h3>Example:full size</h3>
         </div>
 
         <div class="component-container component-container-image">
@@ -1223,6 +1179,11 @@
           <pre><code class="html">&lt;img class=&quot;full-image&quot; src=&quot;/assets/flying-kite.jpg&quot; alt=&quot;&quot; srcset=&quot;&quot;&gt;
          </code></pre>
         </div>
+
+        <div class="description-box mb-sm">
+          <h3>Example:Round image</h3>
+        </div>
+
         <div class="component-container component-container-image">
           <img
             class="round-image"
@@ -1245,17 +1206,14 @@
       <div id="text-utilis">
         <div class="heading p-xs mb-sm">
           <h2>Text Utilities</h2>
-          <h5>There are various text utility classes.</h5>
+          <h5>
+            There are various text utility classes which makes styling
+            consistent and easy to apply.
+          </h5>
         </div>
 
         <div class="description-box mb-sm">
-          <h3>Example: Headings</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>
-              From h1 to h5, there are 5 heading text with 5 different sizes.
-              Just add class h1 to h5 in to any h tag to use the below
-            </p>
-          </div>
+          <h3>Example: Headings from h1 to h5</h3>
         </div>
 
         <div class="component-container component-container-text-utility">
@@ -1265,7 +1223,6 @@
           <h4 class="h4">This is Heading h4</h4>
           <h5 class="h5">This is Heading h5</h5>
         </div>
-        <!-- </div> -->
 
         <div class="code-snippets">
           <pre><code class="html"> &lt;h1 class=&quot;h1&quot;&gt;This is Heading 1&lt;/h1&gt;
@@ -1278,9 +1235,6 @@
 
         <div class="description-box mb-sm">
           <h3>Example:Text alignment</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>Text can start from left center and right side</p>
-          </div>
         </div>
 
         <div
@@ -1302,12 +1256,6 @@
 
         <div class="description-box mb-sm">
           <h3>Example:Grey Text</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>
-              Text in grey color used to denote less important or not
-              availability
-            </p>
-          </div>
         </div>
 
         <div class="component-container component-container-list">
@@ -1339,12 +1287,6 @@
 
         <div class="description-box mb-sm">
           <h3>Example:Normal list</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>
-              Normal lists can be used to present information items together, as
-              numbered (ordered) or not-numbered (unordered).
-            </p>
-          </div>
         </div>
 
         <div class="component-container component-container-list">
@@ -1413,7 +1355,6 @@
 
         <div class="description-box mb-sm">
           <h3>Example:Stacked list</h3>
-          <p>Add list-stacked to ul tag.</p>
         </div>
 
         <div class="component-container component-container-list">
@@ -1437,9 +1378,6 @@
 
         <div class="description-box mb-sm">
           <h3>Example:Spaced list</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>Add list-spaced to ul tag and spaced to li tag</p>
-          </div>
         </div>
 
         <div class="component-container component-container-list">
@@ -1467,14 +1405,11 @@
       <div id="grid">
         <div class="heading p-xs mb-sm">
           <h2>Simplified Grid</h2>
-          <h5>A simple grid used for layout</h5>
+          <h5>A simple grid used for layout of the webpage</h5>
         </div>
 
         <div class="description-box mb-sm">
           <h3>Example:Simple grid with two items</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>Two item grid with column</p>
-          </div>
         </div>
 
         <div class="component-container component-container-grid">
@@ -1494,9 +1429,6 @@
 
         <div class="description-box mb-sm">
           <h3>Example:Simple grid with three items</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>Three item grid with columns</p>
-          </div>
         </div>
 
         <div class="component-container component-container-grid">
@@ -1524,13 +1456,15 @@
       <div id="navigation">
         <div class="heading p-xs mb-sm">
           <h2>Navigation</h2>
+          <h5>
+            Navigation is used on the top of the page. It contains different
+            button or icons or combined which are used for navigating to
+            different pages and actions
+          </h5>
         </div>
 
         <div class="description-box mb-sm">
           <h3>Example:Simple navigation</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>Use below code to use the</p>
-          </div>
         </div>
 
         <div class="component-container component-container-navigation">
@@ -1573,12 +1507,14 @@
       <div id="form">
         <div class="heading p-xs mb-sm">
           <h2>Form</h2>
+          <h5>
+            Forms are used for multiple purspose like surverys, login, signup. A
+            form has input and submit button used for taking informationa nd
+            processing it
+          </h5>
         </div>
         <div class="description-box mb-sm">
           <h3>Example:Login form</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>Sign up form onboarding a client</p>
-          </div>
         </div>
 
         <div class="component-container component-container-form">
@@ -1666,7 +1602,6 @@
 
         <div class="description-box mb-sm">
           <h3>Example:Sign up form</h3>
-          <div class="text-description p-xs mb-sm"></div>
         </div>
 
         <div class="component-container component-container-form">
@@ -1765,13 +1700,7 @@
         </div>
 
         <div class="description-box mb-sm">
-          <h3>ExamplePrice range slider</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>
-              These types of sliders are used in filtering products withing the
-              price range
-            </p>
-          </div>
+          <h3>Example of price range slider</h3>
         </div>
 
         <div class="component-container component-container-slider">
@@ -1827,9 +1756,6 @@
 
         <div class="description-box mb-sm">
           <h3>Example of read-only ratings</h3>
-          <div class="text-description p-xs mb-sm">
-            <p>There are two types, input read-only and badge</p>
-          </div>
         </div>
 
         <div class="component-container component-container-rating">
@@ -1871,14 +1797,7 @@
         </div>
 
         <div class="description-box mb-sm">
-          <div class="text-description p-xs mb-sm">
-            <p>
-              Just add class as baseline_snackbar, leading_snackbar and
-              stacked_snackbar along with snackbar_container. Also add id as
-              baseline_snackbar, leading_snackbar and stacked_snackbar for
-              functionality
-            </p>
-          </div>
+          <h3>Example of sbackbar - Base , leading and stacked</h3>
         </div>
 
         <div class="component-container component-container-snackbar">
