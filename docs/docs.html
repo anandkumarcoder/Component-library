@@ -1094,15 +1094,18 @@
    </code></pre>
         </div>
 
-        <!-- single page product card -->
-
+        <!-- Horizontal card -->
         <div class="description-box mb-sm">
-          <h3>Example of main big card</h3>
+          <h3>Example:Card with shadow</h3>
+          <div class="text-description p-xs mb-sm">
+            <p>Copy the below code to use it</p>
+          </div>
         </div>
 
-        <div class="component-container component-container-single-page">
-          <div class="card-container single-page">
-            <div class="card-main-big single-page-card">
+        <div class="component-container">
+          <div class="card-container horizontal">
+            <div class="card-main-big">
+              <i class="material-icons icon-only">share</i>
               <img
                 class="card-image"
                 src="/assets/tshirt-image.jpg"
@@ -1118,94 +1121,78 @@
 
               <div class="card-price-box">
                 <h5 class="card-price">$80.00</h5>
+                <span class="price-cancelled">$120</span>
               </div>
 
-              <div class="colors-holder">
-                <div class="color black"></div>
-                <div class="color red"></div>
-                <div class="color green"></div>
-              </div>
-
-              <div class="size">
-                <select class="input">
-                  <option selected disabled>Select</option>
-                  <option>S</option>
-                  <option>M</option>
-                  <option>L</option>
-                  <option disabled>XL</option>
-                </select>
+              <div class="quantity">
+                <i class="material-icons icon-only"> add_circle_outline </i>
+                <input
+                  type="text"
+                  min="1"
+                  max=""
+                  class="input-qty"
+                  id="quanity-txt"
+                />
+                <i class="material-icons icon-only"> remove_circle_outline </i>
               </div>
 
               <div class="action-btn">
                 <button class="btn btn-icon btn-icon-favorite">
-                  <i class="material-icons"> favorite</i> Add to wishlist
+                  <i class="material-icons"> favorite</i> Wishlist It
                 </button>
-                <button class="btn btn-icon btn-icon-add-to-cart">
-                  <i class="material-icons">shopping_cart</i>Add to cart
-                </button>
-                <button class="btn btn-icon btn-icon-add-to-cart">
-                  <i class="material-icons">share</i>Share
+                <button class="btn btn-icon btn-icon-delete delete-btn-card">
+                  <i class="material-icons"> delete </i>Delete
                 </button>
               </div>
             </div>
           </div>
         </div>
-
+        <!-- code snippets for horizontal card -->
         <div class="code-snippets">
-          <pre><code class="html">&lt;div class=&quot;component-container   component-container-single-page&quot;&gt;
-      &lt;div class=&quot;card-container single-page&quot;&gt;
-      &lt;div class=&quot;card-main-big single-page-card&quot;&gt;
+          <pre><code class="html">   &lt;div class=&quot;card-container horizontal&quot;&gt;
+    &lt;div class=&quot;card-main-big&quot;&gt;
+      &lt;i class=&quot;material-icons icon-only &quot;&gt;share&lt;/i&gt;
+      &lt;img
+        class=&quot;card-image&quot;
+        src=&quot;/assets/tshirt-image.jpg&quot;
+        alt=&quot;T-shirt image&quot;
+      /&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card-details right-col&quot;&gt;
+      &lt;div class=&quot;prd-name&quot;&gt;
+        &lt;h3 class=&quot;brand-name&quot;&gt;Venum&lt;/h3&gt;
+        &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;card-price-box&quot;&gt;
+        &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt; 
+        &lt;span class=&quot;price-cancelled&quot;&gt;$120&lt;/span&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;quantity&quot;&gt;
+        &lt;i class=&quot;material-icons icon-only&quot;&gt; add_circle_outline &lt;/i&gt;
+        &lt;input type=&quot;text&quot; min=&quot;1&quot; max=&quot;&quot;   class=&quot;input-qty&quot;  id=&quot;quanity-txt&quot;&gt; 
+        &lt;i class=&quot;material-icons icon-only&quot;&gt; remove_circle_outline &lt;/i&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;action-btn&quot;&gt;
+        &lt;button class=&quot;btn btn-icon btn-icon-favorite&quot;&gt;
+          &lt;i class=&quot;material-icons&quot;&gt; favorite&lt;/i&gt; Wishlist It
+        &lt;/button&gt;
+        &lt;button class=&quot;btn btn-icon btn-icon-delete delete-btn-card&quot;&gt;
+          &lt;i class=&quot;material-icons&quot;&gt; delete &lt;/i&gt;Delete
+        &lt;/button&gt;
         
-        &lt;img
-          class=&quot;card-image&quot;
-          src=&quot;/assets/tshirt-image.jpg&quot;
-          alt=&quot;T-shirt image&quot;
-        /&gt;
+  
       &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 
-      &lt;div class=&quot;card-details right-col&quot;&gt;
-        &lt;div class=&quot;prd-name&quot;&gt;
-          &lt;h3 class=&quot;brand-name&quot;&gt;Venum&lt;/h3&gt;
-          &lt;h2 class=&quot;card-title&quot;&gt;AUTHENTIC MEN&apos;S WALKOUT JERSEY&lt;/h2&gt;
-        &lt;/div&gt;
-
-        &lt;div class=&quot;card-price-box&quot;&gt;
-          &lt;h5 class=&quot;card-price&quot;&gt;$80.00&lt;/h5&gt;
-        &lt;/div&gt;
-
-        &lt;div class=&quot;colors-holder&quot;&gt;
-          &lt;div class=&quot;color black&quot;&gt;&lt;/div&gt;
-          &lt;div class=&quot;color red&quot;&gt;&lt;/div&gt;
-          &lt;div class=&quot;color green&quot;&gt;&lt;/div&gt;
-        &lt;/div&gt;
-
-        &lt;div class=&quot;size&quot;&gt;
-          &lt;select class=&quot;input&quot;&gt;
-            &lt;option selected disabled&gt;Select&lt;/option&gt;
-            &lt;option&gt;S&lt;/option&gt;
-            &lt;option&gt;M&lt;/option&gt;
-            &lt;option&gt;L&lt;/option&gt;
-            &lt;option disabled&gt;XL&lt;/option&gt;
-          &lt;/select&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;action-btn&quot;&gt;
-          &lt;button class=&quot;btn btn-icon btn-icon-favorite&quot;&gt;
-            &lt;i class=&quot;material-icons&quot;&gt; favorite&lt;/i&gt; Add to wishlist
-          &lt;/button&gt;
-          &lt;button class=&quot;btn btn-icon btn-icon-add-to-cart&quot;&gt;
-            &lt;i class=&quot;material-icons&quot;&gt;shopping_cart&lt;/i&gt;Add to cart
-          &lt;/button&gt;
-          &lt;button class=&quot;btn btn-icon btn-icon-add-to-cart&quot;&gt;
-            &lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;Share
-          &lt;/button&gt;
-        &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;      
-   </code></pre>
+</code></pre>
         </div>
       </div>
+      
       <hr />
 
       <!-- image section starts -->
@@ -1389,8 +1376,7 @@
             <li>Item 1</li>
           </ol>
         </div>
-        <!-- </div> -->
-        <!-- </div> -->
+
         <div class="code-snippets">
           <pre><code class="html">
           &lt;ol class=&quot;list-container&quot;&gt;
@@ -2007,10 +1993,14 @@ stackedCloseBtn.addEventListener("click", () => {
         <h4>made by anand kumar</h4>
         <ul class="footer-icon-holder list-style-none">
           <li class="footer-links">
-            <a href="#=https://github.com/anandkumarcoder/component-library"><i class="fa fa-github text-lg mr-sm"></i></a>
+            <a href="#=https://github.com/anandkumarcoder/component-library"
+              ><i class="fa fa-github text-lg mr-sm"></i
+            ></a>
           </li>
           <li class="footer-links">
-            <a href="https://twitter.com/5_Anand"><i class="fa fa-twitter text-lg"></i></a>
+            <a href="https://twitter.com/5_Anand"
+              ><i class="fa fa-twitter text-lg"></i
+            ></a>
           </li>
         </ul>
       </div>
