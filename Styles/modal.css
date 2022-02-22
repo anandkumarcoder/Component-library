@@ -1,0 +1,16 @@
+.modal-card {
+  border: 1px solid transparent;
+  background: var(--primary-bg-alert);
+  width: 30rem;
+  height: 10rem;
+  text-align: center;
+  display: none;
+}
+
+.modal-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 3.5rem 0;
+}
