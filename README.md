@@ -96,6 +96,8 @@ https://user-images.githubusercontent.com/84398380/155067620-231e652f-5bf7-47d2-
   - Leading
   - Stacked
 
+- Modal
+
 
 
   
